@@ -4,7 +4,7 @@
 
 ---
 
-
+This website holds all of the sample websites that I will be giving to my potiental clients
 
 ===
 
@@ -12,7 +12,7 @@
 
 ---
 
-Demo: PUT_SITE_URL_HERE
+Demo: www.ctfsamplesites.com
 
 ===
 
@@ -20,12 +20,12 @@ Demo: PUT_SITE_URL_HERE
 
 ---
 
-## Started Developement - 
+## Started Developement - 8/16/2023
 
-## Ended Development -
+## Ended Development - IN PROGRESS
 
 ## Status
 
-PUT_NETLIFY_STATUS_CODE_HERE
+[![Netlify Status](https://api.netlify.com/api/v1/badges/d1a05213-ed39-4445-b89f-3f7c4ca8d703/deploy-status)](https://app.netlify.com/sites/inquisitive-khapse-802fcf/deploys)
 
 ===
