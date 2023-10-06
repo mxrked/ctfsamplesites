@@ -1,4 +1,5 @@
 const isProd = process.env.NODE_ENV === "production";
+const fs = require("fs-extra");
 
 module.exports = {
   reactStrictMode: true,
@@ -13,6 +14,11 @@ module.exports = {
 
   //! This added clean urls and eliminates the .html extension aswell as linking
   //! CSS and JS with the trailingSlash
-  assetPrefix: isProd ? "PUT_SITE_URL_HERE" : "",
+  assetPrefix: isProd ? "https://ctfsamplesites.com/" : "",
   trailingSlash: true,
+
+  // This adds the _headers file after npm run build
+  async afterBuild({ utils }) {
+    await fs.copy("_headers", ".next/_headers");
+  },
 };
