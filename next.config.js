@@ -1,3 +1,5 @@
+const webpack = require("webpack");
+
 const isProd = process.env.NODE_ENV === "production";
 const fs = require("fs-extra");
 
@@ -6,8 +8,18 @@ module.exports = {
   webpack5: true,
 
   // Fixes fs issue
-  webpack: (config) => {
+  webpack: (config, { isServer }) => {
     config.resolve.fallback = { fs: false };
+
+    // if (!isServer) {
+    //   // Exclude or mock child_process in the client bundle
+    //   config.plugins.push(
+    //     new webpack.NormalModuleReplacementPlugin(
+    //       /child_process[/\\]execFile\.js/,
+    //       require.resolve("./emptyModule.js") // Create an empty module file
+    //     )
+    //   );
+    // }
 
     return config;
   },
