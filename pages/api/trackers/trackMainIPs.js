@@ -12,22 +12,21 @@ export default async function handler(req, res) {
     // Checking if the IP is not localhost (127.0.0.1) and not ::1 (localhost as well)
     const ON_LOCALHOST = CLIENT_IP !== "127.0.0.1" && CLIENT_IP !== "::1";
 
+    // Connect to the database
+    const DB = await connectDatabase();
+
+    if (!DB) {
+      res.status(500).json({ error: "Failed to connect to MongoDB" });
+      return;
+    }
+
     // Only proceed if not on localhost
     if (ON_LOCALHOST) {
-      // Connect to the database
-      const DB = await connectDatabase();
-
-      if (!DB) {
-        res.status(500).json({ error: "Failed to connect to MongoDB" });
-        return;
-      }
-
       // Insert the IP only if it doesn't exist
-      await DB.collection("ips").updateOne(
+      await DB.collection("ips").findOneAndUpdate(
         { ip: CLIENT_IP },
         {
-          $setOnInsert: { createdAt: new Date() },
-          $addToSet: { ip: CLIENT_IP },
+          $setOnInsert: { ip: CLIENT_IP, createdAt: new Date() },
         },
         { upsert: true }
       );
