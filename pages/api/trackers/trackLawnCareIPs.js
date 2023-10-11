@@ -22,13 +22,10 @@ export default async function handler(req, res) {
 
     if (ON_LOCALHOST) {
       // Insert the IP only if it doesn't exist
-      await DB.collection("ips").updateOne(
-        { ip: CLIENT_IP },
-        {
-          $setOnInsert: { ip: CLIENT_IP, createdAt: new Date() },
-        },
-        { upsert: true }
-      );
+      await DB.collection("ips").insertOne({
+        ip: CLIENT_IP,
+        createdAt: new Date(),
+      });
     }
 
     // Identify and store duplicate IPs

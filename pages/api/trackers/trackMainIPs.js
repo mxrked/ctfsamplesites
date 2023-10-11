@@ -20,24 +20,18 @@ export default async function handler(req, res) {
     // Checking if the IP is not localhost (127.0.0.1) and not ::1 (localhost as well)
     const ON_LOCALHOST = CLIENT_IP !== "127.0.0.1" && CLIENT_IP !== "::1";
 
-    // if (ON_LOCALHOST) {
-    //   // Insert the IP only if it doesn't exist
-    //   await DB.collection("ips").updateOne(
-    //     { ip: CLIENT_IP },
-    //     {
-    //       $setOnInsert: { ip: CLIENT_IP, createdAt: new Date() },
-    //     },
-    //     { upsert: true }
-    //   );
-    // }
+    if (ON_LOCALHOST) {
+      // Insert the IP only if it doesn't exist
+      await DB.collection("ips").insertOne({
+        ip: CLIENT_IP,
+        createdAt: new Date(),
+      });
+    }
 
-    await DB.collection("ips").updateOne(
-      { ip: CLIENT_IP },
-      {
-        $setOnInsert: { ip: CLIENT_IP, createdAt: new Date() },
-      },
-      { upsert: true }
-    );
+    await DB.collection("ips").insertOne({
+      ip: CLIENT_IP,
+      createdAt: new Date(),
+    });
 
     // Identify and store duplicate IPs
     const duplicateIPs = await DB.collection("ips")
