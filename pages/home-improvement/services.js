@@ -7,21 +7,40 @@
 import { useEffect } from "react";
 import { useRouter } from "next/router";
 
-import { connectToDatabase } from "@/db/connections/Site_HomeImprovement_Connection";
+import { connectDatabase } from "@/db/connections/Site_HomeImprovement_Connection";
 
 import "../../assets/styles/modules/Sites/HomeImprovement/HomeImprovement.module.css";
 
 export async function getServerSideProps() {
-  // Checking to see if connected to db
+  // Establish a connection to the MongoDB database
+  const DB = await connectDatabase();
+
+  // If the database connection fails, return a default count of 0
+  if (!DB) {
+    return {
+      props: { count: 0 },
+    };
+  }
+
   try {
-    await connectToDatabase();
-    return { props: { connectedToDB: true } };
+    // Retrieve the total number of documents (total number of IPs) in the "ips" collection
+    const TOTAL_NUMBER_OF_IPS = await DB.collection("ips").countDocuments();
+
+    // Return the total number of IPs as props
+    return {
+      props: {
+        TOTAL_NUMBER_OF_IPS,
+      },
+    };
   } catch (error) {
-    console.log("Error connecting to db");
-    console.error(error);
-    return { props: { connectedToDB: false } };
+    // Handle errors during the counting process, log the error, and return a default count of 0
+    console.error("Error while counting documents:", error);
+    return {
+      props: { TOTAL_NUMBER_OF_IPS: 0 },
+    };
   }
 }
+
 export default function HomeImprovementServices({ TOTAL_NUMBER_OF_IPS }) {
   const router = useRouter();
 
