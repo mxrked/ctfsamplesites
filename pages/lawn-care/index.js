@@ -4,7 +4,12 @@
  *
  */
 
+import { useEffect } from "react";
 import { useRouter } from "next/router";
+import path from "path";
+import fs from "fs";
+
+import { PageHead } from "@/assets/components/global/All/PageHead";
 
 import { connectDatabase } from "@/db/connections/Site_LawnCare_Connection";
 
@@ -25,22 +30,37 @@ export async function getServerSideProps() {
     // Retrieve the total number of documents (total number of IPs) in the "ips" collection
     const TOTAL_NUMBER_OF_IPS = await DB.collection("ips").countDocuments();
 
-    // Return the total number of IPs as props
+    const pageHeadDataFilePath = path.join(
+      process.cwd(),
+      "public/data/PageHeadData/LawnCare/",
+      "SiteLawnCare_PageHeadData_INDEX.json"
+    );
+
+    const pageHeadDataFileContents = fs.readFileSync(
+      pageHeadDataFilePath,
+      "utf-8"
+    );
+
+    const page_head_data = JSON.parse(pageHeadDataFileContents);
+
     return {
       props: {
         TOTAL_NUMBER_OF_IPS,
+        page_head_data,
       },
     };
   } catch (error) {
-    // Handle errors during the counting process, log the error, and return a default count of 0
-    console.error("Error while counting documents:", error);
+    console.error("Error while fetching data:", error);
     return {
-      props: { TOTAL_NUMBER_OF_IPS: 0 },
+      props: {
+        TOTAL_NUMBER_OF_IPS: 0,
+        page_head_data: null,
+      },
     };
   }
 }
 
-export default function LawnCareIndex({ TOTAL_NUMBER_OF_IPS }) {
+export default function LawnCareIndex({ TOTAL_NUMBER_OF_IPS, page_head_data }) {
   const router = useRouter();
 
   // Checking if connected to MongoDB
@@ -64,5 +84,9 @@ export default function LawnCareIndex({ TOTAL_NUMBER_OF_IPS }) {
     FETCH_DATA();
   }, []);
 
-  return "Lawn Care Index";
+  return (
+    <div id="PAGE" className="page">
+      {/** */} <PageHead page_head_data={page_head_data} />
+    </div>
+  );
 }

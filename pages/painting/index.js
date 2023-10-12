@@ -6,6 +6,10 @@
 
 import { useEffect } from "react";
 import { useRouter } from "next/router";
+import path from "path";
+import fs from "fs";
+
+import { PageHead } from "@/assets/components/global/All/PageHead";
 
 import { connectDatabase } from "@/db/connections/Site_Painting_Connection";
 
@@ -25,23 +29,37 @@ export async function getServerSideProps() {
   try {
     // Retrieve the total number of documents (total number of IPs) in the "ips" collection
     const TOTAL_NUMBER_OF_IPS = await DB.collection("ips").countDocuments();
+    const pageHeadDataFilePath = path.join(
+      process.cwd(),
+      "public/data/PageHeadData/Painting/",
+      "SitePainting_PageHeadData_INDEX.json"
+    );
 
-    // Return the total number of IPs as props
+    const pageHeadDataFileContents = fs.readFileSync(
+      pageHeadDataFilePath,
+      "utf-8"
+    );
+
+    const page_head_data = JSON.parse(pageHeadDataFileContents);
+
     return {
       props: {
         TOTAL_NUMBER_OF_IPS,
+        page_head_data,
       },
     };
   } catch (error) {
-    // Handle errors during the counting process, log the error, and return a default count of 0
-    console.error("Error while counting documents:", error);
+    console.error("Error while fetching data:", error);
     return {
-      props: { TOTAL_NUMBER_OF_IPS: 0 },
+      props: {
+        TOTAL_NUMBER_OF_IPS: 0,
+        page_head_data: null,
+      },
     };
   }
 }
 
-export default function PaintingIndex({ TOTAL_NUMBER_OF_IPS }) {
+export default function PaintingIndex({ TOTAL_NUMBER_OF_IPS, page_head_data }) {
   const router = useRouter();
 
   // Checking if connected to MongoDB
@@ -65,5 +83,9 @@ export default function PaintingIndex({ TOTAL_NUMBER_OF_IPS }) {
     FETCH_DATA();
   }, []);
 
-  return "Painting Index";
+  return (
+    <div id="PAGE" className="page">
+      {/** */} <PageHead page_head_data={page_head_data} />
+    </div>
+  );
 }

@@ -1,6 +1,8 @@
 // React/Next Imports
 import { useEffect, useState } from "react";
 import { useRouter } from "next/router";
+import fs from "fs";
+import path from "path";
 
 // Library Imports
 
@@ -8,41 +10,54 @@ import { useRouter } from "next/router";
 import { connectDatabase } from "@/db/connections/Site_Main_Connection";
 
 // Component Imports
+import { PageHead } from "@/assets/components/global/All/PageHead";
 
 // Style Imports
 import "../assets/styles/modules/Index/Index.module.css";
 
 export async function getServerSideProps() {
-  // Establish a connection to the MongoDB database
-  const DB = await connectDatabase();
-
-  // If the database connection fails, return a default count of 0
-  if (!DB) {
-    return {
-      props: { count: 0 },
-    };
-  }
-
   try {
-    // Retrieve the total number of documents (total number of IPs) in the "ips" collection
+    const DB = await connectDatabase();
+
+    if (!DB) {
+      return {
+        props: { TOTAL_NUMBER_OF_IPS: 0, page_head_data: null },
+      };
+    }
+
     const TOTAL_NUMBER_OF_IPS = await DB.collection("ips").countDocuments();
 
-    // Return the total number of IPs as props
+    const pageHeadDataFilePath = path.join(
+      process.cwd(),
+      "public/data/PageHeadData/Main/",
+      "SiteMain_PageHeadData_INDEX.json"
+    );
+
+    const pageHeadDataFileContents = fs.readFileSync(
+      pageHeadDataFilePath,
+      "utf-8"
+    );
+
+    const page_head_data = JSON.parse(pageHeadDataFileContents);
+
     return {
       props: {
         TOTAL_NUMBER_OF_IPS,
+        page_head_data,
       },
     };
   } catch (error) {
-    // Handle errors during the counting process, log the error, and return a default count of 0
-    console.error("Error while counting documents:", error);
+    console.error("Error while fetching data:", error);
     return {
-      props: { TOTAL_NUMBER_OF_IPS: 0 },
+      props: {
+        TOTAL_NUMBER_OF_IPS: 0,
+        page_head_data: null,
+      },
     };
   }
 }
 
-export default function Home({ TOTAL_NUMBER_OF_IPS }) {
+export default function Home({ TOTAL_NUMBER_OF_IPS, page_head_data }) {
   const router = useRouter();
 
   // Checking if connected to MongoDB
@@ -66,5 +81,9 @@ export default function Home({ TOTAL_NUMBER_OF_IPS }) {
     FETCH_DATA();
   }, []);
 
-  return "Home Page";
+  return (
+    <div id="PAGE" className="page">
+      {/** */} <PageHead page_head_data={page_head_data} />
+    </div>
+  );
 }
