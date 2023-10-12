@@ -15,7 +15,7 @@ import { PageFade } from "@/assets/animations/components/PageFade";
 import { PageHead } from "@/assets/components/global/All/PageHead";
 
 // Style Imports
-import "../assets/styles/modules/Index/Index.module.css";
+import "../assets/styles/modules/Sites/Main/Main.module.css";
 
 export async function getServerSideProps() {
   try {
