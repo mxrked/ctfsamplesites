@@ -11,6 +11,8 @@ import fs from "fs";
 
 import { PageHead } from "@/assets/components/global/All/PageHead";
 
+import { PageFade } from "@/assets/animations/components/PageFade";
+
 import { connectDatabase } from "@/db/connections/Site_Plumbing_Connection";
 
 import "../../assets/styles/modules/Sites/Plumbing/Plumbing.module.css";
@@ -88,8 +90,10 @@ export default function PlumbingServices({
   }, []);
 
   return (
-    <div id="PAGE" className="page">
-      {/** */} <PageHead page_head_data={page_head_data} />
-    </div>
+    <PageFade>
+      <div id="PAGE" className="page">
+        {/** */} <PageHead page_head_data={page_head_data} />
+      </div>
+    </PageFade>
   );
 }

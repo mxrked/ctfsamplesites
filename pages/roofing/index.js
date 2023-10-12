@@ -11,6 +11,8 @@ import fs from "fs";
 
 import { PageHead } from "@/assets/components/global/All/PageHead";
 
+import { PageFade } from "@/assets/animations/components/PageFade";
+
 import { connectDatabase } from "@/db/connections/Site_Roofing_Connection";
 
 import "../../assets/styles/modules/Sites/Roofing/Roofing.module.css";
@@ -85,8 +87,10 @@ export default function RoofingIndex({ TOTAL_NUMBER_OF_IPS, page_head_data }) {
   }, []);
 
   return (
-    <div id="PAGE" className="page">
-      {/** */} <PageHead page_head_data={page_head_data} />
-    </div>
+    <PageFade>
+      <div id="PAGE" className="page">
+        {/** */} <PageHead page_head_data={page_head_data} />
+      </div>
+    </PageFade>
   );
 }

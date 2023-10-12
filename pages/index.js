@@ -9,6 +9,8 @@ import path from "path";
 // Data/Functions/Images Imports
 import { connectDatabase } from "@/db/connections/Site_Main_Connection";
 
+import { PageFade } from "@/assets/animations/components/PageFade";
+
 // Component Imports
 import { PageHead } from "@/assets/components/global/All/PageHead";
 
@@ -82,8 +84,10 @@ export default function Home({ TOTAL_NUMBER_OF_IPS, page_head_data }) {
   }, []);
 
   return (
-    <div id="PAGE" className="page">
-      {/** */} <PageHead page_head_data={page_head_data} />
-    </div>
+    <PageFade>
+      <div id="PAGE" className="page">
+        {/** */} <PageHead page_head_data={page_head_data} />
+      </div>
+    </PageFade>
   );
 }

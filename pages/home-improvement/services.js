@@ -11,6 +11,8 @@ import fs from "fs";
 
 import { PageHead } from "@/assets/components/global/All/PageHead";
 
+import { PageFade } from "@/assets/animations/components/PageFade";
+
 import { connectDatabase } from "@/db/connections/Site_HomeImprovement_Connection";
 
 import "../../assets/styles/modules/Sites/HomeImprovement/HomeImprovement.module.css";
@@ -88,8 +90,10 @@ export default function HomeImprovementServices({
   }, []);
 
   return (
-    <div id="PAGE" className="page">
-      {/** */} <PageHead page_head_data={page_head_data} />
-    </div>
+    <PageFade>
+      <div id="PAGE" className="page">
+        {/** */} <PageHead page_head_data={page_head_data} />
+      </div>
+    </PageFade>
   );
 }
