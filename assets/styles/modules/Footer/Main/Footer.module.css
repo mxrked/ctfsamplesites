@@ -1,0 +1,15 @@
+@font-face {
+  font-family: "Noto Sans Medium";
+  src: url("https://raw.github.com/mxrked/freelance_projects_CDN/raw/main/ctfsamplesites_CDN/main/fonts/NotoSans-Medium.ttf");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Poppins Bold";
+  src: url("https://raw.github.com/mxrked/freelance_projects_CDN/raw/main/ctfsamplesites_CDN/main/fonts/NotoSans-Bold.ttf");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Poppins Extra Bold";
+  src: url("https://raw.github.com/mxrked/freelance_projects_CDN/raw/main/ctfsamplesites_CDN/main/fonts/NotoSans-ExtraBold.ttf");
+  font-display: swap;
+}/*# sourceMappingURL=Footer.module.css.map */
