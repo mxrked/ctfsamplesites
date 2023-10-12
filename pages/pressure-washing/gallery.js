@@ -60,7 +60,10 @@ export async function getServerSideProps() {
   }
 }
 
-export default function PressureWashingGallery({ TOTAL_NUMBER_OF_IPS }) {
+export default function PressureWashingGallery({
+  TOTAL_NUMBER_OF_IPS,
+  page_head_data,
+}) {
   const router = useRouter();
 
   // Checking if connected to MongoDB
