@@ -13,6 +13,7 @@ import { PageFade } from "@/assets/animations/components/PageFade";
 
 // Component Imports
 import { PageHead } from "@/assets/components/global/All/PageHead";
+import { DesktopNav } from "@/assets/components/sites/Main/Nav/DesktopNav";
 
 // Style Imports
 import "../assets/styles/modules/Sites/Main/Main.module.css";
@@ -34,18 +35,29 @@ export async function getServerSideProps() {
       "public/data/PageHeadData/Main/",
       "SiteMain_PageHeadData_INDEX.json"
     );
+    const sampleSitesDataFilePath = path.join(
+      process.cwd(),
+      "public/data/SampleSites/",
+      "SampleSitesData.json"
+    );
 
     const pageHeadDataFileContents = fs.readFileSync(
       pageHeadDataFilePath,
       "utf-8"
     );
+    const sampleSitesDataFileContents = fs.readFileSync(
+      sampleSitesDataFilePath,
+      "utf-8"
+    );
 
     const page_head_data = JSON.parse(pageHeadDataFileContents);
+    const sample_sites_data = JSON.parse(sampleSitesDataFileContents);
 
     return {
       props: {
         TOTAL_NUMBER_OF_IPS,
         page_head_data,
+        sample_sites_data,
       },
     };
   } catch (error) {
@@ -54,12 +66,17 @@ export async function getServerSideProps() {
       props: {
         TOTAL_NUMBER_OF_IPS: 0,
         page_head_data: null,
+        sample_sites_data: null,
       },
     };
   }
 }
 
-export default function Home({ TOTAL_NUMBER_OF_IPS, page_head_data }) {
+export default function Home({
+  TOTAL_NUMBER_OF_IPS,
+  page_head_data,
+  sample_sites_data,
+}) {
   const router = useRouter();
 
   // Checking if connected to MongoDB
@@ -87,6 +104,7 @@ export default function Home({ TOTAL_NUMBER_OF_IPS, page_head_data }) {
     <PageFade>
       <div id="PAGE" className="page">
         {/** */} <PageHead page_head_data={page_head_data} />
+        <DesktopNav sample_sites_data={sample_sites_data} />
       </div>
     </PageFade>
   );
