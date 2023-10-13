@@ -254,9 +254,59 @@ function MyApp({ Component, pageProps }) {
     ELEMENT_TYPES.forEach((eT) => {
       const ELEMENTS = document.getElementsByTagName(eT);
 
-      for (let i = 0; i < ELEMENTS.length; i++) {
-        if (!ELEMENTS[i].classList.contains("selected")) {
-          ELEMENTS[i].classList.add("selected");
+      if (router.pathname == "/") {
+        for (let i = 0; i < ELEMENTS.length; i++) {
+          if (!ELEMENTS[i].classList.contains("selected")) {
+            ELEMENTS[i].classList.add("selected");
+          }
+        }
+      }
+
+      if (router.asPath.indexOf("painting") > -1) {
+        for (let i = 0; i < ELEMENTS.length; i++) {
+          if (!ELEMENTS[i].classList.contains("painting-selected")) {
+            ELEMENTS[i].classList.add("painting-selected");
+          }
+        }
+      }
+
+      if (router.asPath.indexOf("home-improvement") > -1) {
+        for (let i = 0; i < ELEMENTS.length; i++) {
+          if (!ELEMENTS[i].classList.contains("home-improvement-selected")) {
+            ELEMENTS[i].classList.add("home-improvement-selected");
+          }
+        }
+      }
+
+      if (router.asPath.indexOf("pressure-washing") > -1) {
+        for (let i = 0; i < ELEMENTS.length; i++) {
+          if (!ELEMENTS[i].classList.contains("pressure-washing-selected")) {
+            ELEMENTS[i].classList.add("pressure-washing-selected");
+          }
+        }
+      }
+
+      if (router.asPath.indexOf("lawn-care") > -1) {
+        for (let i = 0; i < ELEMENTS.length; i++) {
+          if (!ELEMENTS[i].classList.contains("lawn-care-selected")) {
+            ELEMENTS[i].classList.add("lawn-care-selected");
+          }
+        }
+      }
+
+      if (router.asPath.indexOf("plumbing") > -1) {
+        for (let i = 0; i < ELEMENTS.length; i++) {
+          if (!ELEMENTS[i].classList.contains("plumbing-selected")) {
+            ELEMENTS[i].classList.add("plumbing-selected");
+          }
+        }
+      }
+
+      if (router.asPath.indexOf("roofing") > -1) {
+        for (let i = 0; i < ELEMENTS.length; i++) {
+          if (!ELEMENTS[i].classList.contains("roofing-selected")) {
+            ELEMENTS[i].classList.add("roofing-selected");
+          }
         }
       }
     });
