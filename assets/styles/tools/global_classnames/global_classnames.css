@@ -12,12 +12,15 @@
 }
 
 .selected::-moz-selection {
+  background-color: #3fd7d7;
   color: white;
 }
 
 .selected::selection {
+  background-color: #3fd7d7;
   color: white;
 }
 .selected::-moz-selection {
+  background-color: #3fd7d7;
   color: white;
 }/*# sourceMappingURL=global_classnames.css.map */
