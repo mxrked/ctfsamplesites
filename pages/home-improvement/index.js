@@ -16,7 +16,6 @@ import { PageFade } from "@/assets/animations/components/PageFade";
 import { connectDatabase } from "@/db/connections/Site_HomeImprovement_Connection";
 
 import "../../assets/styles/modules/Sites/HomeImprovement/HomeImprovement.module.css";
-import { PageFade } from "@/assets/animations/components/PageFade";
 
 export async function getServerSideProps() {
   // Establish a connection to the MongoDB database
