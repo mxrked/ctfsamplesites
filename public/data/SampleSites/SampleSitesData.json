@@ -1,0 +1,56 @@
+[
+  {
+    "sampleSiteID": "SS_1",
+    "sampleSiteName": "Painting",
+    "sampleSiteImg": "",
+    "sampleSiteTechnologies": [],
+    "sampleSiteDesc": "",
+    "sampleSiteDemoLink": "/painting",
+    "sampleSiteCodeLink": ""
+  },
+  {
+    "sampleSiteID": "SS_2",
+    "sampleSiteName": "Home Improvement",
+    "sampleSiteImg": "",
+    "sampleSiteTechnologies": [],
+    "sampleSiteDesc": "",
+    "sampleSiteDemoLink": "/home-improvement",
+    "sampleSiteCodeLink": ""
+  },
+  {
+    "sampleSiteID": "SS_3",
+    "sampleSiteName": "Pressure Washing",
+    "sampleSiteImg": "",
+    "sampleSiteTechnologies": [],
+    "sampleSiteDesc": "",
+    "sampleSiteDemoLink": "/pressure-washing",
+    "sampleSiteCodeLink": ""
+  },
+  {
+    "sampleSiteID": "SS_4",
+    "sampleSiteName": "Lawn Care",
+    "sampleSiteImg": "",
+    "sampleSiteTechnologies": [],
+    "sampleSiteDesc": "",
+    "sampleSiteDemoLink": "/lawn-care",
+    "sampleSiteCodeLink": ""
+  },
+  {
+    "sampleSiteID": "SS_5",
+    "sampleSiteName": "Plumbing",
+    "sampleSiteImg": "",
+    "sampleSiteTechnologies": [],
+    "sampleSiteDesc": "",
+    "sampleSiteDemoLink": "/plumbing",
+    "sampleSiteCodeLink": ""
+  },
+  {
+    "sampleSiteID": "SS_6",
+    "sampleSiteName": "Roofing",
+    "sampleSiteImg": "",
+    "sampleSiteTechnologies": [],
+    "sampleSiteDesc": "",
+    "sampleSiteDemoLink": "/roofing",
+    "sampleSiteCodeLink": ""
+  }
+]
