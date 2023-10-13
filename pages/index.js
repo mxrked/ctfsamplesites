@@ -1,5 +1,5 @@
 // React/Next Imports
-import { useEffect, useState } from "react";
+import { useEffect, useState, useRef } from "react";
 import { useRouter } from "next/router";
 import fs from "fs";
 import path from "path";
@@ -14,6 +14,8 @@ import { PageFade } from "@/assets/animations/components/PageFade";
 // Component Imports
 import { PageHead } from "@/assets/components/global/All/PageHead";
 import { DesktopNav } from "@/assets/components/sites/Main/Nav/DesktopNav";
+import { MobileNav } from "@/assets/components/sites/Main/Nav/MobileNav";
+import { MobileNavLinks } from "@/assets/components/sites/Main/Nav/MobileNavLinks";
 
 // Style Imports
 import "../assets/styles/modules/Sites/Main/Main.module.css";
@@ -79,6 +81,30 @@ export default function Home({
 }) {
   const router = useRouter();
 
+  const mobileNavHolderRef = useRef(null);
+
+  useEffect(() => {
+    const handleOutsideClick = (e) => {
+      if (
+        mobileNavHolderRef.current &&
+        !mobileNavHolderRef.current.contains(e.target)
+      ) {
+        document.getElementById("mobileNavLinks").style.display = "none";
+        document.getElementById("mobileNavLinksToggler").style.display =
+          "block";
+        document.getElementById("mobileNavLinksCloser").style.display = "none";
+        document.getElementById("mobileNavLinksSampleSitesCB").checked = false;
+        document.getElementById("mobileNavSampleSitesLinks").style.height = 0;
+      }
+    };
+
+    document.body.addEventListener("click", handleOutsideClick);
+
+    return () => {
+      document.body.removeEventListener("click", handleOutsideClick);
+    };
+  }, [mobileNavHolderRef]);
+
   // Checking if connected to MongoDB
   console.log(TOTAL_NUMBER_OF_IPS);
 
@@ -105,6 +131,14 @@ export default function Home({
       <div id="PAGE" className="page">
         {/** */} <PageHead page_head_data={page_head_data} />
         <DesktopNav sample_sites_data={sample_sites_data} />
+        <div
+          id="mobileNavHolder"
+          className="mobile-nav-holder"
+          ref={mobileNavHolderRef}
+        >
+          <MobileNav />
+          <MobileNavLinks sample_sites_data={sample_sites_data} />
+        </div>
       </div>
     </PageFade>
   );
