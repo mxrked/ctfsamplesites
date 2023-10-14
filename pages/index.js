@@ -16,6 +16,7 @@ import { PageHead } from "@/assets/components/global/All/PageHead";
 import { DesktopNav } from "@/assets/components/sites/Main/Nav/DesktopNav";
 import { MobileNav } from "@/assets/components/sites/Main/Nav/MobileNav";
 import { MobileNavLinks } from "@/assets/components/sites/Main/Nav/MobileNavLinks";
+import { IndexTop } from "@/assets/components/sites/Main/Index/IndexTop";
 
 // Style Imports
 import "../assets/styles/modules/Sites/Main/Main.module.css";
@@ -138,6 +139,9 @@ export default function Home({
         >
           <MobileNav />
           <MobileNavLinks sample_sites_data={sample_sites_data} />
+        </div>
+        <div id="PAGE_CNT" className="page-cnt">
+          <IndexTop />
         </div>
       </div>
     </PageFade>
