@@ -33,6 +33,7 @@
     "react-dom": "18.2.0",
     "react-icons": "^4.11.0",
     "react-intersection-observer": "^9.5.2",
+    "react-lazy-load-image-component": "^1.6.0",
     "react-slick": "^0.29.0",
     "slick-carousel": "^1.8.1",
     "tls": "^0.0.1"
