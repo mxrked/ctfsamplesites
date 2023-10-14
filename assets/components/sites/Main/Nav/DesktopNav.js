@@ -104,6 +104,7 @@ export const DesktopNav = (props) => {
                             document
                               .getElementById("desktopNavLinksLinkMain")
                               .querySelector(".icon").style.color = "#3fd7d7";
+                            SAMPLE_SITE_LINKS.style.display = "none";
                           }
                         }, 200);
                       }}
