@@ -236,6 +236,7 @@ function MyApp({ Component, pageProps }) {
       "h5",
       "h6",
       "p",
+      "p a",
       "span",
       "a",
       "a span",
