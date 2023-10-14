@@ -144,6 +144,7 @@
     width: 100%;
     padding-left: 30px;
     padding-right: 30px;
+    @include quickCenter("relative");
 
     .mobile_nav_inner_box {
       .mobile_nav_inner_row {
@@ -197,6 +198,7 @@
                 background-color: $MineShaft;
                 display: block;
                 border-radius: 3px;
+                @include quickCenter("relative");
 
                 &:nth-child(even) {
                   margin-top: 8px;
@@ -218,6 +220,7 @@
                 background-color: $MineShaft;
                 display: block;
                 border-radius: 3px;
+                @include quickCenter("relative");
 
                 &:first-child {
                   transform: rotate(45deg);
@@ -317,6 +320,10 @@
   }
   .mobile_nav {
     display: block;
+
+    .mobile_nav_inner {
+      max-width: 700px;
+    }
   }
 }
 
@@ -334,6 +341,72 @@
   }
   .mobile_nav {
     display: block;
+
+    .mobile_nav_inner {
+      max-width: 95%;
+      padding-left: 0px;
+      padding-right: 0px;
+
+      .mobile_nav_inner_box {
+        .mobile_nav_inner_row {
+          .mobile_nav_inner_side {
+            height: 90px;
+          }
+
+          .mobile_nav_L {
+            .mobile_nav_inner_side_cnt {
+              .logo {
+                .top_text {
+                  font-size: clamp(19px, 21px, 21px);
+                }
+                .bottom_text {
+                  font-size: clamp(14px, 14px, 14px);
+                  letter-spacing: 1px;
+                  margin-top: 1px;
+                }
+              }
+            }
+          }
+
+          .mobile_nav_R {
+            .mobile_nav_inner_side_cnt {
+              .toggler,
+              .closer {
+                width: 30px;
+                height: 30px;
+
+                span {
+                  height: 4px;
+                  width: 27px;
+                }
+              }
+
+              .toggler {
+                span {
+                  &:nth-child(even) {
+                    margin-top: 6px;
+                    margin-bottom: 6px;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .mobile_nav_links {
+    .main_link {
+      height: 45px;
+      font-size: clamp(15px, 15px, 15px);
+    }
+
+    ul {
+      li {
+        height: 35px;
+        font-size: clamp(13px, 13px, 13px);
+      }
+    }
   }
 }
 
@@ -344,6 +417,72 @@
   }
   .mobile_nav {
     display: block;
+
+    .mobile_nav_inner {
+      max-width: 95%;
+      padding-left: 0px;
+      padding-right: 0px;
+
+      .mobile_nav_inner_box {
+        .mobile_nav_inner_row {
+          .mobile_nav_inner_side {
+            height: 90px;
+          }
+
+          .mobile_nav_L {
+            .mobile_nav_inner_side_cnt {
+              .logo {
+                .top_text {
+                  font-size: clamp(15px, 17px, 17px);
+                }
+                .bottom_text {
+                  font-size: clamp(11px, 12px, 12px);
+                  letter-spacing: 1px;
+                  margin-top: 1px;
+                }
+              }
+            }
+          }
+
+          .mobile_nav_R {
+            .mobile_nav_inner_side_cnt {
+              .toggler,
+              .closer {
+                width: 30px;
+                height: 30px;
+
+                span {
+                  height: 3px;
+                  width: 24px;
+                }
+              }
+
+              .toggler {
+                span {
+                  &:nth-child(even) {
+                    margin-top: 6px;
+                    margin-bottom: 6px;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .mobile_nav_links {
+    .main_link {
+      height: 40px;
+      font-size: clamp(14px, 14px, 14px);
+    }
+
+    ul {
+      li {
+        height: 32px;
+        font-size: clamp(12px, 12px, 12px);
+      }
+    }
   }
 }
 
@@ -354,6 +493,72 @@
   }
   .mobile_nav {
     display: block;
+
+    .mobile_nav_inner {
+      max-width: 95%;
+      padding-left: 0px;
+      padding-right: 0px;
+
+      .mobile_nav_inner_box {
+        .mobile_nav_inner_row {
+          .mobile_nav_inner_side {
+            height: 90px;
+          }
+
+          .mobile_nav_L {
+            .mobile_nav_inner_side_cnt {
+              .logo {
+                .top_text {
+                  font-size: clamp(15px, 17px, 17px);
+                }
+                .bottom_text {
+                  font-size: clamp(11px, 12px, 12px);
+                  letter-spacing: 1px;
+                  margin-top: 1px;
+                }
+              }
+            }
+          }
+
+          .mobile_nav_R {
+            .mobile_nav_inner_side_cnt {
+              .toggler,
+              .closer {
+                width: 30px;
+                height: 30px;
+
+                span {
+                  height: 3px;
+                  width: 24px;
+                }
+              }
+
+              .toggler {
+                span {
+                  &:nth-child(even) {
+                    margin-top: 6px;
+                    margin-bottom: 6px;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .mobile_nav_links {
+    .main_link {
+      height: 40px;
+      font-size: clamp(14px, 14px, 14px);
+    }
+
+    ul {
+      li {
+        height: 32px;
+        font-size: clamp(12px, 12px, 12px);
+      }
+    }
   }
 }
 
@@ -364,15 +569,147 @@
   }
   .mobile_nav {
     display: block;
+
+    .mobile_nav_inner {
+      max-width: 95%;
+      padding-left: 0px;
+      padding-right: 0px;
+
+      .mobile_nav_inner_box {
+        .mobile_nav_inner_row {
+          .mobile_nav_inner_side {
+            height: 130px;
+          }
+
+          .mobile_nav_L {
+            .mobile_nav_inner_side_cnt {
+              .logo {
+                .top_text {
+                  font-size: clamp(23px, 25px, 25px);
+                }
+                .bottom_text {
+                  font-size: clamp(15px, 17px, 17px);
+                  letter-spacing: 3px;
+                  margin-top: 5px;
+                }
+              }
+            }
+          }
+
+          .mobile_nav_R {
+            .mobile_nav_inner_side_cnt {
+              .toggler,
+              .closer {
+                width: 35px;
+                height: 35px;
+
+                span {
+                  height: 4px;
+                  width: 27px;
+                }
+              }
+
+              .toggler {
+                span {
+                  &:nth-child(even) {
+                    margin-top: 6px;
+                    margin-bottom: 6px;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .mobile_nav_links {
+    .main_link {
+      height: 50px;
+      font-size: clamp(16px, 17px, 17px);
+    }
+
+    ul {
+      li {
+        height: 36px;
+        font-size: clamp(14px, 14px, 14px);
+      }
+    }
   }
 }
 
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 1) {
   .desktop_nav {
-    display: block;
+    display: none;
   }
   .mobile_nav {
-    display: none;
+    display: block;
+
+    .mobile_nav_inner {
+      max-width: 95%;
+      padding-left: 0px;
+      padding-right: 0px;
+
+      .mobile_nav_inner_box {
+        .mobile_nav_inner_row {
+          .mobile_nav_inner_side {
+            height: 130px;
+          }
+
+          .mobile_nav_L {
+            .mobile_nav_inner_side_cnt {
+              .logo {
+                .top_text {
+                  font-size: clamp(23px, 25px, 25px);
+                }
+                .bottom_text {
+                  font-size: clamp(15px, 17px, 17px);
+                  letter-spacing: 3px;
+                  margin-top: 5px;
+                }
+              }
+            }
+          }
+
+          .mobile_nav_R {
+            .mobile_nav_inner_side_cnt {
+              .toggler,
+              .closer {
+                width: 35px;
+                height: 35px;
+
+                span {
+                  height: 4px;
+                  width: 27px;
+                }
+              }
+
+              .toggler {
+                span {
+                  &:nth-child(even) {
+                    margin-top: 6px;
+                    margin-bottom: 6px;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .mobile_nav_links {
+    .main_link {
+      height: 50px;
+      font-size: clamp(16px, 17px, 17px);
+    }
+
+    ul {
+      li {
+        height: 36px;
+        font-size: clamp(14px, 14px, 14px);
+      }
+    }
   }
 }
 
@@ -380,8 +717,27 @@
 @media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
   .desktop_nav {
     display: block;
+
+    .desktop_nav_inner {
+      max-width: 900px;
+
+      .desktop_nav_inner_box {
+        .desktop_nav_inner_row {
+          .desktop_nav_L {
+            .desktop_nav_inner_side_cnt {
+              .logo {
+                .top_text {
+                  font-size: clamp(26px, 28px, 28px);
+                }
+              }
+            }
+          }
+        }
+      }
+    }
   }
-  .mobile_nav {
+  .mobile_nav,
+  .mobile_nav_links {
     display: none;
   }
 }
@@ -389,8 +745,27 @@
 @media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
   .desktop_nav {
     display: block;
+
+    .desktop_nav_inner {
+      max-width: 900px;
+
+      .desktop_nav_inner_box {
+        .desktop_nav_inner_row {
+          .desktop_nav_L {
+            .desktop_nav_inner_side_cnt {
+              .logo {
+                .top_text {
+                  font-size: clamp(26px, 28px, 28px);
+                }
+              }
+            }
+          }
+        }
+      }
+    }
   }
-  .mobile_nav {
+  .mobile_nav,
+  .mobile_nav_links {
     display: none;
   }
 }
@@ -399,8 +774,27 @@
 @media screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 1) {
   .desktop_nav {
     display: block;
+
+    .desktop_nav_inner {
+      max-width: 1100px;
+
+      .desktop_nav_inner_box {
+        .desktop_nav_inner_row {
+          .desktop_nav_L {
+            .desktop_nav_inner_side_cnt {
+              .logo {
+                .top_text {
+                  font-size: clamp(28px, 30px, 30px);
+                }
+              }
+            }
+          }
+        }
+      }
+    }
   }
-  .mobile_nav {
+  .mobile_nav,
+  .mobile_nav_links {
     display: none;
   }
 }
