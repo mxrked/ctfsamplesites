@@ -31,4 +31,8 @@
   border: none !important;
   outline: none !important;
   caret-color: transparent !important;
+}
+
+.hidden {
+  display: none !important;
 }/*# sourceMappingURL=global_classnames.css.map */

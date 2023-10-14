@@ -91,6 +91,7 @@
   position: absolute;
   background-color: #464646;
   display: none;
+  z-index: 200;
 }
 .desktop_nav .desktop_nav_inner .desktop_nav_inner_box .desktop_nav_inner_row .desktop_nav_R .desktop_nav_inner_side_cnt .nav_links li .sample_sites_nav_links li {
   font-family: "Noto Sans Medium";
