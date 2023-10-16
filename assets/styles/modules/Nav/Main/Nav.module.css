@@ -303,6 +303,9 @@
   }
 }
 @media (min-width: 992px) {
+  .desktop_nav {
+    display: block;
+  }
   .mobile_nav,
   .mobile_nav_links,
   .mobile_nav_links_overlay {
@@ -495,48 +498,18 @@
 }
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 1) {
   .desktop_nav {
-    display: none;
-  }
-  .mobile_nav {
     display: block;
   }
-  .mobile_nav .mobile_nav_inner {
-    max-width: 95%;
-    padding-left: 0px;
-    padding-right: 0px;
+  .desktop_nav .desktop_nav_inner {
+    max-width: 900px;
   }
-  .mobile_nav .mobile_nav_inner .mobile_nav_inner_box .mobile_nav_inner_row .mobile_nav_inner_side {
-    height: 130px;
+  .desktop_nav .desktop_nav_inner .desktop_nav_inner_box .desktop_nav_inner_row .desktop_nav_L .desktop_nav_inner_side_cnt .logo .top_text {
+    font-size: 28px;
   }
-  .mobile_nav .mobile_nav_inner .mobile_nav_inner_box .mobile_nav_inner_row .mobile_nav_L .mobile_nav_inner_side_cnt .logo .top_text {
-    font-size: 25px;
-  }
-  .mobile_nav .mobile_nav_inner .mobile_nav_inner_box .mobile_nav_inner_row .mobile_nav_L .mobile_nav_inner_side_cnt .logo .bottom_text {
-    font-size: 17px;
-    letter-spacing: 3px;
-    margin-top: 5px;
-  }
-  .mobile_nav .mobile_nav_inner .mobile_nav_inner_box .mobile_nav_inner_row .mobile_nav_R .mobile_nav_inner_side_cnt .toggler,
-  .mobile_nav .mobile_nav_inner .mobile_nav_inner_box .mobile_nav_inner_row .mobile_nav_R .mobile_nav_inner_side_cnt .closer {
-    width: 35px;
-    height: 35px;
-  }
-  .mobile_nav .mobile_nav_inner .mobile_nav_inner_box .mobile_nav_inner_row .mobile_nav_R .mobile_nav_inner_side_cnt .toggler span,
-  .mobile_nav .mobile_nav_inner .mobile_nav_inner_box .mobile_nav_inner_row .mobile_nav_R .mobile_nav_inner_side_cnt .closer span {
-    height: 4px;
-    width: 27px;
-  }
-  .mobile_nav .mobile_nav_inner .mobile_nav_inner_box .mobile_nav_inner_row .mobile_nav_R .mobile_nav_inner_side_cnt .toggler span:nth-child(even) {
-    margin-top: 6px;
-    margin-bottom: 6px;
-  }
-  .mobile_nav_links .main_link {
-    height: 50px;
-    font-size: 17px;
-  }
-  .mobile_nav_links ul li {
-    height: 36px;
-    font-size: 14px;
+  .mobile_nav,
+  .mobile_nav_links,
+  .mobile_nav_links_overlay {
+    display: none;
   }
 }
 @media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
@@ -582,8 +555,7 @@
     font-size: 30px;
   }
   .mobile_nav,
-  .mobile_nav_links,
-  .mobile_nav_links_overlay {
+  .mobile_nav_links {
     display: none;
   }
 }/*# sourceMappingURL=Nav.module.css.map */
