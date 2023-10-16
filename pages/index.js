@@ -20,6 +20,7 @@ import { IndexTop } from "@/assets/components/sites/Main/Index/IndexTop";
 
 // Style Imports
 import "../assets/styles/modules/Sites/Main/Main.module.css";
+import styles from "../assets/styles/modules/Nav/Main/Nav.module.css";
 
 export async function getServerSideProps() {
   try {
@@ -83,7 +84,10 @@ export default function Home({
   const router = useRouter();
 
   const mobileNavHolderRef = useRef(null);
+  const [IS_MOBILE_NAV_HOLDER_VISIBLE, SET_IS_MOBILE_NAV_HOLDER_VISIBLE] =
+    useState(true);
 
+  // Detecting when the user clicks outside of the mobileNavHolder and closes it
   useEffect(() => {
     const handleOutsideClick = (e) => {
       if (
@@ -96,6 +100,7 @@ export default function Home({
         document.getElementById("mobileNavLinksCloser").style.display = "none";
         document.getElementById("mobileNavLinksSampleSitesCB").checked = false;
         document.getElementById("mobileNavSampleSitesLinks").style.height = 0;
+        document.getElementById("mobileNavLinksOverlay").style.display = "none";
       }
     };
 
@@ -105,6 +110,50 @@ export default function Home({
       document.body.removeEventListener("click", handleOutsideClick);
     };
   }, [mobileNavHolderRef]);
+
+  // This is used to close the mobile nav links when the user scrolls passed the mobileNavHolder
+  const handleMobileNavHolderNotVisible = (isElementVisible) => {
+    if (!isElementVisible && IS_MOBILE_NAV_HOLDER_VISIBLE) {
+      document.getElementById("mobileNavLinksSampleSitesCB").checked = false;
+
+      document.getElementById("mobileNavSampleSitesLinks").style.height = "0";
+
+      document.getElementById("mobileNavLinksCloser").style.display = "none";
+      document.getElementById("mobileNavLinksToggler").style.display = "block";
+
+      document.getElementById("mobileNavLinks").style.display = "none";
+
+      document.getElementById("mobileNavLinksOverlay").style.display = "none";
+    }
+  };
+
+  // Detecting when the user scrolls passed the mobileNavHolder and will close it if it is open
+  useEffect(() => {
+    const checkMobileNavHolderVisibility = () => {
+      if (mobileNavHolderRef.current) {
+        const mobileNavHolderRect =
+          mobileNavHolderRef.current.getBoundingClientRect();
+        const isElementVisible =
+          mobileNavHolderRect.top < window.innerHeight &&
+          mobileNavHolderRect.bottom >= 0;
+
+        handleMobileNavHolderNotVisible(isElementVisible);
+
+        SET_IS_MOBILE_NAV_HOLDER_VISIBLE(isElementVisible);
+      }
+    };
+
+    // Adding the scroll event listener
+    window.addEventListener("scroll", checkMobileNavHolderVisibility);
+
+    // Checking when page loads
+    checkMobileNavHolderVisibility();
+
+    // Clean up
+    return () => {
+      window.removeEventListener("scroll", checkMobileNavHolderVisibility);
+    };
+  }, []);
 
   // Checking if connected to MongoDB
   console.log(TOTAL_NUMBER_OF_IPS);
@@ -141,6 +190,10 @@ export default function Home({
           <MobileNavLinks sample_sites_data={sample_sites_data} />
         </div>
         <div id="PAGE_CNT" className="page-cnt">
+          <div
+            id="mobileNavLinksOverlay"
+            className={`${styles.mobile_nav_links_overlay}`}
+          />
           <IndexTop />
         </div>
       </div>
