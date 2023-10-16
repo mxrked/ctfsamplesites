@@ -16,11 +16,14 @@ import { PageHead } from "@/assets/components/global/All/PageHead";
 import { DesktopNav } from "@/assets/components/sites/Main/Nav/DesktopNav";
 import { MobileNav } from "@/assets/components/sites/Main/Nav/MobileNav";
 import { MobileNavLinks } from "@/assets/components/sites/Main/Nav/MobileNavLinks";
+
 import { IndexTop } from "@/assets/components/sites/Main/Index/IndexTop";
+import { IndexSampleSites } from "@/assets/components/sites/Main/Index/IndexSampleSites";
 
 // Style Imports
 import "../assets/styles/modules/Sites/Main/Main.module.css";
 import styles from "../assets/styles/modules/Nav/Main/Nav.module.css";
+import { BackToTop } from "@/assets/components/sites/Main/Index/BackToTop";
 
 export async function getServerSideProps() {
   try {
@@ -189,12 +192,14 @@ export default function Home({
           <MobileNav />
           <MobileNavLinks sample_sites_data={sample_sites_data} />
         </div>
+        <BackToTop />
         <div id="PAGE_CNT" className="page-cnt">
           <div
             id="mobileNavLinksOverlay"
             className={`${styles.mobile_nav_links_overlay}`}
           />
           <IndexTop />
+          <IndexSampleSites sample_sites_data={sample_sites_data} />
         </div>
       </div>
     </PageFade>
