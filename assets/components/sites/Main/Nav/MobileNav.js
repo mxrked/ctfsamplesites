@@ -53,6 +53,10 @@ export const MobileNav = () => {
 
                     document.getElementById("mobileNavLinks").style.display =
                       "block";
+
+                    document.getElementById(
+                      "mobileNavLinksOverlay"
+                    ).style.display = "block";
                   }}
                 >
                   <span className="orientation-change-element half-second" />
@@ -79,6 +83,10 @@ export const MobileNav = () => {
 
                     document.getElementById("mobileNavLinks").style.display =
                       "none";
+
+                    document.getElementById(
+                      "mobileNavLinksOverlay"
+                    ).style.display = "none";
                   }}
                 >
                   <span className="orientation-change-element half-second" />
