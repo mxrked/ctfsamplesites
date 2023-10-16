@@ -145,4 +145,9 @@ select {
   padding: 0;
   margin: 0;
   background-color: transparent;
+}
+
+.page-cnt {
+  position: relative;
+  height: 100%;
 }/*# sourceMappingURL=resets.css.map */

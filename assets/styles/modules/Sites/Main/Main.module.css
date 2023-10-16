@@ -68,6 +68,8 @@
   font-family: "Noto Sans Medium";
   font-size: clamp(1.25rem, 0.61vw + 1.1rem, 1.58rem);
   color: white;
+  margin-left: auto;
+  margin-right: auto;
   margin-top: 40px;
   margin-bottom: 40px;
   line-height: 45px;
@@ -101,4 +103,41 @@
 .index_top .index_top_overlay .index_top_overlay_cnt .link:hover {
   background-color: rgb(56, 215, 200);
   color: rgba(78, 78, 78, 0.864);
+}
+
+@media all and (max-width: 1995px) {
+  .index_top {
+    height: 960px;
+  }
+  .index_top .index_top_overlay .index_top_overlay_cnt h1 {
+    font-size: 65px;
+  }
+  .index_top .index_top_overlay .index_top_overlay_cnt p {
+    font-size: 20px;
+    max-width: 800px;
+    line-height: 40px;
+  }
+  .index_top .index_top_overlay .index_top_overlay_cnt .link {
+    height: 50px;
+    max-width: 220px;
+    font-size: 17px;
+  }
+}
+@media all and (max-width: 991px) {
+  .index_top {
+    height: 730px;
+  }
+  .index_top .index_top_overlay .index_top_overlay_cnt h1 {
+    font-size: 45px;
+  }
+  .index_top .index_top_overlay .index_top_overlay_cnt p {
+    font-size: 18px;
+    max-width: 700px;
+    line-height: 40px;
+  }
+  .index_top .index_top_overlay .index_top_overlay_cnt .link {
+    height: 50px;
+    max-width: 210px;
+    font-size: 16px;
+  }
 }/*# sourceMappingURL=Main.module.css.map */

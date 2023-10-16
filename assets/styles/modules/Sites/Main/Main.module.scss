@@ -79,6 +79,7 @@
         font-family: "Noto Sans Medium";
         font-size: $Text;
         color: white;
+        @include quickCenter("relative");
         margin-top: 40px;
         margin-bottom: 40px;
         line-height: 45px;
@@ -120,9 +121,55 @@
 
 // Responsive
 @media all and (max-width: 1995px) {
+  .index_top {
+    height: 960px;
+
+    .index_top_overlay {
+      .index_top_overlay_cnt {
+        h1 {
+          font-size: clamp(55px, 65px, 65px);
+        }
+
+        p {
+          font-size: clamp(20px, 20px, 20px);
+          max-width: 800px;
+          line-height: 40px;
+        }
+
+        .link {
+          height: 50px;
+          max-width: 220px;
+          font-size: clamp(17px, 17px, 17px);
+        }
+      }
+    }
+  }
 }
 
 @media all and (max-width: 991px) {
+  .index_top {
+    height: 730px;
+
+    .index_top_overlay {
+      .index_top_overlay_cnt {
+        h1 {
+          font-size: clamp(35px, 45px, 45px);
+        }
+
+        p {
+          font-size: clamp(17px, 18px, 18px);
+          max-width: 700px;
+          line-height: 40px;
+        }
+
+        .link {
+          height: 50px;
+          max-width: 210px;
+          font-size: clamp(15px, 16px, 16px);
+        }
+      }
+    }
+  }
 }
 
 @media (min-width: 992px) {
