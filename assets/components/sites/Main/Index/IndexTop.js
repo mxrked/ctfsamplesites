@@ -40,7 +40,13 @@ export const IndexTop = () => {
 
           <div
             className={`${styles.link} orientation-change-element half-second`}
-            onClick={() => {}}
+            onClick={() => {
+              if (document.getElementById("indexSampleSites_JUMPER_POINT")) {
+                document
+                  .getElementById("indexSampleSites_JUMPER_POINT")
+                  .scrollIntoView();
+              }
+            }}
           >
             <span>View Sample Websites</span>
           </div>
