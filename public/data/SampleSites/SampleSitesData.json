@@ -1,56 +1,152 @@
 [
   {
     "sampleSiteID": "SS_1",
+    "sampleSiteModalTriggerID": "SS_1_MODAL",
     "sampleSiteName": "Painting",
     "sampleSiteImg": "",
-    "sampleSiteTechnologies": [],
-    "sampleSiteDesc": "",
-    "sampleSiteDemoLink": "/painting",
-    "sampleSiteCodeLink": ""
+    "sampleSiteTechnologies": [
+      {
+        "techID": "TECH_1",
+        "techName": "ReactJS",
+        "techImg": "https://raw.githubusercontent.com/mxrked/freelance_projects_CDN/main/ctfsamplesites_CDN/main/icons/programming-languages/react.webp"
+      },
+      {
+        "techID": "TECH_2",
+        "techName": "Next.js",
+        "techImg": "https://raw.githubusercontent.com/mxrked/freelance_projects_CDN/main/ctfsamplesites_CDN/main/icons/programming-languages/nextjs.webp"
+      },
+      {
+        "techID": "TECH_3",
+        "techName": "Sass",
+        "techImg": "https://raw.githubusercontent.com/mxrked/freelance_projects_CDN/main/ctfsamplesites_CDN/main/icons/programming-languages/sass.webp"
+      }
+    ],
+    "sampleSiteDesc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+    "sampleSiteDemoLink": "/painting"
   },
   {
     "sampleSiteID": "SS_2",
+    "sampleSiteModalTriggerID": "SS_2_MODAL",
     "sampleSiteName": "Home Improvement",
     "sampleSiteImg": "",
-    "sampleSiteTechnologies": [],
-    "sampleSiteDesc": "",
-    "sampleSiteDemoLink": "/home-improvement",
-    "sampleSiteCodeLink": ""
+    "sampleSiteTechnologies": [
+      {
+        "techID": "TECH_1",
+        "techName": "ReactJS",
+        "techImg": "https://raw.githubusercontent.com/mxrked/freelance_projects_CDN/main/ctfsamplesites_CDN/main/icons/programming-languages/react.webp"
+      },
+      {
+        "techID": "TECH_2",
+        "techName": "Next.js",
+        "techImg": "https://raw.githubusercontent.com/mxrked/freelance_projects_CDN/main/ctfsamplesites_CDN/main/icons/programming-languages/nextjs.webp"
+      },
+      {
+        "techID": "TECH_3",
+        "techName": "Sass",
+        "techImg": "https://raw.githubusercontent.com/mxrked/freelance_projects_CDN/main/ctfsamplesites_CDN/main/icons/programming-languages/sass.webp"
+      }
+    ],
+    "sampleSiteDesc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+    "sampleSiteDemoLink": "/home-improvement"
   },
   {
     "sampleSiteID": "SS_3",
+    "sampleSiteModalTriggerID": "SS_3_MODAL",
     "sampleSiteName": "Pressure Washing",
     "sampleSiteImg": "",
-    "sampleSiteTechnologies": [],
-    "sampleSiteDesc": "",
-    "sampleSiteDemoLink": "/pressure-washing",
-    "sampleSiteCodeLink": ""
+    "sampleSiteTechnologies": [
+      {
+        "techID": "TECH_1",
+        "techName": "ReactJS",
+        "techImg": "https://raw.githubusercontent.com/mxrked/freelance_projects_CDN/main/ctfsamplesites_CDN/main/icons/programming-languages/react.webp"
+      },
+      {
+        "techID": "TECH_2",
+        "techName": "Next.js",
+        "techImg": "https://raw.githubusercontent.com/mxrked/freelance_projects_CDN/main/ctfsamplesites_CDN/main/icons/programming-languages/nextjs.webp"
+      },
+      {
+        "techID": "TECH_3",
+        "techName": "Sass",
+        "techImg": "https://raw.githubusercontent.com/mxrked/freelance_projects_CDN/main/ctfsamplesites_CDN/main/icons/programming-languages/sass.webp"
+      }
+    ],
+    "sampleSiteDesc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+    "sampleSiteDemoLink": "/pressure-washing"
   },
   {
     "sampleSiteID": "SS_4",
+    "sampleSiteModalTriggerID": "SS_4_MODAL",
     "sampleSiteName": "Lawn Care",
     "sampleSiteImg": "",
-    "sampleSiteTechnologies": [],
-    "sampleSiteDesc": "",
-    "sampleSiteDemoLink": "/lawn-care",
-    "sampleSiteCodeLink": ""
+    "sampleSiteTechnologies": [
+      {
+        "techID": "TECH_1",
+        "techName": "ReactJS",
+        "techImg": "https://raw.githubusercontent.com/mxrked/freelance_projects_CDN/main/ctfsamplesites_CDN/main/icons/programming-languages/react.webp"
+      },
+      {
+        "techID": "TECH_2",
+        "techName": "Next.js",
+        "techImg": "https://raw.githubusercontent.com/mxrked/freelance_projects_CDN/main/ctfsamplesites_CDN/main/icons/programming-languages/nextjs.webp"
+      },
+      {
+        "techID": "TECH_3",
+        "techName": "Sass",
+        "techImg": "https://raw.githubusercontent.com/mxrked/freelance_projects_CDN/main/ctfsamplesites_CDN/main/icons/programming-languages/sass.webp"
+      }
+    ],
+    "sampleSiteDesc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+    "sampleSiteDemoLink": "/lawn-care"
   },
   {
     "sampleSiteID": "SS_5",
+    "sampleSiteModalTriggerID": "SS_5_MODAL",
     "sampleSiteName": "Plumbing",
     "sampleSiteImg": "",
-    "sampleSiteTechnologies": [],
-    "sampleSiteDesc": "",
-    "sampleSiteDemoLink": "/plumbing",
-    "sampleSiteCodeLink": ""
+    "sampleSiteTechnologies": [
+      {
+        "techID": "TECH_1",
+        "techName": "ReactJS",
+        "techImg": "https://raw.githubusercontent.com/mxrked/freelance_projects_CDN/main/ctfsamplesites_CDN/main/icons/programming-languages/react.webp"
+      },
+      {
+        "techID": "TECH_2",
+        "techName": "Next.js",
+        "techImg": "https://raw.githubusercontent.com/mxrked/freelance_projects_CDN/main/ctfsamplesites_CDN/main/icons/programming-languages/nextjs.webp"
+      },
+      {
+        "techID": "TECH_3",
+        "techName": "Sass",
+        "techImg": "https://raw.githubusercontent.com/mxrked/freelance_projects_CDN/main/ctfsamplesites_CDN/main/icons/programming-languages/sass.webp"
+      }
+    ],
+    "sampleSiteDesc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+    "sampleSiteDemoLink": "/plumbing"
   },
   {
     "sampleSiteID": "SS_6",
+    "sampleSiteModalTriggerID": "SS_6_MODAL",
     "sampleSiteName": "Roofing",
     "sampleSiteImg": "",
-    "sampleSiteTechnologies": [],
-    "sampleSiteDesc": "",
-    "sampleSiteDemoLink": "/roofing",
-    "sampleSiteCodeLink": ""
+    "sampleSiteTechnologies": [
+      {
+        "techID": "TECH_1",
+        "techName": "ReactJS",
+        "techImg": "https://raw.githubusercontent.com/mxrked/freelance_projects_CDN/main/ctfsamplesites_CDN/main/icons/programming-languages/react.webp"
+      },
+      {
+        "techID": "TECH_2",
+        "techName": "Next.js",
+        "techImg": "https://raw.githubusercontent.com/mxrked/freelance_projects_CDN/main/ctfsamplesites_CDN/main/icons/programming-languages/nextjs.webp"
+      },
+      {
+        "techID": "TECH_3",
+        "techName": "Sass",
+        "techImg": "https://raw.githubusercontent.com/mxrked/freelance_projects_CDN/main/ctfsamplesites_CDN/main/icons/programming-languages/sass.webp"
+      }
+    ],
+    "sampleSiteDesc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+    "sampleSiteDemoLink": "/roofing"
   }
 ]
