@@ -1,0 +1,278 @@
+[
+  {
+    "modalID": "MODAL_1",
+    "modalName": "Painting",
+    "modalImages": [
+      {
+        "imgID": "IMG_1",
+        "imgAlt": "",
+        "imgSrc": "https://raw.githubusercontent.com/mxrked/freelance_projects_CDN/main/ctfsamplesites_CDN/main/imgs/index/placeholder-img.webp"
+      },
+      {
+        "imgID": "IMG_2",
+        "imgAlt": "",
+        "imgSrc": "https://raw.githubusercontent.com/mxrked/freelance_projects_CDN/main/ctfsamplesites_CDN/main/imgs/index/placeholder-img.webp"
+      },
+      {
+        "imgID": "IMG_3",
+        "imgAlt": "",
+        "imgSrc": "https://raw.githubusercontent.com/mxrked/freelance_projects_CDN/main/ctfsamplesites_CDN/main/imgs/index/placeholder-img.webp"
+      },
+      {
+        "imgID": "IMG_4",
+        "imgAlt": "",
+        "imgSrc": "https://raw.githubusercontent.com/mxrked/freelance_projects_CDN/main/ctfsamplesites_CDN/main/imgs/index/placeholder-img.webp"
+      }
+    ],
+    "modalTechnologies": [
+      {
+        "techID": "TECH_1",
+        "techName": "ReactJS",
+        "techImg": "https://raw.githubusercontent.com/mxrked/freelance_projects_CDN/main/ctfsamplesites_CDN/main/icons/programming-languages/react.webp"
+      },
+      {
+        "techID": "TECH_2",
+        "techName": "Next.js",
+        "techImg": "https://raw.githubusercontent.com/mxrked/freelance_projects_CDN/main/ctfsamplesites_CDN/main/icons/programming-languages/nextjs.webp"
+      },
+      {
+        "techID": "TECH_3",
+        "techName": "Sass",
+        "techImg": "https://raw.githubusercontent.com/mxrked/freelance_projects_CDN/main/ctfsamplesites_CDN/main/icons/programming-languages/sass.webp"
+      }
+    ],
+    "modalDesc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+    "modalProcess": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+    "modalDemoLink": "/painting"
+  },
+  {
+    "modalID": "MODAL_2",
+    "modalName": "Home Improvement",
+    "modalImages": [
+      {
+        "imgID": "IMG_1",
+        "imgAlt": "",
+        "imgSrc": "https://raw.githubusercontent.com/mxrked/freelance_projects_CDN/main/ctfsamplesites_CDN/main/imgs/index/placeholder-img.webp"
+      },
+      {
+        "imgID": "IMG_2",
+        "imgAlt": "",
+        "imgSrc": "https://raw.githubusercontent.com/mxrked/freelance_projects_CDN/main/ctfsamplesites_CDN/main/imgs/index/placeholder-img.webp"
+      },
+      {
+        "imgID": "IMG_3",
+        "imgAlt": "",
+        "imgSrc": "https://raw.githubusercontent.com/mxrked/freelance_projects_CDN/main/ctfsamplesites_CDN/main/imgs/index/placeholder-img.webp"
+      },
+      {
+        "imgID": "IMG_4",
+        "imgAlt": "",
+        "imgSrc": "https://raw.githubusercontent.com/mxrked/freelance_projects_CDN/main/ctfsamplesites_CDN/main/imgs/index/placeholder-img.webp"
+      }
+    ],
+    "modalTechnologies": [
+      {
+        "techID": "TECH_1",
+        "techName": "ReactJS",
+        "techImg": "https://raw.githubusercontent.com/mxrked/freelance_projects_CDN/main/ctfsamplesites_CDN/main/icons/programming-languages/react.webp"
+      },
+      {
+        "techID": "TECH_2",
+        "techName": "Next.js",
+        "techImg": "https://raw.githubusercontent.com/mxrked/freelance_projects_CDN/main/ctfsamplesites_CDN/main/icons/programming-languages/nextjs.webp"
+      },
+      {
+        "techID": "TECH_3",
+        "techName": "Sass",
+        "techImg": "https://raw.githubusercontent.com/mxrked/freelance_projects_CDN/main/ctfsamplesites_CDN/main/icons/programming-languages/sass.webp"
+      }
+    ],
+    "modalDesc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+    "modalProcess": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+    "modalDemoLink": "/home-improvement"
+  },
+  {
+    "modalID": "MODAL_3",
+    "modalName": "Pressure Washing",
+    "modalImages": [
+      {
+        "imgID": "IMG_1",
+        "imgAlt": "",
+        "imgSrc": "https://raw.githubusercontent.com/mxrked/freelance_projects_CDN/main/ctfsamplesites_CDN/main/imgs/index/placeholder-img.webp"
+      },
+      {
+        "imgID": "IMG_2",
+        "imgAlt": "",
+        "imgSrc": "https://raw.githubusercontent.com/mxrked/freelance_projects_CDN/main/ctfsamplesites_CDN/main/imgs/index/placeholder-img.webp"
+      },
+      {
+        "imgID": "IMG_3",
+        "imgAlt": "",
+        "imgSrc": "https://raw.githubusercontent.com/mxrked/freelance_projects_CDN/main/ctfsamplesites_CDN/main/imgs/index/placeholder-img.webp"
+      },
+      {
+        "imgID": "IMG_4",
+        "imgAlt": "",
+        "imgSrc": "https://raw.githubusercontent.com/mxrked/freelance_projects_CDN/main/ctfsamplesites_CDN/main/imgs/index/placeholder-img.webp"
+      }
+    ],
+    "modalTechnologies": [
+      {
+        "techID": "TECH_1",
+        "techName": "ReactJS",
+        "techImg": "https://raw.githubusercontent.com/mxrked/freelance_projects_CDN/main/ctfsamplesites_CDN/main/icons/programming-languages/react.webp"
+      },
+      {
+        "techID": "TECH_2",
+        "techName": "Next.js",
+        "techImg": "https://raw.githubusercontent.com/mxrked/freelance_projects_CDN/main/ctfsamplesites_CDN/main/icons/programming-languages/nextjs.webp"
+      },
+      {
+        "techID": "TECH_3",
+        "techName": "Sass",
+        "techImg": "https://raw.githubusercontent.com/mxrked/freelance_projects_CDN/main/ctfsamplesites_CDN/main/icons/programming-languages/sass.webp"
+      }
+    ],
+    "modalDesc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+    "modalProcess": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+    "modalDemoLink": "/pressure-washing"
+  },
+  {
+    "modalID": "MODAL_4",
+    "modalName": "Lawn Care",
+    "modalImages": [
+      {
+        "imgID": "IMG_1",
+        "imgAlt": "",
+        "imgSrc": "https://raw.githubusercontent.com/mxrked/freelance_projects_CDN/main/ctfsamplesites_CDN/main/imgs/index/placeholder-img.webp"
+      },
+      {
+        "imgID": "IMG_2",
+        "imgAlt": "",
+        "imgSrc": "https://raw.githubusercontent.com/mxrked/freelance_projects_CDN/main/ctfsamplesites_CDN/main/imgs/index/placeholder-img.webp"
+      },
+      {
+        "imgID": "IMG_3",
+        "imgAlt": "",
+        "imgSrc": "https://raw.githubusercontent.com/mxrked/freelance_projects_CDN/main/ctfsamplesites_CDN/main/imgs/index/placeholder-img.webp"
+      },
+      {
+        "imgID": "IMG_4",
+        "imgAlt": "",
+        "imgSrc": "https://raw.githubusercontent.com/mxrked/freelance_projects_CDN/main/ctfsamplesites_CDN/main/imgs/index/placeholder-img.webp"
+      }
+    ],
+    "modalTechnologies": [
+      {
+        "techID": "TECH_1",
+        "techName": "ReactJS",
+        "techImg": "https://raw.githubusercontent.com/mxrked/freelance_projects_CDN/main/ctfsamplesites_CDN/main/icons/programming-languages/react.webp"
+      },
+      {
+        "techID": "TECH_2",
+        "techName": "Next.js",
+        "techImg": "https://raw.githubusercontent.com/mxrked/freelance_projects_CDN/main/ctfsamplesites_CDN/main/icons/programming-languages/nextjs.webp"
+      },
+      {
+        "techID": "TECH_3",
+        "techName": "Sass",
+        "techImg": "https://raw.githubusercontent.com/mxrked/freelance_projects_CDN/main/ctfsamplesites_CDN/main/icons/programming-languages/sass.webp"
+      }
+    ],
+    "modalDesc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+    "modalProcess": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+    "modalDemoLink": "/lawn-care"
+  },
+  {
+    "modalID": "MODAL_5",
+    "modalName": "Plumbing",
+    "modalImages": [
+      {
+        "imgID": "IMG_1",
+        "imgAlt": "",
+        "imgSrc": "https://raw.githubusercontent.com/mxrked/freelance_projects_CDN/main/ctfsamplesites_CDN/main/imgs/index/placeholder-img.webp"
+      },
+      {
+        "imgID": "IMG_2",
+        "imgAlt": "",
+        "imgSrc": "https://raw.githubusercontent.com/mxrked/freelance_projects_CDN/main/ctfsamplesites_CDN/main/imgs/index/placeholder-img.webp"
+      },
+      {
+        "imgID": "IMG_3",
+        "imgAlt": "",
+        "imgSrc": "https://raw.githubusercontent.com/mxrked/freelance_projects_CDN/main/ctfsamplesites_CDN/main/imgs/index/placeholder-img.webp"
+      },
+      {
+        "imgID": "IMG_4",
+        "imgAlt": "",
+        "imgSrc": "https://raw.githubusercontent.com/mxrked/freelance_projects_CDN/main/ctfsamplesites_CDN/main/imgs/index/placeholder-img.webp"
+      }
+    ],
+    "modalTechnologies": [
+      {
+        "techID": "TECH_1",
+        "techName": "ReactJS",
+        "techImg": "https://raw.githubusercontent.com/mxrked/freelance_projects_CDN/main/ctfsamplesites_CDN/main/icons/programming-languages/react.webp"
+      },
+      {
+        "techID": "TECH_2",
+        "techName": "Next.js",
+        "techImg": "https://raw.githubusercontent.com/mxrked/freelance_projects_CDN/main/ctfsamplesites_CDN/main/icons/programming-languages/nextjs.webp"
+      },
+      {
+        "techID": "TECH_3",
+        "techName": "Sass",
+        "techImg": "https://raw.githubusercontent.com/mxrked/freelance_projects_CDN/main/ctfsamplesites_CDN/main/icons/programming-languages/sass.webp"
+      }
+    ],
+    "modalDesc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+    "modalProcess": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+    "modalDemoLink": "/plumbing"
+  },
+  {
+    "modalID": "MODAL_6",
+    "modalName": "Roofing",
+    "modalImages": [
+      {
+        "imgID": "IMG_1",
+        "imgAlt": "",
+        "imgSrc": "https://raw.githubusercontent.com/mxrked/freelance_projects_CDN/main/ctfsamplesites_CDN/main/imgs/index/placeholder-img.webp"
+      },
+      {
+        "imgID": "IMG_2",
+        "imgAlt": "",
+        "imgSrc": "https://raw.githubusercontent.com/mxrked/freelance_projects_CDN/main/ctfsamplesites_CDN/main/imgs/index/placeholder-img.webp"
+      },
+      {
+        "imgID": "IMG_3",
+        "imgAlt": "",
+        "imgSrc": "https://raw.githubusercontent.com/mxrked/freelance_projects_CDN/main/ctfsamplesites_CDN/main/imgs/index/placeholder-img.webp"
+      },
+      {
+        "imgID": "IMG_4",
+        "imgAlt": "",
+        "imgSrc": "https://raw.githubusercontent.com/mxrked/freelance_projects_CDN/main/ctfsamplesites_CDN/main/imgs/index/placeholder-img.webp"
+      }
+    ],
+    "modalTechnologies": [
+      {
+        "techID": "TECH_1",
+        "techName": "ReactJS",
+        "techImg": "https://raw.githubusercontent.com/mxrked/freelance_projects_CDN/main/ctfsamplesites_CDN/main/icons/programming-languages/react.webp"
+      },
+      {
+        "techID": "TECH_2",
+        "techName": "Next.js",
+        "techImg": "https://raw.githubusercontent.com/mxrked/freelance_projects_CDN/main/ctfsamplesites_CDN/main/icons/programming-languages/nextjs.webp"
+      },
+      {
+        "techID": "TECH_3",
+        "techName": "Sass",
+        "techImg": "https://raw.githubusercontent.com/mxrked/freelance_projects_CDN/main/ctfsamplesites_CDN/main/icons/programming-languages/sass.webp"
+      }
+    ],
+    "modalDesc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+    "modalProcess": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+    "modalDemoLink": "/roofing"
+  }
+]
