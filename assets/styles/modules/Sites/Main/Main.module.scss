@@ -194,6 +194,8 @@
       padding-left: 30px;
       padding-right: 30px;
       overflow: hidden;
+      white-space: pre-wrap;
+      @include quickCenter("relative");
 
       .sample_site {
         margin-bottom: 50px;
@@ -214,7 +216,7 @@
             .sample_site_inner_row {
               .sample_site_inner_side {
                 height: 800px;
-                padding: 0;
+                // padding: 0;
               }
 
               .sample_site_L {
@@ -247,6 +249,7 @@
                         font-size: $SmallLink;
                         color: $MineShaft;
                         opacity: 0.7;
+                        white-space: pre-wrap;
                       }
                     }
 
@@ -254,6 +257,7 @@
                       .sample_site_name {
                         font-family: "Noto Sans Extra Bold";
                         font-size: $MinorHeading;
+                        white-space: pre-wrap;
                       }
                     }
                   }
@@ -285,6 +289,7 @@
                       font-size: $SmallText;
                       color: $MineShaft;
                       line-height: 35px;
+                      white-space: pre-wrap;
                     }
                   }
 
@@ -347,6 +352,41 @@
       }
     }
   }
+  .index_sample_sites {
+    .index_sample_sites_inner {
+      .index_sample_sites_inner_top {
+        margin-top: 60px;
+
+        .index_sample_sites_inner_top_cnt {
+          h2 {
+            font-size: clamp(35px, 45px, 45px);
+          }
+
+          p {
+            font-size: clamp(20px, 20px, 20px);
+            max-width: 800px;
+            line-height: 40px;
+          }
+        }
+      }
+
+      .index_sample_sites_inner_main {
+        max-width: 1170px;
+
+        .sample_site {
+          .sample_site_inner {
+            .sample_site_inner_box {
+              .sample_site_inner_row {
+                .sample_site_inner_side {
+                  height: 740px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
 }
 
 @media all and (max-width: 991px) {
@@ -369,6 +409,112 @@
           height: 50px;
           max-width: 210px;
           font-size: clamp(15px, 16px, 16px);
+        }
+      }
+    }
+  }
+  .index_sample_sites {
+    .index_sample_sites_inner {
+      padding-left: 0px;
+      padding-right: 0px;
+
+      .index_sample_sites_inner_top {
+        margin-top: 40px;
+
+        .index_sample_sites_inner_top_cnt {
+          h2 {
+            font-size: clamp(25px, 35px, 35px);
+          }
+
+          p {
+            font-size: clamp(16px, 17px, 17px);
+            max-width: 700px;
+            line-height: 40px;
+          }
+        }
+      }
+
+      .index_sample_sites_inner_main {
+        max-width: 700px;
+        padding: 0;
+
+        .sample_site {
+          .sample_site_inner {
+            border-top-right-radius: 0;
+            border-bottom-right-radius: 0;
+
+            .sample_site_inner_box {
+              padding: 0;
+
+              .sample_site_inner_row {
+                padding: 0;
+
+                .sample_site_inner_side {
+                  height: 100%;
+                  max-width: 100%;
+                  width: 100%;
+                }
+
+                .sample_site_L {
+                  height: 290px;
+                }
+
+                .sample_site_R {
+                  padding-top: 60px;
+                  padding-bottom: 60px;
+                  justify-content: center;
+
+                  .sample_site_inner_side_cnt {
+                    max-width: 600px;
+                    padding: 0;
+                    text-align: center;
+
+                    .sample_site_top {
+                      .sample_site_name_holder {
+                        .sample_site_name {
+                          font-size: clamp(20px, 30px, 30px);
+                        }
+                      }
+                    }
+
+                    .sample_site_techs {
+                      @include quickCenter("relative");
+                      justify-content: space-evenly;
+                      max-width: 200px;
+
+                      li {
+                        margin: 0;
+                      }
+                    }
+
+                    .sample_site_desc_holder {
+                      p {
+                        font-size: clamp(16px, 16px, 16px);
+                        max-width: 85%;
+                        @include quickCenter("relative");
+                      }
+                    }
+
+                    .sample_site_links {
+                      display: grid;
+
+                      li {
+                        display: inline-flex;
+                        @include quickCenter("relative");
+                        height: 40px;
+                        font-size: clamp(14px, 15px, 15px);
+                        margin-bottom: 15px;
+
+                        &:last-child {
+                          margin-bottom: 0;
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
         }
       }
     }
@@ -404,6 +550,121 @@
           height: 40px;
           max-width: 195px;
           font-size: clamp(13px, 14px, 14px);
+        }
+      }
+    }
+  }
+  .index_sample_sites {
+    padding-left: 30px;
+    padding-right: 30px;
+
+    .index_sample_sites_inner {
+      padding-left: 0px;
+      padding-right: 0px;
+
+      .index_sample_sites_inner_top {
+        margin-top: 40px;
+
+        .index_sample_sites_inner_top_cnt {
+          h2 {
+            font-size: clamp(25px, 35px, 35px);
+          }
+
+          p {
+            font-size: clamp(16px, 17px, 17px);
+            max-width: 700px;
+            line-height: 40px;
+          }
+        }
+      }
+
+      .index_sample_sites_inner_main {
+        max-width: 700px;
+        padding: 0;
+
+        .sample_site {
+          .sample_site_inner {
+            border-top-right-radius: 0;
+            border-bottom-right-radius: 0;
+
+            .sample_site_inner_box {
+              padding: 0;
+
+              .sample_site_inner_row {
+                padding: 0;
+
+                .sample_site_inner_side {
+                  height: 100%;
+                  max-width: 100%;
+                  width: 100%;
+                }
+
+                .sample_site_L {
+                  height: 210px;
+                }
+
+                .sample_site_R {
+                  padding-top: 60px;
+                  padding-bottom: 60px;
+                  justify-content: center;
+
+                  .sample_site_inner_side_cnt {
+                    max-width: 600px;
+                    padding: 0;
+                    text-align: center;
+
+                    .sample_site_top {
+                      .sample_site_name_holder {
+                        .sample_site_name {
+                          font-size: clamp(17px, 23px, 23px);
+                        }
+                      }
+                    }
+
+                    .sample_site_techs {
+                      @include quickCenter("relative");
+                      justify-content: space-evenly;
+                      max-width: 150px;
+
+                      li {
+                        margin: 0;
+
+                        img {
+                          max-width: 25px;
+                          height: 25px;
+                        }
+                      }
+                    }
+
+                    .sample_site_desc_holder {
+                      p {
+                        font-size: clamp(14px, 14px, 14px);
+                        max-width: 85%;
+                        line-height: 25px;
+                        @include quickCenter("relative");
+                      }
+                    }
+
+                    .sample_site_links {
+                      display: grid;
+
+                      li {
+                        display: inline-flex;
+                        @include quickCenter("relative");
+                        height: 35px;
+                        font-size: clamp(13px, 13px, 13px);
+                        margin-bottom: 15px;
+
+                        &:last-child {
+                          margin-bottom: 0;
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
         }
       }
     }
