@@ -4,19 +4,49 @@
  *
  */
 
+import { useState } from "react";
 import { useRouter } from "next/router";
 
 import { LazyLoadBackgroundImage } from "@/assets/components/global/All/LazyLoadBackgroundImage";
 
+import { IndexSampleSiteModal } from "./IndexSampleSiteModal";
+
 import styles from "../../../../styles/modules/Sites/Main/Main.module.css";
+import DeclareStorageVariable from "@/assets/functions/data/storage/DeclareStorageVariable";
 
 export const IndexSampleSites = ({ sample_sites_data }) => {
   const router = useRouter();
+
+  const [SELECTED_SITE, SET_SELECTED_SITE] = useState(null);
 
   const PLACEHOLDER_URL =
     "https://raw.githubusercontent.com/mxrked/freelance_projects_CDN/main/ctfsamplesites_CDN/main/imgs/index/placeholder-img.webp";
   const NOT_FOUND_URL =
     "https://raw.githubusercontent.com/mxrked/freelance_projects_CDN/main/ctfsamplesites_CDN/main/imgs/index/not-found-img.webp";
+
+  const openModal = (site) => {
+    SET_SELECTED_SITE(site);
+
+    DeclareStorageVariable("session", "Modal Opened", true);
+
+    document.body.style.overflowY = "hidden";
+    document.body.style.pointerEvents = "none";
+
+    setTimeout(() => {
+      document.getElementById(site.modalID + "_MODAL").style.opacity = 1;
+      document.getElementById(site.modalID + "_MODAL").style.visibility =
+        "visible";
+      document.getElementById(site.modalID + "_MODAL").style.pointerEvents =
+        "auto";
+      document
+        .getElementById(site.modalID + "_MODAL")
+        .querySelector(".modal-main").style.overflowY = "auto";
+    }, 100);
+  };
+
+  const closeModal = () => {
+    SET_SELECTED_SITE(null);
+  };
 
   return (
     <section id="indexSampleSites" className={`${styles.index_sample_sites}`}>
@@ -195,7 +225,9 @@ export const IndexSampleSites = ({ sample_sites_data }) => {
                           site.sampleSiteModalTriggerID !== "n/a" &&
                           site.sampleSiteModalTriggerID !== "N/A" ? (
                             <li
-                              onClick={() => {}}
+                              onClick={() => {
+                                openModal(site);
+                              }}
                               className={`${styles.modal_trigger} orientation-change-element half-second`}
                             >
                               <span>Learn More</span>
@@ -211,6 +243,13 @@ export const IndexSampleSites = ({ sample_sites_data }) => {
           ))}
         </div>
       </div>
+
+      {SELECTED_SITE && (
+        <IndexSampleSiteModal
+          sample_site_modal_data={[SELECTED_SITE]}
+          onClose={closeModal}
+        />
+      )}
     </section>
   );
 };
