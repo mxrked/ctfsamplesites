@@ -20,7 +20,6 @@ import { BackToTop } from "@/assets/components/sites/Main/Index/BackToTop";
 
 import { IndexTop } from "@/assets/components/sites/Main/Index/IndexTop";
 import { IndexSampleSites } from "@/assets/components/sites/Main/Index/IndexSampleSites";
-import { IndexSampleSiteModal } from "@/assets/components/sites/Main/Index/IndexSampleSiteModal";
 
 // Style Imports
 import "../assets/styles/modules/Sites/Main/Main.module.css";
@@ -48,11 +47,6 @@ export async function getServerSideProps() {
       "public/data/SampleSites/",
       "SampleSitesData.json"
     );
-    const sampleSiteModalDataFilePath = path.join(
-      process.cwd(),
-      "public/data/SampleSites/",
-      "SampleSiteModalData.json"
-    );
 
     const pageHeadDataFileContents = fs.readFileSync(
       pageHeadDataFilePath,
@@ -62,21 +56,15 @@ export async function getServerSideProps() {
       sampleSitesDataFilePath,
       "utf-8"
     );
-    const sampleSiteModalDataFileContents = fs.readFileSync(
-      sampleSiteModalDataFilePath,
-      "utf-8"
-    );
 
     const page_head_data = JSON.parse(pageHeadDataFileContents);
     const sample_sites_data = JSON.parse(sampleSitesDataFileContents);
-    const sample_site_modal_data = JSON.parse(sampleSiteModalDataFileContents);
 
     return {
       props: {
         TOTAL_NUMBER_OF_IPS,
         page_head_data,
         sample_sites_data,
-        sample_site_modal_data,
       },
     };
   } catch (error) {
@@ -86,7 +74,6 @@ export async function getServerSideProps() {
         TOTAL_NUMBER_OF_IPS: 0,
         page_head_data: null,
         sample_sites_data: null,
-        sample_site_modal_data: null,
       },
     };
   }
@@ -96,7 +83,6 @@ export default function Home({
   TOTAL_NUMBER_OF_IPS,
   page_head_data,
   sample_sites_data,
-  sample_site_modal_data,
 }) {
   const router = useRouter();
 
@@ -207,7 +193,6 @@ export default function Home({
           <MobileNavLinks sample_sites_data={sample_sites_data} />
         </div>
         <BackToTop />
-        <IndexSampleSiteModal sample_site_modal_data={sample_site_modal_data} />
         <div id="PAGE_CNT" className="page-cnt">
           <div
             id="mobileNavLinksOverlay"
