@@ -31,7 +31,11 @@ export async function getServerSideProps() {
 
     if (!DB) {
       return {
-        props: { TOTAL_NUMBER_OF_IPS: 0, page_head_data: null },
+        props: {
+          TOTAL_NUMBER_OF_IPS: 0,
+          page_head_data: null,
+          sample_sites_data: null,
+        },
       };
     }
 
