@@ -251,6 +251,7 @@ function MyApp({ Component, pageProps }) {
       "br",
       "strong",
       "button",
+      "button span",
       "label",
       "select",
       "input",
