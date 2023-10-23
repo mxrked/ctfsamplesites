@@ -14,6 +14,8 @@ export const LazyLoadBackgroundImage = ({
   style_className_PLACEHOLDER,
 }) => {
   const [SHOW_PLACEHOLDER, SET_SHOW_PLACEHOLDER] = useState(true);
+  const NOT_FOUND_URL =
+    "https://raw.githubusercontent.com/mxrked/freelance_projects_CDN/main/ctfsamplesites_CDN/main/imgs/index/not-found-img.webp";
 
   const CONTAINER_REF = useRef(null);
 
@@ -42,7 +44,8 @@ export const LazyLoadBackgroundImage = ({
       {SHOW_PLACEHOLDER && (
         <LazyLoadImage
           src={image_url}
-          alt={image_alt}
+          alt={image_url !== NOT_FOUND_URL ? image_alt : "404 Image."}
+          title={image_url !== NOT_FOUND_URL ? image_alt : "404 Image."}
           className={style_className_PLACEHOLDER}
           effect="blur"
           loading="eager"
@@ -57,7 +60,8 @@ export const LazyLoadBackgroundImage = ({
         style={{
           backgroundImage: `url(${image_url})`,
         }}
-        aria-label={image_alt}
+        aria-label={image_url !== NOT_FOUND_URL ? image_alt : "404 Image."}
+        title={image_url !== NOT_FOUND_URL ? image_alt : "404 Image."}
       />
     </>
   );
