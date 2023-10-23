@@ -27,22 +27,22 @@
       {
         "imgID": "IMG_1",
         "imgAlt": "",
-        "imgSrc": "https://raw.githubusercontent.com/mxrked/freelance_projects_CDN/main/ctfsamplesites_CDN/main/imgs/index/placeholder-img.webp"
+        "imgSrc": "https://raw.githubusercontent.com/mxrked/freelance_projects_CDN/main/ctfsamplesites_CDN/main/imgs/index/red.webp"
       },
       {
         "imgID": "IMG_2",
         "imgAlt": "",
-        "imgSrc": "https://raw.githubusercontent.com/mxrked/freelance_projects_CDN/main/ctfsamplesites_CDN/main/imgs/index/placeholder-img.webp"
+        "imgSrc": "https://raw.githubusercontent.com/mxrked/freelance_projects_CDN/main/ctfsamplesites_CDN/main/imgs/index/blue.webp"
       },
       {
         "imgID": "IMG_3",
         "imgAlt": "",
-        "imgSrc": "https://raw.githubusercontent.com/mxrked/freelance_projects_CDN/main/ctfsamplesites_CDN/main/imgs/index/placeholder-img.webp"
+        "imgSrc": "https://raw.githubusercontent.com/mxrked/freelance_projects_CDN/main/ctfsamplesites_CDN/main/imgs/index/green.webp"
       },
       {
         "imgID": "IMG_4",
         "imgAlt": "",
-        "imgSrc": "https://raw.githubusercontent.com/mxrked/freelance_projects_CDN/main/ctfsamplesites_CDN/main/imgs/index/placeholder-img.webp"
+        "imgSrc": "https://raw.githubusercontent.com/mxrked/freelance_projects_CDN/main/ctfsamplesites_CDN/main/imgs/index/purple.webp"
       }
     ],
     "modalDesc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
@@ -76,22 +76,22 @@
       {
         "imgID": "IMG_1",
         "imgAlt": "",
-        "imgSrc": "https://raw.githubusercontent.com/mxrked/freelance_projects_CDN/main/ctfsamplesites_CDN/main/imgs/index/placeholder-img.webp"
+        "imgSrc": "https://raw.githubusercontent.com/mxrked/freelance_projects_CDN/main/ctfsamplesites_CDN/main/imgs/index/red.webp"
       },
       {
         "imgID": "IMG_2",
         "imgAlt": "",
-        "imgSrc": "https://raw.githubusercontent.com/mxrked/freelance_projects_CDN/main/ctfsamplesites_CDN/main/imgs/index/placeholder-img.webp"
+        "imgSrc": "https://raw.githubusercontent.com/mxrked/freelance_projects_CDN/main/ctfsamplesites_CDN/main/imgs/index/blue.webp"
       },
       {
         "imgID": "IMG_3",
         "imgAlt": "",
-        "imgSrc": "https://raw.githubusercontent.com/mxrked/freelance_projects_CDN/main/ctfsamplesites_CDN/main/imgs/index/placeholder-img.webp"
+        "imgSrc": "https://raw.githubusercontent.com/mxrked/freelance_projects_CDN/main/ctfsamplesites_CDN/main/imgs/index/green.webp"
       },
       {
         "imgID": "IMG_4",
         "imgAlt": "",
-        "imgSrc": "https://raw.githubusercontent.com/mxrked/freelance_projects_CDN/main/ctfsamplesites_CDN/main/imgs/index/placeholder-img.webp"
+        "imgSrc": "https://raw.githubusercontent.com/mxrked/freelance_projects_CDN/main/ctfsamplesites_CDN/main/imgs/index/purple.webp"
       }
     ],
     "modalDesc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
@@ -120,7 +120,31 @@
       }
     ],
     "sampleSiteDesc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
-    "sampleSiteDemoLink": "/pressure-washing"
+    "sampleSiteDemoLink": "/pressure-washing",
+    "modalImages": [
+      {
+        "imgID": "IMG_1",
+        "imgAlt": "",
+        "imgSrc": "https://raw.githubusercontent.com/mxrked/freelance_projects_CDN/main/ctfsamplesites_CDN/main/imgs/index/red.webp"
+      },
+      {
+        "imgID": "IMG_2",
+        "imgAlt": "",
+        "imgSrc": "https://raw.githubusercontent.com/mxrked/freelance_projects_CDN/main/ctfsamplesites_CDN/main/imgs/index/blue.webp"
+      },
+      {
+        "imgID": "IMG_3",
+        "imgAlt": "",
+        "imgSrc": "https://raw.githubusercontent.com/mxrked/freelance_projects_CDN/main/ctfsamplesites_CDN/main/imgs/index/green.webp"
+      },
+      {
+        "imgID": "IMG_4",
+        "imgAlt": "",
+        "imgSrc": "https://raw.githubusercontent.com/mxrked/freelance_projects_CDN/main/ctfsamplesites_CDN/main/imgs/index/purple.webp"
+      }
+    ],
+    "modalDesc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+    "modalProcess": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
   },
   {
     "sampleSiteID": "SS_4",
@@ -150,22 +174,22 @@
       {
         "imgID": "IMG_1",
         "imgAlt": "",
-        "imgSrc": "https://raw.githubusercontent.com/mxrked/freelance_projects_CDN/main/ctfsamplesites_CDN/main/imgs/index/placeholder-img.webp"
+        "imgSrc": "https://raw.githubusercontent.com/mxrked/freelance_projects_CDN/main/ctfsamplesites_CDN/main/imgs/index/red.webp"
       },
       {
         "imgID": "IMG_2",
         "imgAlt": "",
-        "imgSrc": "https://raw.githubusercontent.com/mxrked/freelance_projects_CDN/main/ctfsamplesites_CDN/main/imgs/index/placeholder-img.webp"
+        "imgSrc": "https://raw.githubusercontent.com/mxrked/freelance_projects_CDN/main/ctfsamplesites_CDN/main/imgs/index/blue.webp"
       },
       {
         "imgID": "IMG_3",
         "imgAlt": "",
-        "imgSrc": "https://raw.githubusercontent.com/mxrked/freelance_projects_CDN/main/ctfsamplesites_CDN/main/imgs/index/placeholder-img.webp"
+        "imgSrc": "https://raw.githubusercontent.com/mxrked/freelance_projects_CDN/main/ctfsamplesites_CDN/main/imgs/index/green.webp"
       },
       {
         "imgID": "IMG_4",
         "imgAlt": "",
-        "imgSrc": "https://raw.githubusercontent.com/mxrked/freelance_projects_CDN/main/ctfsamplesites_CDN/main/imgs/index/placeholder-img.webp"
+        "imgSrc": "https://raw.githubusercontent.com/mxrked/freelance_projects_CDN/main/ctfsamplesites_CDN/main/imgs/index/purple.webp"
       }
     ],
     "modalDesc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
@@ -199,22 +223,22 @@
       {
         "imgID": "IMG_1",
         "imgAlt": "",
-        "imgSrc": "https://raw.githubusercontent.com/mxrked/freelance_projects_CDN/main/ctfsamplesites_CDN/main/imgs/index/placeholder-img.webp"
+        "imgSrc": "https://raw.githubusercontent.com/mxrked/freelance_projects_CDN/main/ctfsamplesites_CDN/main/imgs/index/red.webp"
       },
       {
         "imgID": "IMG_2",
         "imgAlt": "",
-        "imgSrc": "https://raw.githubusercontent.com/mxrked/freelance_projects_CDN/main/ctfsamplesites_CDN/main/imgs/index/placeholder-img.webp"
+        "imgSrc": "https://raw.githubusercontent.com/mxrked/freelance_projects_CDN/main/ctfsamplesites_CDN/main/imgs/index/blue.webp"
       },
       {
         "imgID": "IMG_3",
         "imgAlt": "",
-        "imgSrc": "https://raw.githubusercontent.com/mxrked/freelance_projects_CDN/main/ctfsamplesites_CDN/main/imgs/index/placeholder-img.webp"
+        "imgSrc": "https://raw.githubusercontent.com/mxrked/freelance_projects_CDN/main/ctfsamplesites_CDN/main/imgs/index/green.webp"
       },
       {
         "imgID": "IMG_4",
         "imgAlt": "",
-        "imgSrc": "https://raw.githubusercontent.com/mxrked/freelance_projects_CDN/main/ctfsamplesites_CDN/main/imgs/index/placeholder-img.webp"
+        "imgSrc": "https://raw.githubusercontent.com/mxrked/freelance_projects_CDN/main/ctfsamplesites_CDN/main/imgs/index/purple.webp"
       }
     ],
     "modalDesc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
@@ -248,22 +272,22 @@
       {
         "imgID": "IMG_1",
         "imgAlt": "",
-        "imgSrc": "https://raw.githubusercontent.com/mxrked/freelance_projects_CDN/main/ctfsamplesites_CDN/main/imgs/index/placeholder-img.webp"
+        "imgSrc": "https://raw.githubusercontent.com/mxrked/freelance_projects_CDN/main/ctfsamplesites_CDN/main/imgs/index/red.webp"
       },
       {
         "imgID": "IMG_2",
         "imgAlt": "",
-        "imgSrc": "https://raw.githubusercontent.com/mxrked/freelance_projects_CDN/main/ctfsamplesites_CDN/main/imgs/index/placeholder-img.webp"
+        "imgSrc": "https://raw.githubusercontent.com/mxrked/freelance_projects_CDN/main/ctfsamplesites_CDN/main/imgs/index/blue.webp"
       },
       {
         "imgID": "IMG_3",
         "imgAlt": "",
-        "imgSrc": "https://raw.githubusercontent.com/mxrked/freelance_projects_CDN/main/ctfsamplesites_CDN/main/imgs/index/placeholder-img.webp"
+        "imgSrc": "https://raw.githubusercontent.com/mxrked/freelance_projects_CDN/main/ctfsamplesites_CDN/main/imgs/index/green.webp"
       },
       {
         "imgID": "IMG_4",
         "imgAlt": "",
-        "imgSrc": "https://raw.githubusercontent.com/mxrked/freelance_projects_CDN/main/ctfsamplesites_CDN/main/imgs/index/placeholder-img.webp"
+        "imgSrc": "https://raw.githubusercontent.com/mxrked/freelance_projects_CDN/main/ctfsamplesites_CDN/main/imgs/index/purple.webp"
       }
     ],
     "modalDesc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
