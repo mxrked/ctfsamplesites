@@ -4,6 +4,8 @@
  *
  */
 
+import { useEffect, useState } from "react";
+
 import { LazyLoadBackgroundImage } from "@/assets/components/global/All/LazyLoadBackgroundImage";
 
 import { TOP_BG } from "@/assets/cdns/Site_Main/CDNBgs";
@@ -11,16 +13,27 @@ import { TOP_BG } from "@/assets/cdns/Site_Main/CDNBgs";
 import styles from "../../../../styles/modules/Sites/Main/Main.module.css";
 
 export const IndexTop = () => {
+  const [INDEX_TOP_BG_TITLE, SET_INDEX_TOP_BG_TITLE] = useState("");
+
+  useEffect(() => {
+    const BG = document.getElementById("indexTopBg");
+
+    if (BG) {
+      SET_INDEX_TOP_BG_TITLE(BG.getAttribute("aria-label"));
+    }
+  }, [INDEX_TOP_BG_TITLE]);
+
   return (
     <section id="indexTop" className={`${styles.index_top}`}>
       <LazyLoadBackgroundImage
+        id="indexTopBg"
         image_url={TOP_BG}
         image_alt={"CTF Sample Sites - React project enviroment."}
         style_className_MAIN={styles.index_top_bg}
         style_className_PLACEHOLDER={styles.index_top_bg_placeholder}
       />
 
-      <div className={`${styles.index_top_overlay}`}>
+      <div className={`${styles.index_top_overlay}`} title={INDEX_TOP_BG_TITLE}>
         <div className={`${styles.index_top_overlay_cnt}`}>
           <h1 className="orientation-change-element half-second">
             <span>Every professional</span>

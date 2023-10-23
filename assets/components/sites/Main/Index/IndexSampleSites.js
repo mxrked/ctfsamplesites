@@ -9,11 +9,11 @@ import { useRouter } from "next/router";
 
 import { LazyLoadBackgroundImage } from "@/assets/components/global/All/LazyLoadBackgroundImage";
 
+import DeclareStorageVariable from "@/assets/functions/data/storage/DeclareStorageVariable";
+
 import { IndexSampleSiteModal } from "./IndexSampleSiteModal";
 
 import styles from "../../../../styles/modules/Sites/Main/Main.module.css";
-import DeclareStorageVariable from "@/assets/functions/data/storage/DeclareStorageVariable";
-
 export const IndexSampleSites = ({ sample_sites_data }) => {
   const router = useRouter();
 
@@ -169,12 +169,14 @@ export const IndexSampleSites = ({ sample_sites_data }) => {
                                   className="lazyload"
                                   data-src={tech.techImg}
                                   alt={`Image of ${tech.techName}.`}
+                                  title={tech.techName}
                                 />
                               ) : (
                                 <img
                                   className="lazyload"
                                   data-src={NOT_FOUND_URL}
                                   alt={`404 Image.`}
+                                  title={`404 Image.`}
                                 />
                               )}
                             </li>
