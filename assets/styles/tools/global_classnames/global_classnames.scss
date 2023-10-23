@@ -41,3 +41,8 @@
 .hidden {
   display: none !important;
 }
+
+.disabled-modal-img {
+  opacity: 0.5;
+  pointer-events: none;
+}
