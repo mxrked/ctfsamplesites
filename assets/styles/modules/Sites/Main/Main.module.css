@@ -314,12 +314,106 @@
   cursor: pointer;
   background-color: rgba(0, 0, 0, 0.891);
 }
+.sample_site_modal .details_modal_darken {
+  display: none;
+  z-index: 610;
+}
+.sample_site_modal .sample_site_modal_details_modal {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  max-width: 770px;
+  max-height: 550px;
+  overflow: hidden;
+  overflow-y: auto;
+  white-space: pre-wrap;
+  background-color: white;
+  top: 50%;
+  left: 50%;
+  z-index: 615;
+  transform: translate(-50%, -50%);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+}
+.sample_site_modal .sample_site_modal_details_modal .sample_site_modal_details_modal_cnt {
+  text-align: left;
+  width: 100%;
+  height: 100%;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.sample_site_modal .sample_site_modal_details_modal .sample_site_modal_details_modal_cnt .sample_site_modal_details_modal_cnt_top {
+  height: 133px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.sample_site_modal .sample_site_modal_details_modal .sample_site_modal_details_modal_cnt .sample_site_modal_details_modal_cnt_top .top_heading {
+  font-size: 32px;
+  font-family: "Noto Sans Extra Bold";
+}
+.sample_site_modal .sample_site_modal_details_modal .sample_site_modal_details_modal_cnt .sample_site_modal_details_modal_cnt_top .closer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  font-family: "Noto Sans Bold";
+  height: 45px;
+  width: 100%;
+  max-width: 70px;
+  background-color: #202020;
+  color: white;
+  margin-left: auto;
+  margin-right: auto;
+  margin-right: 0;
+}
+.sample_site_modal .sample_site_modal_details_modal .sample_site_modal_details_modal_cnt .sample_site_modal_details_modal_cnt_top .closer:hover {
+  background-color: rgb(13, 13, 13);
+  color: rgba(194, 194, 194, 0.864);
+}
+.sample_site_modal .sample_site_modal_details_modal .sample_site_modal_details_modal_cnt .website_details {
+  margin-bottom: 70px;
+}
+.sample_site_modal .sample_site_modal_details_modal .sample_site_modal_details_modal_cnt .website_details .heading {
+  font-family: "Noto Sans Bold";
+  font-size: 24px;
+  margin-bottom: 10px;
+  display: block;
+}
+.sample_site_modal .sample_site_modal_details_modal .sample_site_modal_details_modal_cnt .website_details ul {
+  font-family: "Noto Sans Medium";
+}
+.sample_site_modal .sample_site_modal_details_modal .sample_site_modal_details_modal_cnt .website_details ul li:first-child {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+.sample_site_modal .sample_site_modal_details_modal .sample_site_modal_details_modal_cnt .pricing_box .pricing_row .pricing_regular,
+.sample_site_modal .sample_site_modal_details_modal .sample_site_modal_details_modal_cnt .pricing_box .pricing_row .pricing_renting {
+  padding: 0;
+}
+.sample_site_modal .sample_site_modal_details_modal .sample_site_modal_details_modal_cnt .pricing_box .pricing_row .pricing_regular .pricing_heading,
+.sample_site_modal .sample_site_modal_details_modal .sample_site_modal_details_modal_cnt .pricing_box .pricing_row .pricing_renting .pricing_heading {
+  display: block;
+  margin-bottom: 10px;
+  font-family: "Noto Sans Bold";
+  font-size: 23px;
+}
+.sample_site_modal .sample_site_modal_details_modal .sample_site_modal_details_modal_cnt .pricing_box .pricing_row .pricing_regular ul,
+.sample_site_modal .sample_site_modal_details_modal .sample_site_modal_details_modal_cnt .pricing_box .pricing_row .pricing_renting ul {
+  font-family: "Noto Sans Medium";
+  font-size: 15px;
+}
 .sample_site_modal .sample_site_modal_main {
   position: absolute;
   width: 100%;
   height: 100%;
   max-width: 1770px;
-  max-height: 880px;
+  max-height: 750px;
   overflow: hidden;
   overflow-y: auto;
   white-space: pre-wrap;
@@ -330,17 +424,18 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  border-radius: 5px;
 }
 .sample_site_modal .sample_site_modal_main .sample_site_modal_main_inner {
   max-width: 95%;
   width: 100%;
   margin-left: auto;
   margin-right: auto;
-  padding-top: 40px;
-  padding-bottom: 40px;
+  padding-top: 0px;
+  padding-bottom: 0px;
 }
 .sample_site_modal .sample_site_modal_main .sample_site_modal_main_inner .sample_site_modal_main_inner_top .sample_site_modal_main_inner_top_box .sample_site_modal_main_inner_top_row .sample_site_modal_main_inner_top_side {
-  height: 600px;
+  height: 700px;
   display: flex;
   align-items: center;
 }
@@ -397,6 +492,8 @@
 }
 .sample_site_modal .sample_site_modal_main .sample_site_modal_main_inner .sample_site_modal_main_inner_top .sample_site_modal_main_inner_top_box .sample_site_modal_main_inner_top_row .sample_site_modal_top_R {
   justify-content: flex-end;
+  padding-left: 60px;
+  padding-right: 60px;
 }
 .sample_site_modal .sample_site_modal_main .sample_site_modal_main_inner .sample_site_modal_main_inner_top .sample_site_modal_main_inner_top_box .sample_site_modal_main_inner_top_row .sample_site_modal_top_R .sample_site_modal_main_inner_top_side_cnt {
   width: 100%;
@@ -474,6 +571,9 @@
   background-color: rgb(56, 215, 200);
   color: rgba(78, 78, 78, 0.864);
 }
+.sample_site_modal .sample_site_modal_main .sample_site_modal_main_inner .sample_site_modal_main_inner_top .sample_site_modal_main_inner_top_box .sample_site_modal_main_inner_top_row .sample_site_modal_top_R .sample_site_modal_main_inner_top_side_cnt .sample_site_links .details_toggler {
+  margin-right: 15px;
+}
 .sample_site_modal .sample_site_modal_main .sample_site_modal_main_inner .sample_site_modal_main_inner_top .sample_site_modal_main_inner_top_box .sample_site_modal_main_inner_top_row .sample_site_modal_top_R .sample_site_modal_main_inner_top_side_cnt .sample_site_links .closer {
   background-color: #202020;
   color: white;
@@ -516,6 +616,13 @@
   }
   .index_sample_sites .index_sample_sites_inner .index_sample_sites_inner_main .sample_site .sample_site_inner .sample_site_inner_box .sample_site_inner_row .sample_site_inner_side {
     height: 740px;
+  }
+  .sample_site_modal .sample_site_modal_details_modal {
+    max-width: 690px;
+  }
+  .sample_site_modal .sample_site_modal_details_modal .sample_site_modal_details_modal_cnt {
+    padding-left: 35px;
+    padding-right: 35px;
   }
 }
 @media all and (max-width: 991px) {
@@ -620,6 +727,63 @@
   }
   .index_sample_sites .index_sample_sites_inner .index_sample_sites_inner_main .sample_site .sample_site_inner .sample_site_inner_box .sample_site_inner_row .sample_site_R .sample_site_inner_side_cnt .sample_site_links li:last-child {
     margin-bottom: 0;
+  }
+  .sample_site_modal .sample_site_modal_details_modal {
+    max-width: 90%;
+    max-height: 670px;
+  }
+  .sample_site_modal .sample_site_modal_details_modal .sample_site_modal_details_modal_cnt {
+    padding-left: 35px;
+    padding-right: 35px;
+  }
+  .sample_site_modal .sample_site_modal_details_modal .sample_site_modal_details_modal_cnt .sample_site_modal_details_modal_cnt_top {
+    display: block;
+    text-align: center;
+    height: 220px;
+    padding-top: 40px;
+    padding-bottom: 20px;
+  }
+  .sample_site_modal .sample_site_modal_details_modal .sample_site_modal_details_modal_cnt .sample_site_modal_details_modal_cnt_top .top_heading {
+    font-size: 28px;
+  }
+  .sample_site_modal .sample_site_modal_details_modal .sample_site_modal_details_modal_cnt .sample_site_modal_details_modal_cnt_top .closer {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 25px;
+  }
+  .sample_site_modal .sample_site_modal_details_modal .sample_site_modal_details_modal_cnt .website_details {
+    text-align: center;
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .sample_site_modal .sample_site_modal_details_modal .sample_site_modal_details_modal_cnt .website_details ul {
+    font-size: 15px;
+  }
+  .sample_site_modal .sample_site_modal_details_modal .sample_site_modal_details_modal_cnt .website_details ul li {
+    margin-bottom: 5px;
+  }
+  .sample_site_modal .sample_site_modal_details_modal .sample_site_modal_details_modal_cnt .pricing_box {
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .sample_site_modal .sample_site_modal_details_modal .sample_site_modal_details_modal_cnt .pricing_box .pricing_row .pricing_regular,
+  .sample_site_modal .sample_site_modal_details_modal .sample_site_modal_details_modal_cnt .pricing_box .pricing_row .pricing_renting {
+    text-align: center;
+    justify-content: center;
+  }
+  .sample_site_modal .sample_site_modal_details_modal .sample_site_modal_details_modal_cnt .pricing_box .pricing_row .pricing_regular .pricing_heading,
+  .sample_site_modal .sample_site_modal_details_modal .sample_site_modal_details_modal_cnt .pricing_box .pricing_row .pricing_renting .pricing_heading {
+    font-size: 19px;
+  }
+  .sample_site_modal .sample_site_modal_details_modal .sample_site_modal_details_modal_cnt .pricing_box .pricing_row .pricing_regular ul,
+  .sample_site_modal .sample_site_modal_details_modal .sample_site_modal_details_modal_cnt .pricing_box .pricing_row .pricing_renting ul {
+    font-size: 15px;
+  }
+  .sample_site_modal .sample_site_modal_details_modal .sample_site_modal_details_modal_cnt .pricing_box .pricing_row .pricing_regular ul li,
+  .sample_site_modal .sample_site_modal_details_modal .sample_site_modal_details_modal_cnt .pricing_box .pricing_row .pricing_renting ul li {
+    margin-bottom: 5px;
   }
 }
 @media all and (max-width: 768px) {

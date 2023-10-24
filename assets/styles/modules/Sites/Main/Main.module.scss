@@ -347,12 +347,119 @@
     background-color: rgba(0, 0, 0, 0.891);
   }
 
+  .details_modal_darken {
+    display: none;
+    z-index: 610;
+  }
+
+  .sample_site_modal_details_modal {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    max-width: 770px;
+    max-height: 550px;
+    overflow: hidden;
+    overflow-y: auto;
+    white-space: pre-wrap;
+    background-color: white;
+    top: 50%;
+    left: 50%;
+    z-index: 615;
+    transform: translate(-50%, -50%);
+    @include displayElement(none, center, center);
+    border-radius: 5px;
+
+    .sample_site_modal_details_modal_cnt {
+      text-align: left;
+      width: 100%;
+      height: 100%;
+      max-width: 700px;
+      @include quickCenter("relative");
+      padding-left: 15px;
+      padding-right: 15px;
+
+      .sample_site_modal_details_modal_cnt_top {
+        height: 133px;
+        @include displayElement(flex, space-between, center);
+
+        .top_heading {
+          font-size: clamp(31px, 32px, 32px);
+          font-family: "Noto Sans Extra Bold";
+        }
+
+        .closer {
+          @include displayElement(flex, center, center);
+          border-radius: 5px;
+          font-family: "Noto Sans Bold";
+          height: 45px;
+          width: 100%;
+          max-width: 70px;
+          background-color: $MineShaft;
+          color: white;
+          @include quickCenter("relative");
+          margin-right: 0;
+
+          &:hover {
+            background-color: rgb(13, 13, 13);
+            color: rgba(194, 194, 194, 0.864);
+          }
+        }
+      }
+
+      .website_details {
+        margin-bottom: 70px;
+
+        .heading {
+          font-family: "Noto Sans Bold";
+          font-size: clamp(23px, 24px, 24px);
+          margin-bottom: 10px;
+          display: block;
+        }
+
+        ul {
+          font-family: "Noto Sans Medium";
+
+          li {
+            &:first-child {
+              margin-top: 15px;
+              margin-bottom: 15px;
+            }
+          }
+        }
+      }
+
+      .pricing_box {
+        .pricing_row {
+          .pricing_regular,
+          .pricing_renting {
+            padding: 0;
+
+            .pricing_heading {
+              display: block;
+              margin-bottom: 10px;
+              font-family: "Noto Sans Bold";
+              font-size: clamp(23px, 23px, 23px);
+            }
+
+            ul {
+              font-family: "Noto Sans Medium";
+              font-size: clamp(14px, 15px, 15px);
+
+              li {
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
   .sample_site_modal_main {
     position: absolute;
     width: 100%;
     height: 100%;
     max-width: 1770px;
-    max-height: 880px;
+    max-height: 750px;
     overflow: hidden;
     overflow-y: auto;
     white-space: pre-wrap;
@@ -361,19 +468,22 @@
     left: 50%;
     transform: translate(-50%, -50%);
     @include displayElement(flex, center, center);
+    border-radius: 5px;
 
     .sample_site_modal_main_inner {
       max-width: 95%;
       width: 100%;
       @include quickCenter("relative");
-      padding-top: 40px;
-      padding-bottom: 40px;
+      padding-top: 0px;
+      padding-bottom: 0px;
 
       .sample_site_modal_main_inner_top {
+        // margin-bottom: 45px;
+
         .sample_site_modal_main_inner_top_box {
           .sample_site_modal_main_inner_top_row {
             .sample_site_modal_main_inner_top_side {
-              height: 600px;
+              height: 700px;
               display: flex;
               align-items: center;
             }
@@ -442,6 +552,8 @@
 
             .sample_site_modal_top_R {
               justify-content: flex-end;
+              padding-left: 60px;
+              padding-right: 60px;
 
               .sample_site_modal_main_inner_top_side_cnt {
                 width: 100%;
@@ -525,6 +637,10 @@
                     }
                   }
 
+                  .details_toggler {
+                    margin-right: 15px;
+                  }
+
                   .closer {
                     background-color: $MineShaft;
                     color: white;
@@ -601,6 +717,16 @@
             }
           }
         }
+      }
+    }
+  }
+  .sample_site_modal {
+    .sample_site_modal_details_modal {
+      max-width: 690px;
+
+      .sample_site_modal_details_modal_cnt {
+        padding-left: 35px;
+        padding-right: 35px;
       }
     }
   }
@@ -736,6 +862,73 @@
                       }
                     }
                   }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .sample_site_modal {
+    .sample_site_modal_details_modal {
+      max-width: 90%;
+      max-height: 670px;
+
+      .sample_site_modal_details_modal_cnt {
+        padding-left: 35px;
+        padding-right: 35px;
+
+        .sample_site_modal_details_modal_cnt_top {
+          display: block;
+          text-align: center;
+          height: 220px;
+          padding-top: 40px;
+          padding-bottom: 20px;
+
+          .top_heading {
+            font-size: clamp(27px, 28px, 28px);
+          }
+
+          .closer {
+            @include quickCenter("relative");
+            margin-top: 25px;
+          }
+        }
+
+        .website_details {
+          text-align: center;
+          max-width: 90%;
+          @include quickCenter("relative");
+
+          ul {
+            font-size: clamp(14px, 15px, 15px);
+
+            li {
+              margin-bottom: 5px;
+            }
+          }
+        }
+
+        .pricing_box {
+          max-width: 80%;
+          @include quickCenter("relative");
+
+          .pricing_row {
+            .pricing_regular,
+            .pricing_renting {
+              text-align: center;
+              justify-content: center;
+
+              .pricing_heading {
+                font-size: clamp(18px, 19px, 19px);
+              }
+
+              ul {
+                font-size: clamp(14px, 15px, 15px);
+
+                li {
+                  margin-bottom: 5px;
                 }
               }
             }
