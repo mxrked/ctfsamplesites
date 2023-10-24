@@ -46,7 +46,37 @@
       }
     ],
     "modalDesc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
-    "modalProcess": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+    "modalProcess": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+    "modalProjectDetails": [
+      {
+        "pageCount": 4,
+        "pageNames": ["Home", "Services", "Gallery", "Contact"],
+        "pageDesc": [
+          "The main page for the sample site.",
+          "The page the displays the services that are provided.",
+          "The page that will display all of the different work that has been done.",
+          "The page that will allow your client(s) to reach out to you."
+        ]
+      }
+    ],
+    "modalProjectPricing_REGULAR": [
+      {
+        "pagePrice": 400.0,
+        "hostingPrice_M": 22.0,
+        "hostingPrice_A": 264.0,
+        "domainPrice": 15.0,
+        "total_M": 437.0,
+        "total_A": 679.0
+      }
+    ],
+    "modalProjectPricing_RENTING": [
+      {
+        "pagePrice": 34.0,
+        "hostingPrice": 25.0,
+        "domainPrice": 2.0,
+        "total": 61.0
+      }
+    ]
   },
   {
     "sampleSiteID": "SS_2",
@@ -95,7 +125,37 @@
       }
     ],
     "modalDesc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
-    "modalProcess": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+    "modalProcess": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+    "modalProjectDetails": [
+      {
+        "pageCount": 4,
+        "pageNames": ["Home", "Services", "Gallery", "Contact"],
+        "pageDesc": [
+          "The main page for the sample site.",
+          "The page the displays the services that are provided.",
+          "The page that will display all of the different work that has been done.",
+          "The page that will allow your client(s) to reach out to you."
+        ]
+      }
+    ],
+    "modalProjectPricing_REGULAR": [
+      {
+        "pagePrice": 400.0,
+        "hostingPrice_M": 22.0,
+        "hostingPrice_A": 264.0,
+        "domainPrice": 15.0,
+        "total_M": 437.0,
+        "total_A": 679.0
+      }
+    ],
+    "modalProjectPricing_RENTING": [
+      {
+        "pagePrice": 34.0,
+        "hostingPrice": 25.0,
+        "domainPrice": 2.0,
+        "total": 61.0
+      }
+    ]
   },
   {
     "sampleSiteID": "SS_3",
@@ -144,7 +204,37 @@
       }
     ],
     "modalDesc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
-    "modalProcess": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+    "modalProcess": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+    "modalProjectDetails": [
+      {
+        "pageCount": 4,
+        "pageNames": ["Home", "Services", "Gallery", "Contact"],
+        "pageDesc": [
+          "The main page for the sample site.",
+          "The page the displays the services that are provided.",
+          "The page that will display all of the different work that has been done.",
+          "The page that will allow your client(s) to reach out to you."
+        ]
+      }
+    ],
+    "modalProjectPricing_REGULAR": [
+      {
+        "pagePrice": 400.0,
+        "hostingPrice_M": 22.0,
+        "hostingPrice_A": 264.0,
+        "domainPrice": 15.0,
+        "total_M": 437.0,
+        "total_A": 679.0
+      }
+    ],
+    "modalProjectPricing_RENTING": [
+      {
+        "pagePrice": 34.0,
+        "hostingPrice": 25.0,
+        "domainPrice": 2.0,
+        "total": 61.0
+      }
+    ]
   },
   {
     "sampleSiteID": "SS_4",
@@ -193,7 +283,37 @@
       }
     ],
     "modalDesc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
-    "modalProcess": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+    "modalProcess": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+    "modalProjectDetails": [
+      {
+        "pageCount": 4,
+        "pageNames": ["Home", "Services", "Gallery", "Contact"],
+        "pageDesc": [
+          "The main page for the sample site.",
+          "The page the displays the services that are provided.",
+          "The page that will display all of the different work that has been done.",
+          "The page that will allow your client(s) to reach out to you."
+        ]
+      }
+    ],
+    "modalProjectPricing_REGULAR": [
+      {
+        "pagePrice": 400.0,
+        "hostingPrice_M": 22.0,
+        "hostingPrice_A": 264.0,
+        "domainPrice": 15.0,
+        "total_M": 437.0,
+        "total_A": 679.0
+      }
+    ],
+    "modalProjectPricing_RENTING": [
+      {
+        "pagePrice": 34.0,
+        "hostingPrice": 25.0,
+        "domainPrice": 2.0,
+        "total": 61.0
+      }
+    ]
   },
   {
     "sampleSiteID": "SS_5",
@@ -242,7 +362,37 @@
       }
     ],
     "modalDesc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
-    "modalProcess": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+    "modalProcess": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+    "modalProjectDetails": [
+      {
+        "pageCount": 4,
+        "pageNames": ["Home", "Services", "Gallery", "Contact"],
+        "pageDesc": [
+          "The main page for the sample site.",
+          "The page the displays the services that are provided.",
+          "The page that will display all of the different work that has been done.",
+          "The page that will allow your client(s) to reach out to you."
+        ]
+      }
+    ],
+    "modalProjectPricing_REGULAR": [
+      {
+        "pagePrice": 400.0,
+        "hostingPrice_M": 22.0,
+        "hostingPrice_A": 264.0,
+        "domainPrice": 15.0,
+        "total_M": 437.0,
+        "total_A": 679.0
+      }
+    ],
+    "modalProjectPricing_RENTING": [
+      {
+        "pagePrice": 34.0,
+        "hostingPrice": 25.0,
+        "domainPrice": 2.0,
+        "total": 61.0
+      }
+    ]
   },
   {
     "sampleSiteID": "SS_6",
@@ -291,6 +441,36 @@
       }
     ],
     "modalDesc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
-    "modalProcess": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+    "modalProcess": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+    "modalProjectDetails": [
+      {
+        "pageCount": 4,
+        "pageNames": ["Home", "Services", "Gallery", "Contact"],
+        "pageDesc": [
+          "The main page for the sample site.",
+          "The page the displays the services that are provided.",
+          "The page that will display all of the different work that has been done.",
+          "The page that will allow your client(s) to reach out to you."
+        ]
+      }
+    ],
+    "modalProjectPricing_REGULAR": [
+      {
+        "pagePrice": 400.0,
+        "hostingPrice_M": 22.0,
+        "hostingPrice_A": 264.0,
+        "domainPrice": 15.0,
+        "total_M": 437.0,
+        "total_A": 679.0
+      }
+    ],
+    "modalProjectPricing_RENTING": [
+      {
+        "pagePrice": 34.0,
+        "hostingPrice": 25.0,
+        "domainPrice": 2.0,
+        "total": 61.0
+      }
+    ]
   }
 ]
