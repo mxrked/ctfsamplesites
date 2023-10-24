@@ -34,6 +34,16 @@ export const IndexSampleSiteModal = ({ sample_site_modal_data, onClose }) => {
     onClose();
   };
 
+  const convertToCurrency = (value) => {
+    const formattedValue = new Intl.NumberFormat("en-US", {
+      style: "currency",
+      currency: "USD",
+      minimumFractionDigits: 2,
+    }).format(value);
+
+    return formattedValue;
+  };
+
   return sample_site_modal_data.map(
     (modal) =>
       IS_MODAL_OPEN && (
@@ -329,6 +339,150 @@ export const IndexSampleSiteModal = ({ sample_site_modal_data, onClose }) => {
                           >
                             <span>Close</span>
                           </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div className={`${styles.sample_site_modal_main_inner_bottom}`}>
+                <div
+                  className={`${styles.sample_site_modal_main_inner_bottom_box} container-fluid`}
+                >
+                  <div
+                    className={`${styles.sample_site_modal_main_inner_bottom_row} row`}
+                  >
+                    <div
+                      className={`${styles.sample_site_modal_main_inner_bottom_side} ${styles.sample_site_modal_bottom_L} col-lg-6 col-md-6 col-sm-6 col-xs-12`}
+                    >
+                      <div
+                        className={`${styles.sample_site_modal_main_inner_bottom_side_cnt}`}
+                      >
+                        <span
+                          className={`${styles.bottom_side_heading} orientation-change-element half-second`}
+                        >
+                          Website Details
+                        </span>
+
+                        <ul>
+                          <li className="orientation-change-element half-second">
+                            Page Count:{" "}
+                            <span>
+                              {modal.modalProjectDetails[0].pageCount}
+                            </span>
+                          </li>
+
+                          {modal.modalProjectDetails[0].pageNames.map(
+                            (pageName, index) => (
+                              <li
+                                key={index}
+                                className="orientation-change-element half-second"
+                              >
+                                {pageName} -{" "}
+                                {modal.modalProjectDetails[0].pageDesc[index]}
+                              </li>
+                            )
+                          )}
+                        </ul>
+                      </div>
+                    </div>
+                    <div
+                      className={`${styles.sample_site_modal_main_inner_bottom_side} ${styles.sample_site_modal_bottom_M} col-lg-3 col-md-3 col-sm-3 col-xs-12`}
+                    >
+                      <div
+                        className={`${styles.sample_site_modal_main_inner_bottom_side_cnt}`}
+                      >
+                        <div className={`${styles.pricing_set}`}>
+                          <span
+                            className={`${styles.pricing_heading} orientation-change-element half-second`}
+                          >
+                            Pricing (Regular):
+                          </span>
+
+                          <ul>
+                            <li className="orientation-change-element half-second">
+                              Pages:{" "}
+                              {convertToCurrency(
+                                modal.modalProjectPricing_REGULAR[0].pagePrice
+                              )}
+                            </li>
+                            <li className="orientation-change-element half-second">
+                              Hosting (Monthly):{" "}
+                              {convertToCurrency(
+                                modal.modalProjectPricing_REGULAR[0]
+                                  .hostingPrice_M
+                              )}
+                            </li>
+                            <li className="orientation-change-element half-second">
+                              Hosting (Annually):{" "}
+                              {convertToCurrency(
+                                modal.modalProjectPricing_REGULAR[0]
+                                  .hostingPrice_A
+                              )}
+                            </li>
+                            <li className="orientation-change-element half-second">
+                              Domain:{" "}
+                              {convertToCurrency(
+                                modal.modalProjectPricing_REGULAR[0].domainPrice
+                              )}
+                            </li>
+                            <li className="orientation-change-element half-second">
+                              Total (Monthly):{" "}
+                              {convertToCurrency(
+                                modal.modalProjectPricing_REGULAR[0].total_M
+                              )}
+                            </li>
+                            <li className="orientation-change-element half-second">
+                              Total (Annually):{" "}
+                              {convertToCurrency(
+                                modal.modalProjectPricing_REGULAR[0].total_A
+                              )}
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      className={`${styles.sample_site_modal_main_inner_bottom_side} ${styles.sample_site_modal_bottom_R} col-lg-3 col-md-3 col-sm-3 col-xs-12`}
+                    >
+                      <div
+                        className={`${styles.sample_site_modal_main_inner_bottom_side_cnt}`}
+                      >
+                        <div className={`${styles.pricing_set}`}>
+                          <span
+                            className={`${styles.pricing_heading} orientation-change-element half-second`}
+                          >
+                            Pricing (Renting):
+                          </span>
+
+                          <ul>
+                            <li className="orientation-change-element half-second">
+                              Pages:{" "}
+                              {convertToCurrency(
+                                modal.modalProjectPricing_RENTING[0].pagePrice
+                              )}
+                            </li>
+                            <li className="orientation-change-element half-second">
+                              Hosting:{" "}
+                              {convertToCurrency(
+                                modal.modalProjectPricing_RENTING[0]
+                                  .hostingPrice
+                              )}
+                            </li>
+                            <li className="orientation-change-element half-second">
+                              Domain:{" "}
+                              {convertToCurrency(
+                                modal.modalProjectPricing_RENTING[0].domainPrice
+                              )}
+                            </li>
+                            <li className="orientation-change-element half-second">
+                              Total:{" "}
+                              {convertToCurrency(
+                                modal.modalProjectPricing_RENTING[0].total
+                              )}
+                            </li>
+                          </ul>
                         </div>
                       </div>
                     </div>
