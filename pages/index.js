@@ -163,7 +163,7 @@ export default function Home({
   }, []);
 
   // Checking if connected to MongoDB
-  console.log(TOTAL_NUMBER_OF_IPS);
+  console.log("Total Number of Visits: " + TOTAL_NUMBER_OF_IPS);
 
   // Triggering trackMainIPs.js
   useEffect(() => {
