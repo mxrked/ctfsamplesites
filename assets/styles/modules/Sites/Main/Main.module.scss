@@ -2710,6 +2710,11 @@
           }
         }
 
+        .pricing_main_heading,
+        .pricing_main_text {
+          text-align: center;
+        }
+
         .pricing_box {
           max-width: 500px;
           @include quickCenter("relative");
@@ -3001,26 +3006,23 @@
                     button {
                       display: block;
                       @include quickCenter("relative");
-                      height: 40px;
-                      font-size: clamp(15px, 16px, 16px);
+                      height: 45px;
+                      font-size: clamp(15px, 15px, 15px);
                     }
 
                     .demo_link,
                     .details_toggler {
-                      margin-right: auto;
+                      @include quickCenter("relative");
+                    }
+
+                    .demo_and_details {
+                      display: block;
+                      justify-content: center;
                     }
 
                     .details_toggler {
                       margin-top: 15px;
                       margin-bottom: 15px;
-                    }
-
-                    .demo_and_details {
-                      @include quickCenter("relative");
-                      max-width: 100%;
-                      display: block;
-                      justify-content: space-evenly;
-                      margin-bottom: 0;
                     }
                   }
                 }
@@ -3072,6 +3074,11 @@
               margin-bottom: 5px;
             }
           }
+        }
+
+        .pricing_main_heading,
+        .pricing_main_text {
+          text-align: center;
         }
 
         .pricing_box {
@@ -3829,6 +3836,11 @@
               margin-bottom: 5px;
             }
           }
+        }
+
+        .pricing_main_heading,
+        .pricing_main_text {
+          text-align: left;
         }
 
         .pricing_box {
