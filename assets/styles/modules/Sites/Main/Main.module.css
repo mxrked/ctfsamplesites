@@ -260,6 +260,7 @@
 .index_sample_sites .index_sample_sites_inner .index_sample_sites_inner_main .sample_site .sample_site_inner .sample_site_inner_box .sample_site_inner_row .sample_site_R .sample_site_inner_side_cnt .sample_site_techs li img {
   max-width: 30px;
   width: 100%;
+  cursor: pointer;
 }
 .index_sample_sites .index_sample_sites_inner .index_sample_sites_inner_main .sample_site .sample_site_inner .sample_site_inner_box .sample_site_inner_row .sample_site_R .sample_site_inner_side_cnt .sample_site_desc_holder {
   margin-bottom: 45px;
@@ -322,8 +323,8 @@
   position: absolute;
   width: 100%;
   height: 100%;
-  max-width: 770px;
-  max-height: 550px;
+  max-width: 800px;
+  max-height: 625px;
   overflow: hidden;
   overflow-y: auto;
   white-space: pre-wrap;
@@ -377,7 +378,7 @@
   color: rgba(194, 194, 194, 0.864);
 }
 .sample_site_modal .sample_site_modal_details_modal .sample_site_modal_details_modal_cnt .website_details {
-  margin-bottom: 70px;
+  margin-bottom: 60px;
 }
 .sample_site_modal .sample_site_modal_details_modal .sample_site_modal_details_modal_cnt .website_details .heading {
   font-family: "Noto Sans Bold";
@@ -392,6 +393,23 @@
   margin-top: 15px;
   margin-bottom: 15px;
 }
+.sample_site_modal .sample_site_modal_details_modal .sample_site_modal_details_modal_cnt .pricing_main_heading {
+  display: block;
+  margin-bottom: 10px;
+  font-family: "Noto Sans Bold";
+  font-size: 25px;
+  opacity: 0.6;
+}
+.sample_site_modal .sample_site_modal_details_modal .sample_site_modal_details_modal_cnt .pricing_main_text {
+  display: block;
+  margin-bottom: 30px;
+  font-family: "Noto Sans Medium";
+  font-size: 15px;
+}
+.sample_site_modal .sample_site_modal_details_modal .sample_site_modal_details_modal_cnt .pricing_main_text span {
+  font-family: "Noto Sans Bold";
+  color: #3fd7d7;
+}
 .sample_site_modal .sample_site_modal_details_modal .sample_site_modal_details_modal_cnt .pricing_box .pricing_row .pricing_regular,
 .sample_site_modal .sample_site_modal_details_modal .sample_site_modal_details_modal_cnt .pricing_box .pricing_row .pricing_renting {
   padding: 0;
@@ -401,7 +419,7 @@
   display: block;
   margin-bottom: 10px;
   font-family: "Noto Sans Bold";
-  font-size: 23px;
+  font-size: 20px;
 }
 .sample_site_modal .sample_site_modal_details_modal .sample_site_modal_details_modal_cnt .pricing_box .pricing_row .pricing_regular ul,
 .sample_site_modal .sample_site_modal_details_modal .sample_site_modal_details_modal_cnt .pricing_box .pricing_row .pricing_renting ul {
@@ -530,11 +548,12 @@
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  max-width: 160px;
+  max-width: 240px;
 }
 .sample_site_modal .sample_site_modal_main .sample_site_modal_main_inner .sample_site_modal_main_inner_top .sample_site_modal_main_inner_top_box .sample_site_modal_main_inner_top_row .sample_site_modal_top_R .sample_site_modal_main_inner_top_side_cnt .sample_site_technologies .sample_site_tech {
   display: block;
   text-align: center;
+  cursor: pointer;
 }
 .sample_site_modal .sample_site_modal_main .sample_site_modal_main_inner .sample_site_modal_main_inner_top .sample_site_modal_main_inner_top_box .sample_site_modal_main_inner_top_row .sample_site_modal_top_R .sample_site_modal_main_inner_top_side_cnt .sample_site_technologies .sample_site_tech img {
   width: 100%;
@@ -563,6 +582,9 @@
   font-family: "Noto Sans Bold";
   height: 45px;
   background-color: #3fd7d7;
+}
+.sample_site_modal .sample_site_modal_main .sample_site_modal_main_inner .sample_site_modal_main_inner_top .sample_site_modal_main_inner_top_box .sample_site_modal_main_inner_top_row .sample_site_modal_top_R .sample_site_modal_main_inner_top_side_cnt .sample_site_links .demo_and_details {
+  display: flex;
 }
 .sample_site_modal .sample_site_modal_main .sample_site_modal_main_inner .sample_site_modal_main_inner_top .sample_site_modal_main_inner_top_box .sample_site_modal_main_inner_top_row .sample_site_modal_top_R .sample_site_modal_main_inner_top_side_cnt .sample_site_links .demo_link {
   margin-right: 15px;
@@ -617,12 +639,175 @@
   .index_sample_sites .index_sample_sites_inner .index_sample_sites_inner_main .sample_site .sample_site_inner .sample_site_inner_box .sample_site_inner_row .sample_site_inner_side {
     height: 740px;
   }
+  .sample_site_modal .sample_site_modal_main {
+    max-width: 1150px;
+    max-height: 680px;
+    display: flex;
+  }
+  .sample_site_modal .sample_site_modal_main .sample_site_modal_main_inner .sample_site_modal_main_inner_top .sample_site_modal_main_inner_top_box .sample_site_modal_main_inner_top_row .sample_site_modal_main_inner_top_side {
+    width: 100%;
+    max-width: 100%;
+    max-height: 680px;
+  }
+  .sample_site_modal .sample_site_modal_main .sample_site_modal_main_inner .sample_site_modal_main_inner_top .sample_site_modal_main_inner_top_box .sample_site_modal_main_inner_top_row .sample_site_modal_top_L {
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-left: 15px;
+    padding-right: 15px;
+    max-width: 45%;
+  }
+  .sample_site_modal .sample_site_modal_main .sample_site_modal_main_inner .sample_site_modal_main_inner_top .sample_site_modal_main_inner_top_box .sample_site_modal_main_inner_top_row .sample_site_modal_top_L .sample_site_modal_main_inner_top_side_cnt {
+    max-width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .sample_site_modal .sample_site_modal_main .sample_site_modal_main_inner .sample_site_modal_main_inner_top .sample_site_modal_main_inner_top_box .sample_site_modal_main_inner_top_row .sample_site_modal_top_L .sample_site_modal_main_inner_top_side_cnt .main_img_holder {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 480px;
+  }
+  .sample_site_modal .sample_site_modal_main .sample_site_modal_main_inner .sample_site_modal_main_inner_top .sample_site_modal_main_inner_top_box .sample_site_modal_main_inner_top_row .sample_site_modal_top_L .sample_site_modal_main_inner_top_side_cnt .modal_imgs {
+    max-width: 480px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .sample_site_modal .sample_site_modal_main .sample_site_modal_main_inner .sample_site_modal_main_inner_top .sample_site_modal_main_inner_top_box .sample_site_modal_main_inner_top_row .sample_site_modal_top_L .sample_site_modal_main_inner_top_side_cnt .modal_imgs .modal_imgs_box .modal_imgs_row .modal_img {
+    height: 75px;
+  }
+  .sample_site_modal .sample_site_modal_main .sample_site_modal_main_inner .sample_site_modal_main_inner_top .sample_site_modal_main_inner_top_box .sample_site_modal_main_inner_top_row .sample_site_modal_top_R {
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-left: 35px;
+    padding-right: 0px;
+    max-width: 55%;
+  }
+  .sample_site_modal .sample_site_modal_main .sample_site_modal_main_inner .sample_site_modal_main_inner_top .sample_site_modal_main_inner_top_box .sample_site_modal_main_inner_top_row .sample_site_modal_top_R .sample_site_modal_main_inner_top_side_cnt .modal_text {
+    text-align: left;
+  }
+  .sample_site_modal .sample_site_modal_main .sample_site_modal_main_inner .sample_site_modal_main_inner_top .sample_site_modal_main_inner_top_box .sample_site_modal_main_inner_top_row .sample_site_modal_top_R .sample_site_modal_main_inner_top_side_cnt .modal_text .sample_site_id {
+    font-size: 15px;
+  }
+  .sample_site_modal .sample_site_modal_main .sample_site_modal_main_inner .sample_site_modal_main_inner_top .sample_site_modal_main_inner_top_box .sample_site_modal_main_inner_top_row .sample_site_modal_top_R .sample_site_modal_main_inner_top_side_cnt .modal_text .sample_site_name {
+    font-size: 25px;
+  }
+  .sample_site_modal .sample_site_modal_main .sample_site_modal_main_inner .sample_site_modal_main_inner_top .sample_site_modal_main_inner_top_box .sample_site_modal_main_inner_top_row .sample_site_modal_top_R .sample_site_modal_main_inner_top_side_cnt .modal_text p {
+    font-size: 15px;
+    max-width: 95%;
+    line-height: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-left: 0;
+  }
+  .sample_site_modal .sample_site_modal_main .sample_site_modal_main_inner .sample_site_modal_main_inner_top .sample_site_modal_main_inner_top_box .sample_site_modal_main_inner_top_row .sample_site_modal_top_R .sample_site_modal_main_inner_top_side_cnt .sample_site_technologies {
+    margin-left: auto;
+    margin-right: auto;
+    margin-left: 0;
+    max-width: 250px;
+  }
+  .sample_site_modal .sample_site_modal_main .sample_site_modal_main_inner .sample_site_modal_main_inner_top .sample_site_modal_main_inner_top_box .sample_site_modal_main_inner_top_row .sample_site_modal_top_R .sample_site_modal_main_inner_top_side_cnt .sample_site_technologies .sample_site_tech img {
+    max-width: 30px;
+    max-height: 30px;
+    min-height: 30px;
+  }
+  .sample_site_modal .sample_site_modal_main .sample_site_modal_main_inner .sample_site_modal_main_inner_top .sample_site_modal_main_inner_top_box .sample_site_modal_main_inner_top_row .sample_site_modal_top_R .sample_site_modal_main_inner_top_side_cnt .sample_site_links {
+    display: flex;
+    text-align: center;
+  }
+  .sample_site_modal .sample_site_modal_main .sample_site_modal_main_inner .sample_site_modal_main_inner_top .sample_site_modal_main_inner_top_box .sample_site_modal_main_inner_top_row .sample_site_modal_top_R .sample_site_modal_main_inner_top_side_cnt .sample_site_links button {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 40px;
+    font-size: 14px;
+    margin-right: 15px;
+    margin-left: 0;
+  }
+  .sample_site_modal .sample_site_modal_main .sample_site_modal_main_inner .sample_site_modal_main_inner_top .sample_site_modal_main_inner_top_box .sample_site_modal_main_inner_top_row .sample_site_modal_top_R .sample_site_modal_main_inner_top_side_cnt .sample_site_links .demo_link,
+  .sample_site_modal .sample_site_modal_main .sample_site_modal_main_inner .sample_site_modal_main_inner_top .sample_site_modal_main_inner_top_box .sample_site_modal_main_inner_top_row .sample_site_modal_top_R .sample_site_modal_main_inner_top_side_cnt .sample_site_links .details_toggler {
+    margin-right: 0;
+  }
+  .sample_site_modal .sample_site_modal_main .sample_site_modal_main_inner .sample_site_modal_main_inner_top .sample_site_modal_main_inner_top_box .sample_site_modal_main_inner_top_row .sample_site_modal_top_R .sample_site_modal_main_inner_top_side_cnt .sample_site_links .details_toggler {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+  .sample_site_modal .sample_site_modal_main .sample_site_modal_main_inner .sample_site_modal_main_inner_top .sample_site_modal_main_inner_top_box .sample_site_modal_main_inner_top_row .sample_site_modal_top_R .sample_site_modal_main_inner_top_side_cnt .sample_site_links .demo_and_details {
+    max-width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 0;
+  }
   .sample_site_modal .sample_site_modal_details_modal {
-    max-width: 690px;
+    max-width: 800px;
+    max-height: 640px;
   }
   .sample_site_modal .sample_site_modal_details_modal .sample_site_modal_details_modal_cnt {
     padding-left: 35px;
     padding-right: 35px;
+  }
+  .sample_site_modal .sample_site_modal_details_modal .sample_site_modal_details_modal_cnt .sample_site_modal_details_modal_cnt_top {
+    display: flex;
+    justify-content: space-between;
+    height: 170px;
+    padding-top: 40px;
+    padding-bottom: 20px;
+  }
+  .sample_site_modal .sample_site_modal_details_modal .sample_site_modal_details_modal_cnt .sample_site_modal_details_modal_cnt_top .top_heading {
+    font-size: 31px;
+  }
+  .sample_site_modal .sample_site_modal_details_modal .sample_site_modal_details_modal_cnt .sample_site_modal_details_modal_cnt_top .closer {
+    margin-left: auto;
+    margin-right: auto;
+    margin-right: 0;
+    margin-top: 0px;
+    height: 40px;
+    max-width: 75px;
+    font-size: 16px;
+  }
+  .sample_site_modal .sample_site_modal_details_modal .sample_site_modal_details_modal_cnt .website_details {
+    text-align: left;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 70px;
+  }
+  .sample_site_modal .sample_site_modal_details_modal .sample_site_modal_details_modal_cnt .website_details ul {
+    font-size: 15px;
+  }
+  .sample_site_modal .sample_site_modal_details_modal .sample_site_modal_details_modal_cnt .website_details ul li {
+    margin-bottom: 5px;
+  }
+  .sample_site_modal .sample_site_modal_details_modal .sample_site_modal_details_modal_cnt .pricing_box {
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .sample_site_modal .sample_site_modal_details_modal .sample_site_modal_details_modal_cnt .pricing_box .pricing_row .pricing_regular,
+  .sample_site_modal .sample_site_modal_details_modal .sample_site_modal_details_modal_cnt .pricing_box .pricing_row .pricing_renting {
+    max-width: 50%;
+    text-align: left;
+    justify-content: flex-start;
+  }
+  .sample_site_modal .sample_site_modal_details_modal .sample_site_modal_details_modal_cnt .pricing_box .pricing_row .pricing_regular .pricing_heading,
+  .sample_site_modal .sample_site_modal_details_modal .sample_site_modal_details_modal_cnt .pricing_box .pricing_row .pricing_renting .pricing_heading {
+    font-size: 18px;
+  }
+  .sample_site_modal .sample_site_modal_details_modal .sample_site_modal_details_modal_cnt .pricing_box .pricing_row .pricing_regular ul,
+  .sample_site_modal .sample_site_modal_details_modal .sample_site_modal_details_modal_cnt .pricing_box .pricing_row .pricing_renting ul {
+    font-size: 15px;
+  }
+  .sample_site_modal .sample_site_modal_details_modal .sample_site_modal_details_modal_cnt .pricing_box .pricing_row .pricing_regular ul li,
+  .sample_site_modal .sample_site_modal_details_modal .sample_site_modal_details_modal_cnt .pricing_box .pricing_row .pricing_renting ul li {
+    margin-bottom: 5px;
+  }
+  .sample_site_modal .sample_site_modal_details_modal .sample_site_modal_details_modal_cnt .pricing_box .pricing_row .pricing_regular {
+    margin-bottom: 40px;
+  }
+  .sample_site_modal .sample_site_modal_details_modal .sample_site_modal_details_modal_cnt .pricing_box .pricing_row .pricing_renting {
+    margin-bottom: 35px;
   }
 }
 @media all and (max-width: 991px) {
@@ -728,9 +913,86 @@
   .index_sample_sites .index_sample_sites_inner .index_sample_sites_inner_main .sample_site .sample_site_inner .sample_site_inner_box .sample_site_inner_row .sample_site_R .sample_site_inner_side_cnt .sample_site_links li:last-child {
     margin-bottom: 0;
   }
+  .sample_site_modal .sample_site_modal_main {
+    max-width: 640px;
+    max-height: 800px;
+    display: block;
+  }
+  .sample_site_modal .sample_site_modal_main .sample_site_modal_main_inner .sample_site_modal_main_inner_top .sample_site_modal_main_inner_top_box .sample_site_modal_main_inner_top_row .sample_site_modal_main_inner_top_side {
+    width: 100%;
+    max-width: 100%;
+    height: 100%;
+  }
+  .sample_site_modal .sample_site_modal_main .sample_site_modal_main_inner .sample_site_modal_main_inner_top .sample_site_modal_main_inner_top_box .sample_site_modal_main_inner_top_row .sample_site_modal_top_L {
+    padding-top: 70px;
+    padding-bottom: 40px;
+  }
+  .sample_site_modal .sample_site_modal_main .sample_site_modal_main_inner .sample_site_modal_main_inner_top .sample_site_modal_main_inner_top_box .sample_site_modal_main_inner_top_row .sample_site_modal_top_L .sample_site_modal_main_inner_top_side_cnt .main_img_holder {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 450px;
+  }
+  .sample_site_modal .sample_site_modal_main .sample_site_modal_main_inner .sample_site_modal_main_inner_top .sample_site_modal_main_inner_top_box .sample_site_modal_main_inner_top_row .sample_site_modal_top_L .sample_site_modal_main_inner_top_side_cnt .modal_imgs {
+    max-width: 450px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .sample_site_modal .sample_site_modal_main .sample_site_modal_main_inner .sample_site_modal_main_inner_top .sample_site_modal_main_inner_top_box .sample_site_modal_main_inner_top_row .sample_site_modal_top_L .sample_site_modal_main_inner_top_side_cnt .modal_imgs .modal_imgs_box .modal_imgs_row .modal_img {
+    height: 90px;
+  }
+  .sample_site_modal .sample_site_modal_main .sample_site_modal_main_inner .sample_site_modal_main_inner_top .sample_site_modal_main_inner_top_box .sample_site_modal_main_inner_top_row .sample_site_modal_top_R {
+    padding-top: 40px;
+    padding-bottom: 70px;
+  }
+  .sample_site_modal .sample_site_modal_main .sample_site_modal_main_inner .sample_site_modal_main_inner_top .sample_site_modal_main_inner_top_box .sample_site_modal_main_inner_top_row .sample_site_modal_top_R .sample_site_modal_main_inner_top_side_cnt .modal_text {
+    text-align: center;
+  }
+  .sample_site_modal .sample_site_modal_main .sample_site_modal_main_inner .sample_site_modal_main_inner_top .sample_site_modal_main_inner_top_box .sample_site_modal_main_inner_top_row .sample_site_modal_top_R .sample_site_modal_main_inner_top_side_cnt .modal_text .sample_site_name {
+    font-size: 30px;
+  }
+  .sample_site_modal .sample_site_modal_main .sample_site_modal_main_inner .sample_site_modal_main_inner_top .sample_site_modal_main_inner_top_box .sample_site_modal_main_inner_top_row .sample_site_modal_top_R .sample_site_modal_main_inner_top_side_cnt .modal_text p {
+    font-size: 16px;
+    max-width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .sample_site_modal .sample_site_modal_main .sample_site_modal_main_inner .sample_site_modal_main_inner_top .sample_site_modal_main_inner_top_box .sample_site_modal_main_inner_top_row .sample_site_modal_top_R .sample_site_modal_main_inner_top_side_cnt .sample_site_technologies {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 240px;
+  }
+  .sample_site_modal .sample_site_modal_main .sample_site_modal_main_inner .sample_site_modal_main_inner_top .sample_site_modal_main_inner_top_box .sample_site_modal_main_inner_top_row .sample_site_modal_top_R .sample_site_modal_main_inner_top_side_cnt .sample_site_links {
+    display: block;
+    text-align: center;
+  }
+  .sample_site_modal .sample_site_modal_main .sample_site_modal_main_inner .sample_site_modal_main_inner_top .sample_site_modal_main_inner_top_box .sample_site_modal_main_inner_top_row .sample_site_modal_top_R .sample_site_modal_main_inner_top_side_cnt .sample_site_links button {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 40px;
+    font-size: 15px;
+  }
+  .sample_site_modal .sample_site_modal_main .sample_site_modal_main_inner .sample_site_modal_main_inner_top .sample_site_modal_main_inner_top_box .sample_site_modal_main_inner_top_row .sample_site_modal_top_R .sample_site_modal_main_inner_top_side_cnt .sample_site_links .demo_link,
+  .sample_site_modal .sample_site_modal_main .sample_site_modal_main_inner .sample_site_modal_main_inner_top .sample_site_modal_main_inner_top_box .sample_site_modal_main_inner_top_row .sample_site_modal_top_R .sample_site_modal_main_inner_top_side_cnt .sample_site_links .details_toggler {
+    margin-right: auto;
+  }
+  .sample_site_modal .sample_site_modal_main .sample_site_modal_main_inner .sample_site_modal_main_inner_top .sample_site_modal_main_inner_top_box .sample_site_modal_main_inner_top_row .sample_site_modal_top_R .sample_site_modal_main_inner_top_side_cnt .sample_site_links .demo_link {
+    margin-right: 15px;
+  }
+  .sample_site_modal .sample_site_modal_main .sample_site_modal_main_inner .sample_site_modal_main_inner_top .sample_site_modal_main_inner_top_box .sample_site_modal_main_inner_top_row .sample_site_modal_top_R .sample_site_modal_main_inner_top_side_cnt .sample_site_links .details_toggler {
+    margin-left: 15px;
+  }
+  .sample_site_modal .sample_site_modal_main .sample_site_modal_main_inner .sample_site_modal_main_inner_top .sample_site_modal_main_inner_top_box .sample_site_modal_main_inner_top_row .sample_site_modal_top_R .sample_site_modal_main_inner_top_side_cnt .sample_site_links .demo_and_details {
+    margin-bottom: 20px;
+    justify-content: center;
+  }
+  .sample_site_modal .sample_site_modal_main .sample_site_modal_main_inner .sample_site_modal_main_inner_top .sample_site_modal_main_inner_top_box .sample_site_modal_main_inner_top_row .sample_site_modal_top_R .sample_site_modal_main_inner_top_side_cnt .sample_site_links .details_toggler {
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
   .sample_site_modal .sample_site_modal_details_modal {
     max-width: 90%;
-    max-height: 670px;
+    max-height: 730px;
   }
   .sample_site_modal .sample_site_modal_details_modal .sample_site_modal_details_modal_cnt {
     padding-left: 35px;
@@ -739,7 +1001,7 @@
   .sample_site_modal .sample_site_modal_details_modal .sample_site_modal_details_modal_cnt .sample_site_modal_details_modal_cnt_top {
     display: block;
     text-align: center;
-    height: 220px;
+    height: 190px;
     padding-top: 40px;
     padding-bottom: 20px;
   }
@@ -762,6 +1024,10 @@
   }
   .sample_site_modal .sample_site_modal_details_modal .sample_site_modal_details_modal_cnt .website_details ul li {
     margin-bottom: 5px;
+  }
+  .sample_site_modal .sample_site_modal_details_modal .sample_site_modal_details_modal_cnt .pricing_main_heading,
+  .sample_site_modal .sample_site_modal_details_modal .sample_site_modal_details_modal_cnt .pricing_main_text {
+    text-align: center;
   }
   .sample_site_modal .sample_site_modal_details_modal .sample_site_modal_details_modal_cnt .pricing_box {
     max-width: 80%;
@@ -903,6 +1169,158 @@
   .index_sample_sites .index_sample_sites_inner .index_sample_sites_inner_main .sample_site .sample_site_inner .sample_site_inner_box .sample_site_inner_row .sample_site_R .sample_site_inner_side_cnt .sample_site_links li:last-child {
     margin-bottom: 0;
   }
+  .sample_site_modal .sample_site_modal_main {
+    max-width: 470px;
+    max-height: 760px;
+    display: block;
+  }
+  .sample_site_modal .sample_site_modal_main .sample_site_modal_main_inner .sample_site_modal_main_inner_top .sample_site_modal_main_inner_top_box .sample_site_modal_main_inner_top_row .sample_site_modal_main_inner_top_side {
+    width: 100%;
+    max-width: 100%;
+    height: 100%;
+  }
+  .sample_site_modal .sample_site_modal_main .sample_site_modal_main_inner .sample_site_modal_main_inner_top .sample_site_modal_main_inner_top_box .sample_site_modal_main_inner_top_row .sample_site_modal_top_L {
+    padding-top: 70px;
+    padding-bottom: 40px;
+  }
+  .sample_site_modal .sample_site_modal_main .sample_site_modal_main_inner .sample_site_modal_main_inner_top .sample_site_modal_main_inner_top_box .sample_site_modal_main_inner_top_row .sample_site_modal_top_L .sample_site_modal_main_inner_top_side_cnt .main_img_holder {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 350px;
+  }
+  .sample_site_modal .sample_site_modal_main .sample_site_modal_main_inner .sample_site_modal_main_inner_top .sample_site_modal_main_inner_top_box .sample_site_modal_main_inner_top_row .sample_site_modal_top_L .sample_site_modal_main_inner_top_side_cnt .modal_imgs {
+    max-width: 350px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .sample_site_modal .sample_site_modal_main .sample_site_modal_main_inner .sample_site_modal_main_inner_top .sample_site_modal_main_inner_top_box .sample_site_modal_main_inner_top_row .sample_site_modal_top_L .sample_site_modal_main_inner_top_side_cnt .modal_imgs .modal_imgs_box .modal_imgs_row .modal_img {
+    height: 65px;
+  }
+  .sample_site_modal .sample_site_modal_main .sample_site_modal_main_inner .sample_site_modal_main_inner_top .sample_site_modal_main_inner_top_box .sample_site_modal_main_inner_top_row .sample_site_modal_top_R {
+    padding-top: 40px;
+    padding-left: 0;
+    padding-bottom: 45px;
+  }
+  .sample_site_modal .sample_site_modal_main .sample_site_modal_main_inner .sample_site_modal_main_inner_top .sample_site_modal_main_inner_top_box .sample_site_modal_main_inner_top_row .sample_site_modal_top_R .sample_site_modal_main_inner_top_side_cnt .modal_text {
+    text-align: center;
+  }
+  .sample_site_modal .sample_site_modal_main .sample_site_modal_main_inner .sample_site_modal_main_inner_top .sample_site_modal_main_inner_top_box .sample_site_modal_main_inner_top_row .sample_site_modal_top_R .sample_site_modal_main_inner_top_side_cnt .modal_text .sample_site_id {
+    font-size: 15px;
+  }
+  .sample_site_modal .sample_site_modal_main .sample_site_modal_main_inner .sample_site_modal_main_inner_top .sample_site_modal_main_inner_top_box .sample_site_modal_main_inner_top_row .sample_site_modal_top_R .sample_site_modal_main_inner_top_side_cnt .modal_text .sample_site_name {
+    font-size: 24px;
+  }
+  .sample_site_modal .sample_site_modal_main .sample_site_modal_main_inner .sample_site_modal_main_inner_top .sample_site_modal_main_inner_top_box .sample_site_modal_main_inner_top_row .sample_site_modal_top_R .sample_site_modal_main_inner_top_side_cnt .modal_text p {
+    font-size: 15px;
+    max-width: 95%;
+    line-height: 25px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .sample_site_modal .sample_site_modal_main .sample_site_modal_main_inner .sample_site_modal_main_inner_top .sample_site_modal_main_inner_top_box .sample_site_modal_main_inner_top_row .sample_site_modal_top_R .sample_site_modal_main_inner_top_side_cnt .sample_site_technologies {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .sample_site_modal .sample_site_modal_main .sample_site_modal_main_inner .sample_site_modal_main_inner_top .sample_site_modal_main_inner_top_box .sample_site_modal_main_inner_top_row .sample_site_modal_top_R .sample_site_modal_main_inner_top_side_cnt .sample_site_technologies .sample_site_tech img {
+    max-width: 25px;
+    max-height: 25px;
+    min-height: 25px;
+  }
+  .sample_site_modal .sample_site_modal_main .sample_site_modal_main_inner .sample_site_modal_main_inner_top .sample_site_modal_main_inner_top_box .sample_site_modal_main_inner_top_row .sample_site_modal_top_R .sample_site_modal_main_inner_top_side_cnt .sample_site_links {
+    display: block;
+    text-align: center;
+  }
+  .sample_site_modal .sample_site_modal_main .sample_site_modal_main_inner .sample_site_modal_main_inner_top .sample_site_modal_main_inner_top_box .sample_site_modal_main_inner_top_row .sample_site_modal_top_R .sample_site_modal_main_inner_top_side_cnt .sample_site_links button {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 45px;
+    font-size: 15px;
+  }
+  .sample_site_modal .sample_site_modal_main .sample_site_modal_main_inner .sample_site_modal_main_inner_top .sample_site_modal_main_inner_top_box .sample_site_modal_main_inner_top_row .sample_site_modal_top_R .sample_site_modal_main_inner_top_side_cnt .sample_site_links .demo_link,
+  .sample_site_modal .sample_site_modal_main .sample_site_modal_main_inner .sample_site_modal_main_inner_top .sample_site_modal_main_inner_top_box .sample_site_modal_main_inner_top_row .sample_site_modal_top_R .sample_site_modal_main_inner_top_side_cnt .sample_site_links .details_toggler {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .sample_site_modal .sample_site_modal_main .sample_site_modal_main_inner .sample_site_modal_main_inner_top .sample_site_modal_main_inner_top_box .sample_site_modal_main_inner_top_row .sample_site_modal_top_R .sample_site_modal_main_inner_top_side_cnt .sample_site_links .demo_and_details {
+    display: block;
+    justify-content: center;
+  }
+  .sample_site_modal .sample_site_modal_main .sample_site_modal_main_inner .sample_site_modal_main_inner_top .sample_site_modal_main_inner_top_box .sample_site_modal_main_inner_top_row .sample_site_modal_top_R .sample_site_modal_main_inner_top_side_cnt .sample_site_links .details_toggler {
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+  .sample_site_modal .sample_site_modal_details_modal {
+    max-width: 90%;
+    max-height: 450px;
+    height: 100%;
+  }
+  .sample_site_modal .sample_site_modal_details_modal .sample_site_modal_details_modal_cnt {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+  .sample_site_modal .sample_site_modal_details_modal .sample_site_modal_details_modal_cnt .sample_site_modal_details_modal_cnt_top {
+    display: block;
+    text-align: center;
+    height: 190px;
+    padding-top: 40px;
+    padding-bottom: 20px;
+  }
+  .sample_site_modal .sample_site_modal_details_modal .sample_site_modal_details_modal_cnt .sample_site_modal_details_modal_cnt_top .top_heading {
+    font-size: 24px;
+  }
+  .sample_site_modal .sample_site_modal_details_modal .sample_site_modal_details_modal_cnt .sample_site_modal_details_modal_cnt_top .closer {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 25px;
+  }
+  .sample_site_modal .sample_site_modal_details_modal .sample_site_modal_details_modal_cnt .website_details {
+    text-align: center;
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .sample_site_modal .sample_site_modal_details_modal .sample_site_modal_details_modal_cnt .website_details ul {
+    font-size: 15px;
+  }
+  .sample_site_modal .sample_site_modal_details_modal .sample_site_modal_details_modal_cnt .website_details ul li {
+    margin-bottom: 5px;
+  }
+  .sample_site_modal .sample_site_modal_details_modal .sample_site_modal_details_modal_cnt .pricing_main_heading,
+  .sample_site_modal .sample_site_modal_details_modal .sample_site_modal_details_modal_cnt .pricing_main_text {
+    text-align: center;
+  }
+  .sample_site_modal .sample_site_modal_details_modal .sample_site_modal_details_modal_cnt .pricing_main_heading {
+    font-size: 20px;
+  }
+  .sample_site_modal .sample_site_modal_details_modal .sample_site_modal_details_modal_cnt .pricing_box {
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .sample_site_modal .sample_site_modal_details_modal .sample_site_modal_details_modal_cnt .pricing_box .pricing_row .pricing_regular,
+  .sample_site_modal .sample_site_modal_details_modal .sample_site_modal_details_modal_cnt .pricing_box .pricing_row .pricing_renting {
+    text-align: center;
+    justify-content: center;
+  }
+  .sample_site_modal .sample_site_modal_details_modal .sample_site_modal_details_modal_cnt .pricing_box .pricing_row .pricing_regular .pricing_heading,
+  .sample_site_modal .sample_site_modal_details_modal .sample_site_modal_details_modal_cnt .pricing_box .pricing_row .pricing_renting .pricing_heading {
+    font-size: 19px;
+  }
+  .sample_site_modal .sample_site_modal_details_modal .sample_site_modal_details_modal_cnt .pricing_box .pricing_row .pricing_regular ul,
+  .sample_site_modal .sample_site_modal_details_modal .sample_site_modal_details_modal_cnt .pricing_box .pricing_row .pricing_renting ul {
+    font-size: 15px;
+  }
+  .sample_site_modal .sample_site_modal_details_modal .sample_site_modal_details_modal_cnt .pricing_box .pricing_row .pricing_regular ul li,
+  .sample_site_modal .sample_site_modal_details_modal .sample_site_modal_details_modal_cnt .pricing_box .pricing_row .pricing_renting ul li {
+    margin-bottom: 5px;
+  }
+  .sample_site_modal .sample_site_modal_details_modal .sample_site_modal_details_modal_cnt .pricing_box .pricing_row .pricing_regular {
+    margin-bottom: 30px;
+  }
+  .sample_site_modal .sample_site_modal_details_modal .sample_site_modal_details_modal_cnt .pricing_box .pricing_row .pricing_renting {
+    margin-bottom: 30px;
+  }
 }
 @media all and (max-width: 419px) {
   .index_top {
@@ -1030,6 +1448,170 @@
   .index_sample_sites .index_sample_sites_inner .index_sample_sites_inner_main .sample_site .sample_site_inner .sample_site_inner_box .sample_site_inner_row .sample_site_R .sample_site_inner_side_cnt .sample_site_links li:last-child {
     margin-bottom: 0;
   }
+  .sample_site_modal .sample_site_modal_main {
+    max-width: 90%;
+    max-height: 500px;
+    display: block;
+  }
+  .sample_site_modal .sample_site_modal_main .sample_site_modal_main_inner .sample_site_modal_main_inner_top .sample_site_modal_main_inner_top_box .sample_site_modal_main_inner_top_row .sample_site_modal_main_inner_top_side {
+    width: 100%;
+    max-width: 100%;
+    height: 100%;
+  }
+  .sample_site_modal .sample_site_modal_main .sample_site_modal_main_inner .sample_site_modal_main_inner_top .sample_site_modal_main_inner_top_box .sample_site_modal_main_inner_top_row .sample_site_modal_top_L {
+    padding-top: 30px;
+    padding-bottom: 25px;
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+  .sample_site_modal .sample_site_modal_main .sample_site_modal_main_inner .sample_site_modal_main_inner_top .sample_site_modal_main_inner_top_box .sample_site_modal_main_inner_top_row .sample_site_modal_top_L .sample_site_modal_main_inner_top_side_cnt .main_img_holder {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 350px;
+  }
+  .sample_site_modal .sample_site_modal_main .sample_site_modal_main_inner .sample_site_modal_main_inner_top .sample_site_modal_main_inner_top_box .sample_site_modal_main_inner_top_row .sample_site_modal_top_L .sample_site_modal_main_inner_top_side_cnt .modal_imgs {
+    max-width: 350px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .sample_site_modal .sample_site_modal_main .sample_site_modal_main_inner .sample_site_modal_main_inner_top .sample_site_modal_main_inner_top_box .sample_site_modal_main_inner_top_row .sample_site_modal_top_L .sample_site_modal_main_inner_top_side_cnt .modal_imgs .modal_imgs_box .modal_imgs_row .modal_img {
+    height: 55px;
+  }
+  .sample_site_modal .sample_site_modal_main .sample_site_modal_main_inner .sample_site_modal_main_inner_top .sample_site_modal_main_inner_top_box .sample_site_modal_main_inner_top_row .sample_site_modal_top_R {
+    padding-top: 65px;
+    padding-bottom: 80px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .sample_site_modal .sample_site_modal_main .sample_site_modal_main_inner .sample_site_modal_main_inner_top .sample_site_modal_main_inner_top_box .sample_site_modal_main_inner_top_row .sample_site_modal_top_R .sample_site_modal_main_inner_top_side_cnt .modal_text {
+    text-align: center;
+  }
+  .sample_site_modal .sample_site_modal_main .sample_site_modal_main_inner .sample_site_modal_main_inner_top .sample_site_modal_main_inner_top_box .sample_site_modal_main_inner_top_row .sample_site_modal_top_R .sample_site_modal_main_inner_top_side_cnt .modal_text .sample_site_id {
+    font-size: 15px;
+  }
+  .sample_site_modal .sample_site_modal_main .sample_site_modal_main_inner .sample_site_modal_main_inner_top .sample_site_modal_main_inner_top_box .sample_site_modal_main_inner_top_row .sample_site_modal_top_R .sample_site_modal_main_inner_top_side_cnt .modal_text .sample_site_name {
+    font-size: 21px;
+  }
+  .sample_site_modal .sample_site_modal_main .sample_site_modal_main_inner .sample_site_modal_main_inner_top .sample_site_modal_main_inner_top_box .sample_site_modal_main_inner_top_row .sample_site_modal_top_R .sample_site_modal_main_inner_top_side_cnt .modal_text p {
+    font-size: 13px;
+    max-width: 95%;
+    line-height: 25px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .sample_site_modal .sample_site_modal_main .sample_site_modal_main_inner .sample_site_modal_main_inner_top .sample_site_modal_main_inner_top_box .sample_site_modal_main_inner_top_row .sample_site_modal_top_R .sample_site_modal_main_inner_top_side_cnt .sample_site_technologies {
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    max-width: 120px;
+  }
+  .sample_site_modal .sample_site_modal_main .sample_site_modal_main_inner .sample_site_modal_main_inner_top .sample_site_modal_main_inner_top_box .sample_site_modal_main_inner_top_row .sample_site_modal_top_R .sample_site_modal_main_inner_top_side_cnt .sample_site_technologies .sample_site_tech {
+    margin-bottom: 20px;
+  }
+  .sample_site_modal .sample_site_modal_main .sample_site_modal_main_inner .sample_site_modal_main_inner_top .sample_site_modal_main_inner_top_box .sample_site_modal_main_inner_top_row .sample_site_modal_top_R .sample_site_modal_main_inner_top_side_cnt .sample_site_technologies .sample_site_tech img {
+    max-width: 25px;
+    max-height: 25px;
+    min-height: 25px;
+  }
+  .sample_site_modal .sample_site_modal_main .sample_site_modal_main_inner .sample_site_modal_main_inner_top .sample_site_modal_main_inner_top_box .sample_site_modal_main_inner_top_row .sample_site_modal_top_R .sample_site_modal_main_inner_top_side_cnt .sample_site_links {
+    display: block;
+    text-align: center;
+  }
+  .sample_site_modal .sample_site_modal_main .sample_site_modal_main_inner .sample_site_modal_main_inner_top .sample_site_modal_main_inner_top_box .sample_site_modal_main_inner_top_row .sample_site_modal_top_R .sample_site_modal_main_inner_top_side_cnt .sample_site_links button {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 35px;
+    font-size: 14px;
+  }
+  .sample_site_modal .sample_site_modal_main .sample_site_modal_main_inner .sample_site_modal_main_inner_top .sample_site_modal_main_inner_top_box .sample_site_modal_main_inner_top_row .sample_site_modal_top_R .sample_site_modal_main_inner_top_side_cnt .sample_site_links .demo_link,
+  .sample_site_modal .sample_site_modal_main .sample_site_modal_main_inner .sample_site_modal_main_inner_top .sample_site_modal_main_inner_top_box .sample_site_modal_main_inner_top_row .sample_site_modal_top_R .sample_site_modal_main_inner_top_side_cnt .sample_site_links .details_toggler {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .sample_site_modal .sample_site_modal_main .sample_site_modal_main_inner .sample_site_modal_main_inner_top .sample_site_modal_main_inner_top_box .sample_site_modal_main_inner_top_row .sample_site_modal_top_R .sample_site_modal_main_inner_top_side_cnt .sample_site_links .demo_and_details {
+    display: block;
+    margin-bottom: 0;
+    justify-content: center;
+  }
+  .sample_site_modal .sample_site_modal_main .sample_site_modal_main_inner .sample_site_modal_main_inner_top .sample_site_modal_main_inner_top_box .sample_site_modal_main_inner_top_row .sample_site_modal_top_R .sample_site_modal_main_inner_top_side_cnt .sample_site_links .details_toggler {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  .sample_site_modal .sample_site_modal_details_modal {
+    max-width: 90%;
+    max-height: 450px;
+  }
+  .sample_site_modal .sample_site_modal_details_modal .sample_site_modal_details_modal_cnt {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+  .sample_site_modal .sample_site_modal_details_modal .sample_site_modal_details_modal_cnt .sample_site_modal_details_modal_cnt_top {
+    display: block;
+    text-align: center;
+    height: 170px;
+    padding-top: 40px;
+    padding-bottom: 20px;
+  }
+  .sample_site_modal .sample_site_modal_details_modal .sample_site_modal_details_modal_cnt .sample_site_modal_details_modal_cnt_top .top_heading {
+    font-size: 21px;
+  }
+  .sample_site_modal .sample_site_modal_details_modal .sample_site_modal_details_modal_cnt .sample_site_modal_details_modal_cnt_top .closer {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 25px;
+    height: 35px;
+    max-width: 65px;
+    font-size: 14px;
+  }
+  .sample_site_modal .sample_site_modal_details_modal .sample_site_modal_details_modal_cnt .website_details {
+    text-align: center;
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+  }
+  .sample_site_modal .sample_site_modal_details_modal .sample_site_modal_details_modal_cnt .website_details ul {
+    font-size: 13px;
+  }
+  .sample_site_modal .sample_site_modal_details_modal .sample_site_modal_details_modal_cnt .website_details ul li {
+    margin-bottom: 5px;
+  }
+  .sample_site_modal .sample_site_modal_details_modal .sample_site_modal_details_modal_cnt .pricing_main_text {
+    font-size: 14px;
+    max-width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .sample_site_modal .sample_site_modal_details_modal .sample_site_modal_details_modal_cnt .pricing_box {
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .sample_site_modal .sample_site_modal_details_modal .sample_site_modal_details_modal_cnt .pricing_box .pricing_row .pricing_regular,
+  .sample_site_modal .sample_site_modal_details_modal .sample_site_modal_details_modal_cnt .pricing_box .pricing_row .pricing_renting {
+    text-align: center;
+    justify-content: center;
+  }
+  .sample_site_modal .sample_site_modal_details_modal .sample_site_modal_details_modal_cnt .pricing_box .pricing_row .pricing_regular .pricing_heading,
+  .sample_site_modal .sample_site_modal_details_modal .sample_site_modal_details_modal_cnt .pricing_box .pricing_row .pricing_renting .pricing_heading {
+    font-size: 17px;
+  }
+  .sample_site_modal .sample_site_modal_details_modal .sample_site_modal_details_modal_cnt .pricing_box .pricing_row .pricing_regular ul,
+  .sample_site_modal .sample_site_modal_details_modal .sample_site_modal_details_modal_cnt .pricing_box .pricing_row .pricing_renting ul {
+    font-size: 13px;
+  }
+  .sample_site_modal .sample_site_modal_details_modal .sample_site_modal_details_modal_cnt .pricing_box .pricing_row .pricing_regular ul li,
+  .sample_site_modal .sample_site_modal_details_modal .sample_site_modal_details_modal_cnt .pricing_box .pricing_row .pricing_renting ul li {
+    margin-bottom: 5px;
+  }
+  .sample_site_modal .sample_site_modal_details_modal .sample_site_modal_details_modal_cnt .pricing_box .pricing_row .pricing_regular {
+    margin-bottom: 40px;
+  }
+  .sample_site_modal .sample_site_modal_details_modal .sample_site_modal_details_modal_cnt .pricing_box .pricing_row .pricing_renting {
+    margin-bottom: 35px;
+  }
 }
 @media only screen and (min-device-width: 411px) and (max-device-width: 823px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
   .index_top {
@@ -1156,6 +1738,173 @@
   }
   .index_sample_sites .index_sample_sites_inner .index_sample_sites_inner_main .sample_site .sample_site_inner .sample_site_inner_box .sample_site_inner_row .sample_site_R .sample_site_inner_side_cnt .sample_site_links li:last-child {
     margin-bottom: 0;
+  }
+  .sample_site_modal .sample_site_modal_main {
+    max-width: 500px;
+    max-height: 90%;
+    display: block;
+  }
+  .sample_site_modal .sample_site_modal_main .sample_site_modal_main_inner .sample_site_modal_main_inner_top .sample_site_modal_main_inner_top_box .sample_site_modal_main_inner_top_row .sample_site_modal_main_inner_top_side {
+    width: 100%;
+    max-width: 100%;
+    height: 100%;
+  }
+  .sample_site_modal .sample_site_modal_main .sample_site_modal_main_inner .sample_site_modal_main_inner_top .sample_site_modal_main_inner_top_box .sample_site_modal_main_inner_top_row .sample_site_modal_top_L {
+    padding-top: 30px;
+    padding-bottom: 25px;
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+  .sample_site_modal .sample_site_modal_main .sample_site_modal_main_inner .sample_site_modal_main_inner_top .sample_site_modal_main_inner_top_box .sample_site_modal_main_inner_top_row .sample_site_modal_top_L .sample_site_modal_main_inner_top_side_cnt .main_img_holder {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 310px;
+  }
+  .sample_site_modal .sample_site_modal_main .sample_site_modal_main_inner .sample_site_modal_main_inner_top .sample_site_modal_main_inner_top_box .sample_site_modal_main_inner_top_row .sample_site_modal_top_L .sample_site_modal_main_inner_top_side_cnt .modal_imgs {
+    max-width: 310px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .sample_site_modal .sample_site_modal_main .sample_site_modal_main_inner .sample_site_modal_main_inner_top .sample_site_modal_main_inner_top_box .sample_site_modal_main_inner_top_row .sample_site_modal_top_L .sample_site_modal_main_inner_top_side_cnt .modal_imgs .modal_imgs_box .modal_imgs_row .modal_img {
+    height: 45px;
+  }
+  .sample_site_modal .sample_site_modal_main .sample_site_modal_main_inner .sample_site_modal_main_inner_top .sample_site_modal_main_inner_top_box .sample_site_modal_main_inner_top_row .sample_site_modal_top_R {
+    padding-top: 25px;
+    padding-bottom: 30px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .sample_site_modal .sample_site_modal_main .sample_site_modal_main_inner .sample_site_modal_main_inner_top .sample_site_modal_main_inner_top_box .sample_site_modal_main_inner_top_row .sample_site_modal_top_R .sample_site_modal_main_inner_top_side_cnt .modal_text {
+    text-align: center;
+  }
+  .sample_site_modal .sample_site_modal_main .sample_site_modal_main_inner .sample_site_modal_main_inner_top .sample_site_modal_main_inner_top_box .sample_site_modal_main_inner_top_row .sample_site_modal_top_R .sample_site_modal_main_inner_top_side_cnt .modal_text .sample_site_id {
+    font-size: 15px;
+  }
+  .sample_site_modal .sample_site_modal_main .sample_site_modal_main_inner .sample_site_modal_main_inner_top .sample_site_modal_main_inner_top_box .sample_site_modal_main_inner_top_row .sample_site_modal_top_R .sample_site_modal_main_inner_top_side_cnt .modal_text .sample_site_name {
+    font-size: 21px;
+  }
+  .sample_site_modal .sample_site_modal_main .sample_site_modal_main_inner .sample_site_modal_main_inner_top .sample_site_modal_main_inner_top_box .sample_site_modal_main_inner_top_row .sample_site_modal_top_R .sample_site_modal_main_inner_top_side_cnt .modal_text p {
+    font-size: 13px;
+    max-width: 85%;
+    line-height: 25px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .sample_site_modal .sample_site_modal_main .sample_site_modal_main_inner .sample_site_modal_main_inner_top .sample_site_modal_main_inner_top_box .sample_site_modal_main_inner_top_row .sample_site_modal_top_R .sample_site_modal_main_inner_top_side_cnt .sample_site_technologies {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .sample_site_modal .sample_site_modal_main .sample_site_modal_main_inner .sample_site_modal_main_inner_top .sample_site_modal_main_inner_top_box .sample_site_modal_main_inner_top_row .sample_site_modal_top_R .sample_site_modal_main_inner_top_side_cnt .sample_site_technologies .sample_site_tech img {
+    max-width: 25px;
+    max-height: 25px;
+    min-height: 25px;
+  }
+  .sample_site_modal .sample_site_modal_main .sample_site_modal_main_inner .sample_site_modal_main_inner_top .sample_site_modal_main_inner_top_box .sample_site_modal_main_inner_top_row .sample_site_modal_top_R .sample_site_modal_main_inner_top_side_cnt .sample_site_links {
+    display: block;
+    text-align: center;
+  }
+  .sample_site_modal .sample_site_modal_main .sample_site_modal_main_inner .sample_site_modal_main_inner_top .sample_site_modal_main_inner_top_box .sample_site_modal_main_inner_top_row .sample_site_modal_top_R .sample_site_modal_main_inner_top_side_cnt .sample_site_links button {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 35px;
+    font-size: 13px;
+  }
+  .sample_site_modal .sample_site_modal_main .sample_site_modal_main_inner .sample_site_modal_main_inner_top .sample_site_modal_main_inner_top_box .sample_site_modal_main_inner_top_row .sample_site_modal_top_R .sample_site_modal_main_inner_top_side_cnt .sample_site_links .demo_link,
+  .sample_site_modal .sample_site_modal_main .sample_site_modal_main_inner .sample_site_modal_main_inner_top .sample_site_modal_main_inner_top_box .sample_site_modal_main_inner_top_row .sample_site_modal_top_R .sample_site_modal_main_inner_top_side_cnt .sample_site_links .details_toggler {
+    margin-right: auto;
+  }
+  .sample_site_modal .sample_site_modal_main .sample_site_modal_main_inner .sample_site_modal_main_inner_top .sample_site_modal_main_inner_top_box .sample_site_modal_main_inner_top_row .sample_site_modal_top_R .sample_site_modal_main_inner_top_side_cnt .sample_site_links .demo_link {
+    margin-right: 15px;
+  }
+  .sample_site_modal .sample_site_modal_main .sample_site_modal_main_inner .sample_site_modal_main_inner_top .sample_site_modal_main_inner_top_box .sample_site_modal_main_inner_top_row .sample_site_modal_top_R .sample_site_modal_main_inner_top_side_cnt .sample_site_links .details_toggler {
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 15px;
+  }
+  .sample_site_modal .sample_site_modal_main .sample_site_modal_main_inner .sample_site_modal_main_inner_top .sample_site_modal_main_inner_top_box .sample_site_modal_main_inner_top_row .sample_site_modal_top_R .sample_site_modal_main_inner_top_side_cnt .sample_site_links .demo_and_details {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 430px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 25px;
+  }
+  .sample_site_modal .sample_site_modal_details_modal {
+    max-width: 380px;
+    max-height: 80%;
+  }
+  .sample_site_modal .sample_site_modal_details_modal .sample_site_modal_details_modal_cnt {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+  .sample_site_modal .sample_site_modal_details_modal .sample_site_modal_details_modal_cnt .sample_site_modal_details_modal_cnt_top {
+    display: block;
+    text-align: center;
+    height: 170px;
+    padding-top: 40px;
+    padding-bottom: 20px;
+  }
+  .sample_site_modal .sample_site_modal_details_modal .sample_site_modal_details_modal_cnt .sample_site_modal_details_modal_cnt_top .top_heading {
+    font-size: 21px;
+  }
+  .sample_site_modal .sample_site_modal_details_modal .sample_site_modal_details_modal_cnt .sample_site_modal_details_modal_cnt_top .closer {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 25px;
+    height: 35px;
+    max-width: 65px;
+    font-size: 14px;
+  }
+  .sample_site_modal .sample_site_modal_details_modal .sample_site_modal_details_modal_cnt .website_details {
+    text-align: center;
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+  }
+  .sample_site_modal .sample_site_modal_details_modal .sample_site_modal_details_modal_cnt .website_details ul {
+    font-size: 13px;
+  }
+  .sample_site_modal .sample_site_modal_details_modal .sample_site_modal_details_modal_cnt .website_details ul li {
+    margin-bottom: 5px;
+  }
+  .sample_site_modal .sample_site_modal_details_modal .sample_site_modal_details_modal_cnt .pricing_main_text {
+    font-size: 14px;
+    max-width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .sample_site_modal .sample_site_modal_details_modal .sample_site_modal_details_modal_cnt .pricing_box {
+    max-width: 420px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 25px;
+  }
+  .sample_site_modal .sample_site_modal_details_modal .sample_site_modal_details_modal_cnt .pricing_box .pricing_row .pricing_regular,
+  .sample_site_modal .sample_site_modal_details_modal .sample_site_modal_details_modal_cnt .pricing_box .pricing_row .pricing_renting {
+    max-width: 50%;
+    text-align: center;
+    justify-content: center;
+  }
+  .sample_site_modal .sample_site_modal_details_modal .sample_site_modal_details_modal_cnt .pricing_box .pricing_row .pricing_regular .pricing_heading,
+  .sample_site_modal .sample_site_modal_details_modal .sample_site_modal_details_modal_cnt .pricing_box .pricing_row .pricing_renting .pricing_heading {
+    font-size: 17px;
+  }
+  .sample_site_modal .sample_site_modal_details_modal .sample_site_modal_details_modal_cnt .pricing_box .pricing_row .pricing_regular ul,
+  .sample_site_modal .sample_site_modal_details_modal .sample_site_modal_details_modal_cnt .pricing_box .pricing_row .pricing_renting ul {
+    font-size: 13px;
+  }
+  .sample_site_modal .sample_site_modal_details_modal .sample_site_modal_details_modal_cnt .pricing_box .pricing_row .pricing_regular ul li,
+  .sample_site_modal .sample_site_modal_details_modal .sample_site_modal_details_modal_cnt .pricing_box .pricing_row .pricing_renting ul li {
+    margin-bottom: 5px;
+    display: inline-block;
+  }
+  .sample_site_modal .sample_site_modal_details_modal .sample_site_modal_details_modal_cnt .pricing_box .pricing_row .pricing_regular {
+    margin-bottom: 40px;
+  }
+  .sample_site_modal .sample_site_modal_details_modal .sample_site_modal_details_modal_cnt .pricing_box .pricing_row .pricing_renting {
+    margin-bottom: 35px;
   }
 }
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1) {
@@ -1290,6 +2039,163 @@
   .index_sample_sites .index_sample_sites_inner .index_sample_sites_inner_main .sample_site .sample_site_inner .sample_site_inner_box .sample_site_inner_row .sample_site_R .sample_site_inner_side_cnt .sample_site_links li:last-child {
     margin-bottom: 0;
   }
+  .sample_site_modal .sample_site_modal_main {
+    max-width: 650px;
+    max-height: 790px;
+    display: block;
+  }
+  .sample_site_modal .sample_site_modal_main .sample_site_modal_main_inner .sample_site_modal_main_inner_top .sample_site_modal_main_inner_top_box .sample_site_modal_main_inner_top_row .sample_site_modal_main_inner_top_side {
+    width: 100%;
+    max-width: 100%;
+    height: 100%;
+  }
+  .sample_site_modal .sample_site_modal_main .sample_site_modal_main_inner .sample_site_modal_main_inner_top .sample_site_modal_main_inner_top_box .sample_site_modal_main_inner_top_row .sample_site_modal_top_L {
+    padding-top: 60px;
+    padding-bottom: 45px;
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+  .sample_site_modal .sample_site_modal_main .sample_site_modal_main_inner .sample_site_modal_main_inner_top .sample_site_modal_main_inner_top_box .sample_site_modal_main_inner_top_row .sample_site_modal_top_L .sample_site_modal_main_inner_top_side_cnt .main_img_holder {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 380px;
+  }
+  .sample_site_modal .sample_site_modal_main .sample_site_modal_main_inner .sample_site_modal_main_inner_top .sample_site_modal_main_inner_top_box .sample_site_modal_main_inner_top_row .sample_site_modal_top_L .sample_site_modal_main_inner_top_side_cnt .modal_imgs {
+    max-width: 380px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .sample_site_modal .sample_site_modal_main .sample_site_modal_main_inner .sample_site_modal_main_inner_top .sample_site_modal_main_inner_top_box .sample_site_modal_main_inner_top_row .sample_site_modal_top_L .sample_site_modal_main_inner_top_side_cnt .modal_imgs .modal_imgs_box .modal_imgs_row .modal_img {
+    height: 60px;
+  }
+  .sample_site_modal .sample_site_modal_main .sample_site_modal_main_inner .sample_site_modal_main_inner_top .sample_site_modal_main_inner_top_box .sample_site_modal_main_inner_top_row .sample_site_modal_top_R {
+    padding-top: 25px;
+    padding-bottom: 60px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .sample_site_modal .sample_site_modal_main .sample_site_modal_main_inner .sample_site_modal_main_inner_top .sample_site_modal_main_inner_top_box .sample_site_modal_main_inner_top_row .sample_site_modal_top_R .sample_site_modal_main_inner_top_side_cnt .modal_text {
+    text-align: center;
+  }
+  .sample_site_modal .sample_site_modal_main .sample_site_modal_main_inner .sample_site_modal_main_inner_top .sample_site_modal_main_inner_top_box .sample_site_modal_main_inner_top_row .sample_site_modal_top_R .sample_site_modal_main_inner_top_side_cnt .modal_text .sample_site_id {
+    font-size: 15px;
+  }
+  .sample_site_modal .sample_site_modal_main .sample_site_modal_main_inner .sample_site_modal_main_inner_top .sample_site_modal_main_inner_top_box .sample_site_modal_main_inner_top_row .sample_site_modal_top_R .sample_site_modal_main_inner_top_side_cnt .modal_text .sample_site_name {
+    font-size: 25px;
+  }
+  .sample_site_modal .sample_site_modal_main .sample_site_modal_main_inner .sample_site_modal_main_inner_top .sample_site_modal_main_inner_top_box .sample_site_modal_main_inner_top_row .sample_site_modal_top_R .sample_site_modal_main_inner_top_side_cnt .modal_text p {
+    font-size: 15px;
+    max-width: 85%;
+    line-height: 25px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .sample_site_modal .sample_site_modal_main .sample_site_modal_main_inner .sample_site_modal_main_inner_top .sample_site_modal_main_inner_top_box .sample_site_modal_main_inner_top_row .sample_site_modal_top_R .sample_site_modal_main_inner_top_side_cnt .sample_site_technologies {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .sample_site_modal .sample_site_modal_main .sample_site_modal_main_inner .sample_site_modal_main_inner_top .sample_site_modal_main_inner_top_box .sample_site_modal_main_inner_top_row .sample_site_modal_top_R .sample_site_modal_main_inner_top_side_cnt .sample_site_technologies .sample_site_tech img {
+    max-width: 30px;
+    max-height: 30px;
+    min-height: 30px;
+  }
+  .sample_site_modal .sample_site_modal_main .sample_site_modal_main_inner .sample_site_modal_main_inner_top .sample_site_modal_main_inner_top_box .sample_site_modal_main_inner_top_row .sample_site_modal_top_R .sample_site_modal_main_inner_top_side_cnt .sample_site_links {
+    display: block;
+    text-align: center;
+  }
+  .sample_site_modal .sample_site_modal_main .sample_site_modal_main_inner .sample_site_modal_main_inner_top .sample_site_modal_main_inner_top_box .sample_site_modal_main_inner_top_row .sample_site_modal_top_R .sample_site_modal_main_inner_top_side_cnt .sample_site_links button {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 45px;
+    font-size: 15px;
+  }
+  .sample_site_modal .sample_site_modal_main .sample_site_modal_main_inner .sample_site_modal_main_inner_top .sample_site_modal_main_inner_top_box .sample_site_modal_main_inner_top_row .sample_site_modal_top_R .sample_site_modal_main_inner_top_side_cnt .sample_site_links .demo_link,
+  .sample_site_modal .sample_site_modal_main .sample_site_modal_main_inner .sample_site_modal_main_inner_top .sample_site_modal_main_inner_top_box .sample_site_modal_main_inner_top_row .sample_site_modal_top_R .sample_site_modal_main_inner_top_side_cnt .sample_site_links .details_toggler {
+    margin-right: auto;
+  }
+  .sample_site_modal .sample_site_modal_main .sample_site_modal_main_inner .sample_site_modal_main_inner_top .sample_site_modal_main_inner_top_box .sample_site_modal_main_inner_top_row .sample_site_modal_top_R .sample_site_modal_main_inner_top_side_cnt .sample_site_links .demo_link {
+    margin-right: 15px;
+  }
+  .sample_site_modal .sample_site_modal_main .sample_site_modal_main_inner .sample_site_modal_main_inner_top .sample_site_modal_main_inner_top_box .sample_site_modal_main_inner_top_row .sample_site_modal_top_R .sample_site_modal_main_inner_top_side_cnt .sample_site_links .details_toggler {
+    margin-left: 15px;
+  }
+  .sample_site_modal .sample_site_modal_main .sample_site_modal_main_inner .sample_site_modal_main_inner_top .sample_site_modal_main_inner_top_box .sample_site_modal_main_inner_top_row .sample_site_modal_top_R .sample_site_modal_main_inner_top_side_cnt .sample_site_links .demo_and_details {
+    margin-bottom: 20px;
+    justify-content: center;
+  }
+  .sample_site_modal .sample_site_modal_main .sample_site_modal_main_inner .sample_site_modal_main_inner_top .sample_site_modal_main_inner_top_box .sample_site_modal_main_inner_top_row .sample_site_modal_top_R .sample_site_modal_main_inner_top_side_cnt .sample_site_links .details_toggler {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  .sample_site_modal .sample_site_modal_details_modal {
+    max-width: 85%;
+    max-height: 620px;
+  }
+  .sample_site_modal .sample_site_modal_details_modal .sample_site_modal_details_modal_cnt {
+    padding-left: 35px;
+    padding-right: 35px;
+  }
+  .sample_site_modal .sample_site_modal_details_modal .sample_site_modal_details_modal_cnt .sample_site_modal_details_modal_cnt_top {
+    display: block;
+    text-align: center;
+    height: 170px;
+    padding-top: 40px;
+    padding-bottom: 20px;
+  }
+  .sample_site_modal .sample_site_modal_details_modal .sample_site_modal_details_modal_cnt .sample_site_modal_details_modal_cnt_top .top_heading {
+    font-size: 25px;
+  }
+  .sample_site_modal .sample_site_modal_details_modal .sample_site_modal_details_modal_cnt .sample_site_modal_details_modal_cnt_top .closer {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 25px;
+    height: 40px;
+    max-width: 75px;
+    font-size: 16px;
+  }
+  .sample_site_modal .sample_site_modal_details_modal .sample_site_modal_details_modal_cnt .website_details {
+    text-align: center;
+    max-width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+  }
+  .sample_site_modal .sample_site_modal_details_modal .sample_site_modal_details_modal_cnt .website_details ul {
+    font-size: 15px;
+  }
+  .sample_site_modal .sample_site_modal_details_modal .sample_site_modal_details_modal_cnt .website_details ul li {
+    margin-bottom: 5px;
+  }
+  .sample_site_modal .sample_site_modal_details_modal .sample_site_modal_details_modal_cnt .pricing_box {
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .sample_site_modal .sample_site_modal_details_modal .sample_site_modal_details_modal_cnt .pricing_box .pricing_row .pricing_regular,
+  .sample_site_modal .sample_site_modal_details_modal .sample_site_modal_details_modal_cnt .pricing_box .pricing_row .pricing_renting {
+    max-width: 50%;
+    text-align: center;
+    justify-content: center;
+  }
+  .sample_site_modal .sample_site_modal_details_modal .sample_site_modal_details_modal_cnt .pricing_box .pricing_row .pricing_regular .pricing_heading,
+  .sample_site_modal .sample_site_modal_details_modal .sample_site_modal_details_modal_cnt .pricing_box .pricing_row .pricing_renting .pricing_heading {
+    font-size: 18px;
+  }
+  .sample_site_modal .sample_site_modal_details_modal .sample_site_modal_details_modal_cnt .pricing_box .pricing_row .pricing_regular ul,
+  .sample_site_modal .sample_site_modal_details_modal .sample_site_modal_details_modal_cnt .pricing_box .pricing_row .pricing_renting ul {
+    font-size: 15px;
+  }
+  .sample_site_modal .sample_site_modal_details_modal .sample_site_modal_details_modal_cnt .pricing_box .pricing_row .pricing_regular ul li,
+  .sample_site_modal .sample_site_modal_details_modal .sample_site_modal_details_modal_cnt .pricing_box .pricing_row .pricing_renting ul li {
+    margin-bottom: 5px;
+  }
+  .sample_site_modal .sample_site_modal_details_modal .sample_site_modal_details_modal_cnt .pricing_box .pricing_row .pricing_regular {
+    margin-bottom: 40px;
+  }
+  .sample_site_modal .sample_site_modal_details_modal .sample_site_modal_details_modal_cnt .pricing_box .pricing_row .pricing_renting {
+    margin-bottom: 35px;
+  }
 }
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 1) {
   .index_top {
@@ -1422,6 +2328,163 @@
   }
   .index_sample_sites .index_sample_sites_inner .index_sample_sites_inner_main .sample_site .sample_site_inner .sample_site_inner_box .sample_site_inner_row .sample_site_R .sample_site_inner_side_cnt .sample_site_links li:last-child {
     margin-bottom: 0;
+  }
+  .sample_site_modal .sample_site_modal_main {
+    max-width: 550px;
+    max-height: 80%;
+    display: block;
+  }
+  .sample_site_modal .sample_site_modal_main .sample_site_modal_main_inner .sample_site_modal_main_inner_top .sample_site_modal_main_inner_top_box .sample_site_modal_main_inner_top_row .sample_site_modal_main_inner_top_side {
+    width: 100%;
+    max-width: 100%;
+    height: 100%;
+  }
+  .sample_site_modal .sample_site_modal_main .sample_site_modal_main_inner .sample_site_modal_main_inner_top .sample_site_modal_main_inner_top_box .sample_site_modal_main_inner_top_row .sample_site_modal_top_L {
+    padding-top: 50px;
+    padding-bottom: 45px;
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+  .sample_site_modal .sample_site_modal_main .sample_site_modal_main_inner .sample_site_modal_main_inner_top .sample_site_modal_main_inner_top_box .sample_site_modal_main_inner_top_row .sample_site_modal_top_L .sample_site_modal_main_inner_top_side_cnt .main_img_holder {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 310px;
+  }
+  .sample_site_modal .sample_site_modal_main .sample_site_modal_main_inner .sample_site_modal_main_inner_top .sample_site_modal_main_inner_top_box .sample_site_modal_main_inner_top_row .sample_site_modal_top_L .sample_site_modal_main_inner_top_side_cnt .modal_imgs {
+    max-width: 310px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .sample_site_modal .sample_site_modal_main .sample_site_modal_main_inner .sample_site_modal_main_inner_top .sample_site_modal_main_inner_top_box .sample_site_modal_main_inner_top_row .sample_site_modal_top_L .sample_site_modal_main_inner_top_side_cnt .modal_imgs .modal_imgs_box .modal_imgs_row .modal_img {
+    height: 60px;
+  }
+  .sample_site_modal .sample_site_modal_main .sample_site_modal_main_inner .sample_site_modal_main_inner_top .sample_site_modal_main_inner_top_box .sample_site_modal_main_inner_top_row .sample_site_modal_top_R {
+    padding-top: 25px;
+    padding-bottom: 50px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .sample_site_modal .sample_site_modal_main .sample_site_modal_main_inner .sample_site_modal_main_inner_top .sample_site_modal_main_inner_top_box .sample_site_modal_main_inner_top_row .sample_site_modal_top_R .sample_site_modal_main_inner_top_side_cnt .modal_text {
+    text-align: center;
+  }
+  .sample_site_modal .sample_site_modal_main .sample_site_modal_main_inner .sample_site_modal_main_inner_top .sample_site_modal_main_inner_top_box .sample_site_modal_main_inner_top_row .sample_site_modal_top_R .sample_site_modal_main_inner_top_side_cnt .modal_text .sample_site_id {
+    font-size: 15px;
+  }
+  .sample_site_modal .sample_site_modal_main .sample_site_modal_main_inner .sample_site_modal_main_inner_top .sample_site_modal_main_inner_top_box .sample_site_modal_main_inner_top_row .sample_site_modal_top_R .sample_site_modal_main_inner_top_side_cnt .modal_text .sample_site_name {
+    font-size: 25px;
+  }
+  .sample_site_modal .sample_site_modal_main .sample_site_modal_main_inner .sample_site_modal_main_inner_top .sample_site_modal_main_inner_top_box .sample_site_modal_main_inner_top_row .sample_site_modal_top_R .sample_site_modal_main_inner_top_side_cnt .modal_text p {
+    font-size: 15px;
+    max-width: 85%;
+    line-height: 25px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .sample_site_modal .sample_site_modal_main .sample_site_modal_main_inner .sample_site_modal_main_inner_top .sample_site_modal_main_inner_top_box .sample_site_modal_main_inner_top_row .sample_site_modal_top_R .sample_site_modal_main_inner_top_side_cnt .sample_site_technologies {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .sample_site_modal .sample_site_modal_main .sample_site_modal_main_inner .sample_site_modal_main_inner_top .sample_site_modal_main_inner_top_box .sample_site_modal_main_inner_top_row .sample_site_modal_top_R .sample_site_modal_main_inner_top_side_cnt .sample_site_technologies .sample_site_tech img {
+    max-width: 30px;
+    max-height: 30px;
+    min-height: 30px;
+  }
+  .sample_site_modal .sample_site_modal_main .sample_site_modal_main_inner .sample_site_modal_main_inner_top .sample_site_modal_main_inner_top_box .sample_site_modal_main_inner_top_row .sample_site_modal_top_R .sample_site_modal_main_inner_top_side_cnt .sample_site_links {
+    display: block;
+    text-align: center;
+  }
+  .sample_site_modal .sample_site_modal_main .sample_site_modal_main_inner .sample_site_modal_main_inner_top .sample_site_modal_main_inner_top_box .sample_site_modal_main_inner_top_row .sample_site_modal_top_R .sample_site_modal_main_inner_top_side_cnt .sample_site_links button {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 40px;
+    font-size: 16px;
+  }
+  .sample_site_modal .sample_site_modal_main .sample_site_modal_main_inner .sample_site_modal_main_inner_top .sample_site_modal_main_inner_top_box .sample_site_modal_main_inner_top_row .sample_site_modal_top_R .sample_site_modal_main_inner_top_side_cnt .sample_site_links .demo_link,
+  .sample_site_modal .sample_site_modal_main .sample_site_modal_main_inner .sample_site_modal_main_inner_top .sample_site_modal_main_inner_top_box .sample_site_modal_main_inner_top_row .sample_site_modal_top_R .sample_site_modal_main_inner_top_side_cnt .sample_site_links .details_toggler {
+    margin-right: auto;
+  }
+  .sample_site_modal .sample_site_modal_main .sample_site_modal_main_inner .sample_site_modal_main_inner_top .sample_site_modal_main_inner_top_box .sample_site_modal_main_inner_top_row .sample_site_modal_top_R .sample_site_modal_main_inner_top_side_cnt .sample_site_links .details_toggler {
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+  .sample_site_modal .sample_site_modal_main .sample_site_modal_main_inner .sample_site_modal_main_inner_top .sample_site_modal_main_inner_top_box .sample_site_modal_main_inner_top_row .sample_site_modal_top_R .sample_site_modal_main_inner_top_side_cnt .sample_site_links .demo_and_details {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+    display: block;
+    justify-content: space-evenly;
+    margin-bottom: 0;
+  }
+  .sample_site_modal .sample_site_modal_details_modal {
+    max-width: 560px;
+    max-height: 70%;
+  }
+  .sample_site_modal .sample_site_modal_details_modal .sample_site_modal_details_modal_cnt {
+    padding-left: 35px;
+    padding-right: 35px;
+  }
+  .sample_site_modal .sample_site_modal_details_modal .sample_site_modal_details_modal_cnt .sample_site_modal_details_modal_cnt_top {
+    display: block;
+    text-align: center;
+    height: 170px;
+    padding-top: 40px;
+    padding-bottom: 20px;
+  }
+  .sample_site_modal .sample_site_modal_details_modal .sample_site_modal_details_modal_cnt .sample_site_modal_details_modal_cnt_top .top_heading {
+    font-size: 25px;
+  }
+  .sample_site_modal .sample_site_modal_details_modal .sample_site_modal_details_modal_cnt .sample_site_modal_details_modal_cnt_top .closer {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 25px;
+    height: 40px;
+    max-width: 75px;
+    font-size: 16px;
+  }
+  .sample_site_modal .sample_site_modal_details_modal .sample_site_modal_details_modal_cnt .website_details {
+    text-align: center;
+    max-width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+  }
+  .sample_site_modal .sample_site_modal_details_modal .sample_site_modal_details_modal_cnt .website_details ul {
+    font-size: 15px;
+  }
+  .sample_site_modal .sample_site_modal_details_modal .sample_site_modal_details_modal_cnt .website_details ul li {
+    margin-bottom: 5px;
+  }
+  .sample_site_modal .sample_site_modal_details_modal .sample_site_modal_details_modal_cnt .pricing_box {
+    max-width: 500px;
+    padding-left: 15px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .sample_site_modal .sample_site_modal_details_modal .sample_site_modal_details_modal_cnt .pricing_box .pricing_row .pricing_regular,
+  .sample_site_modal .sample_site_modal_details_modal .sample_site_modal_details_modal_cnt .pricing_box .pricing_row .pricing_renting {
+    max-width: 50%;
+    text-align: center;
+    justify-content: center;
+  }
+  .sample_site_modal .sample_site_modal_details_modal .sample_site_modal_details_modal_cnt .pricing_box .pricing_row .pricing_regular .pricing_heading,
+  .sample_site_modal .sample_site_modal_details_modal .sample_site_modal_details_modal_cnt .pricing_box .pricing_row .pricing_renting .pricing_heading {
+    font-size: 18px;
+  }
+  .sample_site_modal .sample_site_modal_details_modal .sample_site_modal_details_modal_cnt .pricing_box .pricing_row .pricing_regular ul,
+  .sample_site_modal .sample_site_modal_details_modal .sample_site_modal_details_modal_cnt .pricing_box .pricing_row .pricing_renting ul {
+    font-size: 15px;
+  }
+  .sample_site_modal .sample_site_modal_details_modal .sample_site_modal_details_modal_cnt .pricing_box .pricing_row .pricing_regular ul li,
+  .sample_site_modal .sample_site_modal_details_modal .sample_site_modal_details_modal_cnt .pricing_box .pricing_row .pricing_renting ul li {
+    display: block;
+    margin-bottom: 5px;
+  }
+  .sample_site_modal .sample_site_modal_details_modal .sample_site_modal_details_modal_cnt .pricing_box .pricing_row .pricing_regular {
+    margin-bottom: 40px;
+  }
+  .sample_site_modal .sample_site_modal_details_modal .sample_site_modal_details_modal_cnt .pricing_box .pricing_row .pricing_renting {
+    margin-bottom: 35px;
   }
 }
 @media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
@@ -1556,6 +2619,168 @@
   .index_sample_sites .index_sample_sites_inner .index_sample_sites_inner_main .sample_site .sample_site_inner .sample_site_inner_box .sample_site_inner_row .sample_site_R .sample_site_inner_side_cnt .sample_site_links li:last-child {
     margin-bottom: 0;
   }
+  .sample_site_modal .sample_site_modal_main {
+    max-width: 950px;
+    max-height: 950px;
+    display: block;
+  }
+  .sample_site_modal .sample_site_modal_main .sample_site_modal_main_inner .sample_site_modal_main_inner_top .sample_site_modal_main_inner_top_box .sample_site_modal_main_inner_top_row .sample_site_modal_main_inner_top_side {
+    width: 100%;
+    max-width: 100%;
+    height: 100%;
+  }
+  .sample_site_modal .sample_site_modal_main .sample_site_modal_main_inner .sample_site_modal_main_inner_top .sample_site_modal_main_inner_top_box .sample_site_modal_main_inner_top_row .sample_site_modal_top_L {
+    padding-top: 50px;
+    padding-bottom: 45px;
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+  .sample_site_modal .sample_site_modal_main .sample_site_modal_main_inner .sample_site_modal_main_inner_top .sample_site_modal_main_inner_top_box .sample_site_modal_main_inner_top_row .sample_site_modal_top_L .sample_site_modal_main_inner_top_side_cnt .main_img_holder {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 480px;
+  }
+  .sample_site_modal .sample_site_modal_main .sample_site_modal_main_inner .sample_site_modal_main_inner_top .sample_site_modal_main_inner_top_box .sample_site_modal_main_inner_top_row .sample_site_modal_top_L .sample_site_modal_main_inner_top_side_cnt .modal_imgs {
+    max-width: 480px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .sample_site_modal .sample_site_modal_main .sample_site_modal_main_inner .sample_site_modal_main_inner_top .sample_site_modal_main_inner_top_box .sample_site_modal_main_inner_top_row .sample_site_modal_top_L .sample_site_modal_main_inner_top_side_cnt .modal_imgs .modal_imgs_box .modal_imgs_row .modal_img {
+    height: 85px;
+  }
+  .sample_site_modal .sample_site_modal_main .sample_site_modal_main_inner .sample_site_modal_main_inner_top .sample_site_modal_main_inner_top_box .sample_site_modal_main_inner_top_row .sample_site_modal_top_R {
+    padding-top: 45px;
+    padding-bottom: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .sample_site_modal .sample_site_modal_main .sample_site_modal_main_inner .sample_site_modal_main_inner_top .sample_site_modal_main_inner_top_box .sample_site_modal_main_inner_top_row .sample_site_modal_top_R .sample_site_modal_main_inner_top_side_cnt .modal_text {
+    text-align: center;
+  }
+  .sample_site_modal .sample_site_modal_main .sample_site_modal_main_inner .sample_site_modal_main_inner_top .sample_site_modal_main_inner_top_box .sample_site_modal_main_inner_top_row .sample_site_modal_top_R .sample_site_modal_main_inner_top_side_cnt .modal_text .sample_site_id {
+    font-size: 15px;
+  }
+  .sample_site_modal .sample_site_modal_main .sample_site_modal_main_inner .sample_site_modal_main_inner_top .sample_site_modal_main_inner_top_box .sample_site_modal_main_inner_top_row .sample_site_modal_top_R .sample_site_modal_main_inner_top_side_cnt .modal_text .sample_site_name {
+    font-size: 25px;
+  }
+  .sample_site_modal .sample_site_modal_main .sample_site_modal_main_inner .sample_site_modal_main_inner_top .sample_site_modal_main_inner_top_box .sample_site_modal_main_inner_top_row .sample_site_modal_top_R .sample_site_modal_main_inner_top_side_cnt .modal_text p {
+    font-size: 15px;
+    max-width: 85%;
+    line-height: 25px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .sample_site_modal .sample_site_modal_main .sample_site_modal_main_inner .sample_site_modal_main_inner_top .sample_site_modal_main_inner_top_box .sample_site_modal_main_inner_top_row .sample_site_modal_top_R .sample_site_modal_main_inner_top_side_cnt .sample_site_technologies {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 250px;
+  }
+  .sample_site_modal .sample_site_modal_main .sample_site_modal_main_inner .sample_site_modal_main_inner_top .sample_site_modal_main_inner_top_box .sample_site_modal_main_inner_top_row .sample_site_modal_top_R .sample_site_modal_main_inner_top_side_cnt .sample_site_technologies .sample_site_tech img {
+    max-width: 30px;
+    max-height: 30px;
+    min-height: 30px;
+  }
+  .sample_site_modal .sample_site_modal_main .sample_site_modal_main_inner .sample_site_modal_main_inner_top .sample_site_modal_main_inner_top_box .sample_site_modal_main_inner_top_row .sample_site_modal_top_R .sample_site_modal_main_inner_top_side_cnt .sample_site_links {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+  .sample_site_modal .sample_site_modal_main .sample_site_modal_main_inner .sample_site_modal_main_inner_top .sample_site_modal_main_inner_top_box .sample_site_modal_main_inner_top_row .sample_site_modal_top_R .sample_site_modal_main_inner_top_side_cnt .sample_site_links button {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 40px;
+    font-size: 14px;
+    margin-right: 15px;
+    margin-left: 0;
+  }
+  .sample_site_modal .sample_site_modal_main .sample_site_modal_main_inner .sample_site_modal_main_inner_top .sample_site_modal_main_inner_top_box .sample_site_modal_main_inner_top_row .sample_site_modal_top_R .sample_site_modal_main_inner_top_side_cnt .sample_site_links .demo_link,
+  .sample_site_modal .sample_site_modal_main .sample_site_modal_main_inner .sample_site_modal_main_inner_top .sample_site_modal_main_inner_top_box .sample_site_modal_main_inner_top_row .sample_site_modal_top_R .sample_site_modal_main_inner_top_side_cnt .sample_site_links .details_toggler {
+    margin-right: 0;
+  }
+  .sample_site_modal .sample_site_modal_main .sample_site_modal_main_inner .sample_site_modal_main_inner_top .sample_site_modal_main_inner_top_box .sample_site_modal_main_inner_top_row .sample_site_modal_top_R .sample_site_modal_main_inner_top_side_cnt .sample_site_links .details_toggler {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+  .sample_site_modal .sample_site_modal_main .sample_site_modal_main_inner .sample_site_modal_main_inner_top .sample_site_modal_main_inner_top_box .sample_site_modal_main_inner_top_row .sample_site_modal_top_R .sample_site_modal_main_inner_top_side_cnt .sample_site_links .demo_and_details {
+    max-width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .sample_site_modal .sample_site_modal_details_modal {
+    max-width: 85%;
+    max-height: 750px;
+  }
+  .sample_site_modal .sample_site_modal_details_modal .sample_site_modal_details_modal_cnt {
+    padding-left: 35px;
+    padding-right: 35px;
+  }
+  .sample_site_modal .sample_site_modal_details_modal .sample_site_modal_details_modal_cnt .sample_site_modal_details_modal_cnt_top {
+    display: flex;
+    justify-content: space-between;
+    height: 170px;
+    padding-top: 40px;
+    padding-bottom: 20px;
+  }
+  .sample_site_modal .sample_site_modal_details_modal .sample_site_modal_details_modal_cnt .sample_site_modal_details_modal_cnt_top .top_heading {
+    font-size: 31px;
+  }
+  .sample_site_modal .sample_site_modal_details_modal .sample_site_modal_details_modal_cnt .sample_site_modal_details_modal_cnt_top .closer {
+    margin-left: auto;
+    margin-right: auto;
+    margin-right: 0;
+    margin-top: 0px;
+    height: 40px;
+    max-width: 75px;
+    font-size: 16px;
+  }
+  .sample_site_modal .sample_site_modal_details_modal .sample_site_modal_details_modal_cnt .website_details {
+    text-align: left;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 70px;
+  }
+  .sample_site_modal .sample_site_modal_details_modal .sample_site_modal_details_modal_cnt .website_details ul {
+    font-size: 15px;
+  }
+  .sample_site_modal .sample_site_modal_details_modal .sample_site_modal_details_modal_cnt .website_details ul li {
+    margin-bottom: 5px;
+  }
+  .sample_site_modal .sample_site_modal_details_modal .sample_site_modal_details_modal_cnt .pricing_box {
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .sample_site_modal .sample_site_modal_details_modal .sample_site_modal_details_modal_cnt .pricing_box .pricing_row .pricing_regular,
+  .sample_site_modal .sample_site_modal_details_modal .sample_site_modal_details_modal_cnt .pricing_box .pricing_row .pricing_renting {
+    max-width: 50%;
+    text-align: left;
+    justify-content: flex-start;
+  }
+  .sample_site_modal .sample_site_modal_details_modal .sample_site_modal_details_modal_cnt .pricing_box .pricing_row .pricing_regular .pricing_heading,
+  .sample_site_modal .sample_site_modal_details_modal .sample_site_modal_details_modal_cnt .pricing_box .pricing_row .pricing_renting .pricing_heading {
+    font-size: 18px;
+  }
+  .sample_site_modal .sample_site_modal_details_modal .sample_site_modal_details_modal_cnt .pricing_box .pricing_row .pricing_regular ul,
+  .sample_site_modal .sample_site_modal_details_modal .sample_site_modal_details_modal_cnt .pricing_box .pricing_row .pricing_renting ul {
+    font-size: 15px;
+  }
+  .sample_site_modal .sample_site_modal_details_modal .sample_site_modal_details_modal_cnt .pricing_box .pricing_row .pricing_regular ul li,
+  .sample_site_modal .sample_site_modal_details_modal .sample_site_modal_details_modal_cnt .pricing_box .pricing_row .pricing_renting ul li {
+    margin-bottom: 5px;
+  }
+  .sample_site_modal .sample_site_modal_details_modal .sample_site_modal_details_modal_cnt .pricing_box .pricing_row .pricing_regular {
+    margin-bottom: 40px;
+  }
+  .sample_site_modal .sample_site_modal_details_modal .sample_site_modal_details_modal_cnt .pricing_box .pricing_row .pricing_renting {
+    margin-bottom: 35px;
+  }
 }
 @media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
   .index_top {
@@ -1689,6 +2914,176 @@
   .index_sample_sites .index_sample_sites_inner .index_sample_sites_inner_main .sample_site .sample_site_inner .sample_site_inner_box .sample_site_inner_row .sample_site_R .sample_site_inner_side_cnt .sample_site_links li:last-child {
     margin-bottom: 0;
   }
+  .sample_site_modal .sample_site_modal_main {
+    max-width: 950px;
+    max-height: 600px;
+    display: block;
+  }
+  .sample_site_modal .sample_site_modal_main .sample_site_modal_main_inner .sample_site_modal_main_inner_top .sample_site_modal_main_inner_top_box .sample_site_modal_main_inner_top_row .sample_site_modal_main_inner_top_side {
+    width: 100%;
+    max-width: 100%;
+    height: 600px;
+  }
+  .sample_site_modal .sample_site_modal_main .sample_site_modal_main_inner .sample_site_modal_main_inner_top .sample_site_modal_main_inner_top_box .sample_site_modal_main_inner_top_row .sample_site_modal_top_L {
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-left: 15px;
+    padding-right: 15px;
+    max-width: 45%;
+  }
+  .sample_site_modal .sample_site_modal_main .sample_site_modal_main_inner .sample_site_modal_main_inner_top .sample_site_modal_main_inner_top_box .sample_site_modal_main_inner_top_row .sample_site_modal_top_L .sample_site_modal_main_inner_top_side_cnt {
+    max-width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .sample_site_modal .sample_site_modal_main .sample_site_modal_main_inner .sample_site_modal_main_inner_top .sample_site_modal_main_inner_top_box .sample_site_modal_main_inner_top_row .sample_site_modal_top_L .sample_site_modal_main_inner_top_side_cnt .main_img_holder {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 480px;
+  }
+  .sample_site_modal .sample_site_modal_main .sample_site_modal_main_inner .sample_site_modal_main_inner_top .sample_site_modal_main_inner_top_box .sample_site_modal_main_inner_top_row .sample_site_modal_top_L .sample_site_modal_main_inner_top_side_cnt .modal_imgs {
+    max-width: 480px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .sample_site_modal .sample_site_modal_main .sample_site_modal_main_inner .sample_site_modal_main_inner_top .sample_site_modal_main_inner_top_box .sample_site_modal_main_inner_top_row .sample_site_modal_top_L .sample_site_modal_main_inner_top_side_cnt .modal_imgs .modal_imgs_box .modal_imgs_row .modal_img {
+    height: 75px;
+  }
+  .sample_site_modal .sample_site_modal_main .sample_site_modal_main_inner .sample_site_modal_main_inner_top .sample_site_modal_main_inner_top_box .sample_site_modal_main_inner_top_row .sample_site_modal_top_R {
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-left: 35px;
+    padding-right: 0px;
+    max-width: 55%;
+  }
+  .sample_site_modal .sample_site_modal_main .sample_site_modal_main_inner .sample_site_modal_main_inner_top .sample_site_modal_main_inner_top_box .sample_site_modal_main_inner_top_row .sample_site_modal_top_R .sample_site_modal_main_inner_top_side_cnt .modal_text {
+    text-align: left;
+  }
+  .sample_site_modal .sample_site_modal_main .sample_site_modal_main_inner .sample_site_modal_main_inner_top .sample_site_modal_main_inner_top_box .sample_site_modal_main_inner_top_row .sample_site_modal_top_R .sample_site_modal_main_inner_top_side_cnt .modal_text .sample_site_id {
+    font-size: 15px;
+  }
+  .sample_site_modal .sample_site_modal_main .sample_site_modal_main_inner .sample_site_modal_main_inner_top .sample_site_modal_main_inner_top_box .sample_site_modal_main_inner_top_row .sample_site_modal_top_R .sample_site_modal_main_inner_top_side_cnt .modal_text .sample_site_name {
+    font-size: 25px;
+  }
+  .sample_site_modal .sample_site_modal_main .sample_site_modal_main_inner .sample_site_modal_main_inner_top .sample_site_modal_main_inner_top_box .sample_site_modal_main_inner_top_row .sample_site_modal_top_R .sample_site_modal_main_inner_top_side_cnt .modal_text p {
+    font-size: 15px;
+    max-width: 95%;
+    line-height: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-left: 0;
+  }
+  .sample_site_modal .sample_site_modal_main .sample_site_modal_main_inner .sample_site_modal_main_inner_top .sample_site_modal_main_inner_top_box .sample_site_modal_main_inner_top_row .sample_site_modal_top_R .sample_site_modal_main_inner_top_side_cnt .sample_site_technologies {
+    margin-left: auto;
+    margin-right: auto;
+    margin-left: 0;
+    max-width: 250px;
+  }
+  .sample_site_modal .sample_site_modal_main .sample_site_modal_main_inner .sample_site_modal_main_inner_top .sample_site_modal_main_inner_top_box .sample_site_modal_main_inner_top_row .sample_site_modal_top_R .sample_site_modal_main_inner_top_side_cnt .sample_site_technologies .sample_site_tech img {
+    max-width: 30px;
+    max-height: 30px;
+    min-height: 30px;
+  }
+  .sample_site_modal .sample_site_modal_main .sample_site_modal_main_inner .sample_site_modal_main_inner_top .sample_site_modal_main_inner_top_box .sample_site_modal_main_inner_top_row .sample_site_modal_top_R .sample_site_modal_main_inner_top_side_cnt .sample_site_links {
+    display: block;
+    text-align: center;
+  }
+  .sample_site_modal .sample_site_modal_main .sample_site_modal_main_inner .sample_site_modal_main_inner_top .sample_site_modal_main_inner_top_box .sample_site_modal_main_inner_top_row .sample_site_modal_top_R .sample_site_modal_main_inner_top_side_cnt .sample_site_links button {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 40px;
+    font-size: 14px;
+    margin-right: 15px;
+    margin-left: 0;
+  }
+  .sample_site_modal .sample_site_modal_main .sample_site_modal_main_inner .sample_site_modal_main_inner_top .sample_site_modal_main_inner_top_box .sample_site_modal_main_inner_top_row .sample_site_modal_top_R .sample_site_modal_main_inner_top_side_cnt .sample_site_links .demo_link,
+  .sample_site_modal .sample_site_modal_main .sample_site_modal_main_inner .sample_site_modal_main_inner_top .sample_site_modal_main_inner_top_box .sample_site_modal_main_inner_top_row .sample_site_modal_top_R .sample_site_modal_main_inner_top_side_cnt .sample_site_links .details_toggler {
+    margin-right: 0;
+  }
+  .sample_site_modal .sample_site_modal_main .sample_site_modal_main_inner .sample_site_modal_main_inner_top .sample_site_modal_main_inner_top_box .sample_site_modal_main_inner_top_row .sample_site_modal_top_R .sample_site_modal_main_inner_top_side_cnt .sample_site_links .details_toggler {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+  .sample_site_modal .sample_site_modal_main .sample_site_modal_main_inner .sample_site_modal_main_inner_top .sample_site_modal_main_inner_top_box .sample_site_modal_main_inner_top_row .sample_site_modal_top_R .sample_site_modal_main_inner_top_side_cnt .sample_site_links .demo_and_details {
+    max-width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 15px;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .sample_site_modal .sample_site_modal_details_modal {
+    max-width: 80%;
+    max-height: 640px;
+  }
+  .sample_site_modal .sample_site_modal_details_modal .sample_site_modal_details_modal_cnt {
+    padding-left: 35px;
+    padding-right: 35px;
+  }
+  .sample_site_modal .sample_site_modal_details_modal .sample_site_modal_details_modal_cnt .sample_site_modal_details_modal_cnt_top {
+    display: flex;
+    justify-content: space-between;
+    height: 170px;
+    padding-top: 40px;
+    padding-bottom: 20px;
+  }
+  .sample_site_modal .sample_site_modal_details_modal .sample_site_modal_details_modal_cnt .sample_site_modal_details_modal_cnt_top .top_heading {
+    font-size: 31px;
+  }
+  .sample_site_modal .sample_site_modal_details_modal .sample_site_modal_details_modal_cnt .sample_site_modal_details_modal_cnt_top .closer {
+    margin-left: auto;
+    margin-right: auto;
+    margin-right: 0;
+    margin-top: 0px;
+    height: 40px;
+    max-width: 75px;
+    font-size: 16px;
+  }
+  .sample_site_modal .sample_site_modal_details_modal .sample_site_modal_details_modal_cnt .website_details {
+    text-align: left;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 70px;
+  }
+  .sample_site_modal .sample_site_modal_details_modal .sample_site_modal_details_modal_cnt .website_details ul {
+    font-size: 15px;
+  }
+  .sample_site_modal .sample_site_modal_details_modal .sample_site_modal_details_modal_cnt .website_details ul li {
+    margin-bottom: 5px;
+  }
+  .sample_site_modal .sample_site_modal_details_modal .sample_site_modal_details_modal_cnt .pricing_box {
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .sample_site_modal .sample_site_modal_details_modal .sample_site_modal_details_modal_cnt .pricing_box .pricing_row .pricing_regular,
+  .sample_site_modal .sample_site_modal_details_modal .sample_site_modal_details_modal_cnt .pricing_box .pricing_row .pricing_renting {
+    max-width: 50%;
+    text-align: left;
+    justify-content: flex-start;
+  }
+  .sample_site_modal .sample_site_modal_details_modal .sample_site_modal_details_modal_cnt .pricing_box .pricing_row .pricing_regular .pricing_heading,
+  .sample_site_modal .sample_site_modal_details_modal .sample_site_modal_details_modal_cnt .pricing_box .pricing_row .pricing_renting .pricing_heading {
+    font-size: 18px;
+  }
+  .sample_site_modal .sample_site_modal_details_modal .sample_site_modal_details_modal_cnt .pricing_box .pricing_row .pricing_regular ul,
+  .sample_site_modal .sample_site_modal_details_modal .sample_site_modal_details_modal_cnt .pricing_box .pricing_row .pricing_renting ul {
+    font-size: 15px;
+  }
+  .sample_site_modal .sample_site_modal_details_modal .sample_site_modal_details_modal_cnt .pricing_box .pricing_row .pricing_regular ul li,
+  .sample_site_modal .sample_site_modal_details_modal .sample_site_modal_details_modal_cnt .pricing_box .pricing_row .pricing_renting ul li {
+    margin-bottom: 5px;
+  }
+  .sample_site_modal .sample_site_modal_details_modal .sample_site_modal_details_modal_cnt .pricing_box .pricing_row .pricing_regular {
+    margin-bottom: 40px;
+  }
+  .sample_site_modal .sample_site_modal_details_modal .sample_site_modal_details_modal_cnt .pricing_box .pricing_row .pricing_renting {
+    margin-bottom: 35px;
+  }
 }
 @media screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 1) {
   .index_top {
@@ -1821,5 +3216,175 @@
   }
   .index_sample_sites .index_sample_sites_inner .index_sample_sites_inner_main .sample_site .sample_site_inner .sample_site_inner_box .sample_site_inner_row .sample_site_R .sample_site_inner_side_cnt .sample_site_links li:last-child {
     margin-bottom: 0;
+  }
+  .sample_site_modal .sample_site_modal_main {
+    max-width: 1150px;
+    max-height: 680px;
+    display: flex;
+  }
+  .sample_site_modal .sample_site_modal_main .sample_site_modal_main_inner .sample_site_modal_main_inner_top .sample_site_modal_main_inner_top_box .sample_site_modal_main_inner_top_row .sample_site_modal_main_inner_top_side {
+    width: 100%;
+    max-width: 100%;
+    max-height: 680px;
+  }
+  .sample_site_modal .sample_site_modal_main .sample_site_modal_main_inner .sample_site_modal_main_inner_top .sample_site_modal_main_inner_top_box .sample_site_modal_main_inner_top_row .sample_site_modal_top_L {
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-left: 15px;
+    padding-right: 15px;
+    max-width: 45%;
+  }
+  .sample_site_modal .sample_site_modal_main .sample_site_modal_main_inner .sample_site_modal_main_inner_top .sample_site_modal_main_inner_top_box .sample_site_modal_main_inner_top_row .sample_site_modal_top_L .sample_site_modal_main_inner_top_side_cnt {
+    max-width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .sample_site_modal .sample_site_modal_main .sample_site_modal_main_inner .sample_site_modal_main_inner_top .sample_site_modal_main_inner_top_box .sample_site_modal_main_inner_top_row .sample_site_modal_top_L .sample_site_modal_main_inner_top_side_cnt .main_img_holder {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 480px;
+  }
+  .sample_site_modal .sample_site_modal_main .sample_site_modal_main_inner .sample_site_modal_main_inner_top .sample_site_modal_main_inner_top_box .sample_site_modal_main_inner_top_row .sample_site_modal_top_L .sample_site_modal_main_inner_top_side_cnt .modal_imgs {
+    max-width: 480px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .sample_site_modal .sample_site_modal_main .sample_site_modal_main_inner .sample_site_modal_main_inner_top .sample_site_modal_main_inner_top_box .sample_site_modal_main_inner_top_row .sample_site_modal_top_L .sample_site_modal_main_inner_top_side_cnt .modal_imgs .modal_imgs_box .modal_imgs_row .modal_img {
+    height: 75px;
+  }
+  .sample_site_modal .sample_site_modal_main .sample_site_modal_main_inner .sample_site_modal_main_inner_top .sample_site_modal_main_inner_top_box .sample_site_modal_main_inner_top_row .sample_site_modal_top_R {
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-left: 35px;
+    padding-right: 0px;
+    max-width: 55%;
+  }
+  .sample_site_modal .sample_site_modal_main .sample_site_modal_main_inner .sample_site_modal_main_inner_top .sample_site_modal_main_inner_top_box .sample_site_modal_main_inner_top_row .sample_site_modal_top_R .sample_site_modal_main_inner_top_side_cnt .modal_text {
+    text-align: left;
+  }
+  .sample_site_modal .sample_site_modal_main .sample_site_modal_main_inner .sample_site_modal_main_inner_top .sample_site_modal_main_inner_top_box .sample_site_modal_main_inner_top_row .sample_site_modal_top_R .sample_site_modal_main_inner_top_side_cnt .modal_text .sample_site_id {
+    font-size: 15px;
+  }
+  .sample_site_modal .sample_site_modal_main .sample_site_modal_main_inner .sample_site_modal_main_inner_top .sample_site_modal_main_inner_top_box .sample_site_modal_main_inner_top_row .sample_site_modal_top_R .sample_site_modal_main_inner_top_side_cnt .modal_text .sample_site_name {
+    font-size: 25px;
+  }
+  .sample_site_modal .sample_site_modal_main .sample_site_modal_main_inner .sample_site_modal_main_inner_top .sample_site_modal_main_inner_top_box .sample_site_modal_main_inner_top_row .sample_site_modal_top_R .sample_site_modal_main_inner_top_side_cnt .modal_text p {
+    font-size: 15px;
+    max-width: 95%;
+    line-height: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-left: 0;
+  }
+  .sample_site_modal .sample_site_modal_main .sample_site_modal_main_inner .sample_site_modal_main_inner_top .sample_site_modal_main_inner_top_box .sample_site_modal_main_inner_top_row .sample_site_modal_top_R .sample_site_modal_main_inner_top_side_cnt .sample_site_technologies {
+    margin-left: auto;
+    margin-right: auto;
+    margin-left: 0;
+    max-width: 250px;
+  }
+  .sample_site_modal .sample_site_modal_main .sample_site_modal_main_inner .sample_site_modal_main_inner_top .sample_site_modal_main_inner_top_box .sample_site_modal_main_inner_top_row .sample_site_modal_top_R .sample_site_modal_main_inner_top_side_cnt .sample_site_technologies .sample_site_tech img {
+    max-width: 30px;
+    max-height: 30px;
+    min-height: 30px;
+  }
+  .sample_site_modal .sample_site_modal_main .sample_site_modal_main_inner .sample_site_modal_main_inner_top .sample_site_modal_main_inner_top_box .sample_site_modal_main_inner_top_row .sample_site_modal_top_R .sample_site_modal_main_inner_top_side_cnt .sample_site_links {
+    display: flex;
+    text-align: center;
+  }
+  .sample_site_modal .sample_site_modal_main .sample_site_modal_main_inner .sample_site_modal_main_inner_top .sample_site_modal_main_inner_top_box .sample_site_modal_main_inner_top_row .sample_site_modal_top_R .sample_site_modal_main_inner_top_side_cnt .sample_site_links button {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 40px;
+    font-size: 14px;
+    margin-right: 15px;
+    margin-left: 0;
+  }
+  .sample_site_modal .sample_site_modal_main .sample_site_modal_main_inner .sample_site_modal_main_inner_top .sample_site_modal_main_inner_top_box .sample_site_modal_main_inner_top_row .sample_site_modal_top_R .sample_site_modal_main_inner_top_side_cnt .sample_site_links .demo_link,
+  .sample_site_modal .sample_site_modal_main .sample_site_modal_main_inner .sample_site_modal_main_inner_top .sample_site_modal_main_inner_top_box .sample_site_modal_main_inner_top_row .sample_site_modal_top_R .sample_site_modal_main_inner_top_side_cnt .sample_site_links .details_toggler {
+    margin-right: 0;
+  }
+  .sample_site_modal .sample_site_modal_main .sample_site_modal_main_inner .sample_site_modal_main_inner_top .sample_site_modal_main_inner_top_box .sample_site_modal_main_inner_top_row .sample_site_modal_top_R .sample_site_modal_main_inner_top_side_cnt .sample_site_links .details_toggler {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+  .sample_site_modal .sample_site_modal_main .sample_site_modal_main_inner .sample_site_modal_main_inner_top .sample_site_modal_main_inner_top_box .sample_site_modal_main_inner_top_row .sample_site_modal_top_R .sample_site_modal_main_inner_top_side_cnt .sample_site_links .demo_and_details {
+    max-width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .sample_site_modal .sample_site_modal_details_modal {
+    max-width: 800px;
+    max-height: 640px;
+  }
+  .sample_site_modal .sample_site_modal_details_modal .sample_site_modal_details_modal_cnt {
+    padding-left: 35px;
+    padding-right: 35px;
+  }
+  .sample_site_modal .sample_site_modal_details_modal .sample_site_modal_details_modal_cnt .sample_site_modal_details_modal_cnt_top {
+    display: flex;
+    justify-content: space-between;
+    height: 170px;
+    padding-top: 40px;
+    padding-bottom: 20px;
+  }
+  .sample_site_modal .sample_site_modal_details_modal .sample_site_modal_details_modal_cnt .sample_site_modal_details_modal_cnt_top .top_heading {
+    font-size: 31px;
+  }
+  .sample_site_modal .sample_site_modal_details_modal .sample_site_modal_details_modal_cnt .sample_site_modal_details_modal_cnt_top .closer {
+    margin-left: auto;
+    margin-right: auto;
+    margin-right: 0;
+    margin-top: 0px;
+    height: 40px;
+    max-width: 75px;
+    font-size: 16px;
+  }
+  .sample_site_modal .sample_site_modal_details_modal .sample_site_modal_details_modal_cnt .website_details {
+    text-align: left;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 70px;
+  }
+  .sample_site_modal .sample_site_modal_details_modal .sample_site_modal_details_modal_cnt .website_details ul {
+    font-size: 15px;
+  }
+  .sample_site_modal .sample_site_modal_details_modal .sample_site_modal_details_modal_cnt .website_details ul li {
+    margin-bottom: 5px;
+  }
+  .sample_site_modal .sample_site_modal_details_modal .sample_site_modal_details_modal_cnt .pricing_box {
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .sample_site_modal .sample_site_modal_details_modal .sample_site_modal_details_modal_cnt .pricing_box .pricing_row .pricing_regular,
+  .sample_site_modal .sample_site_modal_details_modal .sample_site_modal_details_modal_cnt .pricing_box .pricing_row .pricing_renting {
+    max-width: 50%;
+    text-align: left;
+    justify-content: flex-start;
+  }
+  .sample_site_modal .sample_site_modal_details_modal .sample_site_modal_details_modal_cnt .pricing_box .pricing_row .pricing_regular .pricing_heading,
+  .sample_site_modal .sample_site_modal_details_modal .sample_site_modal_details_modal_cnt .pricing_box .pricing_row .pricing_renting .pricing_heading {
+    font-size: 18px;
+  }
+  .sample_site_modal .sample_site_modal_details_modal .sample_site_modal_details_modal_cnt .pricing_box .pricing_row .pricing_regular ul,
+  .sample_site_modal .sample_site_modal_details_modal .sample_site_modal_details_modal_cnt .pricing_box .pricing_row .pricing_renting ul {
+    font-size: 15px;
+  }
+  .sample_site_modal .sample_site_modal_details_modal .sample_site_modal_details_modal_cnt .pricing_box .pricing_row .pricing_regular ul li,
+  .sample_site_modal .sample_site_modal_details_modal .sample_site_modal_details_modal_cnt .pricing_box .pricing_row .pricing_renting ul li {
+    margin-bottom: 5px;
+  }
+  .sample_site_modal .sample_site_modal_details_modal .sample_site_modal_details_modal_cnt .pricing_box .pricing_row .pricing_regular {
+    margin-bottom: 40px;
+  }
+  .sample_site_modal .sample_site_modal_details_modal .sample_site_modal_details_modal_cnt .pricing_box .pricing_row .pricing_renting {
+    margin-bottom: 35px;
   }
 }/*# sourceMappingURL=Main.module.css.map */
