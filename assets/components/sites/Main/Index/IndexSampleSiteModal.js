@@ -154,6 +154,20 @@ export const IndexSampleSiteModal = ({ sample_site_modal_data, onClose }) => {
                   )}
                 </ul>
               </div>
+
+              <span
+                className={`${styles.pricing_main_heading} orientation-change-element half-second`}
+              >
+                Project Pricing Plans:
+              </span>
+
+              <p
+                className={`${styles.pricing_main_text} orientation-change-element half-second`}
+              >
+                <span>*</span> For regular projects, only choose one hosting
+                type.
+              </p>
+
               <div className={`${styles.pricing_box} container-fluid`}>
                 <div className={`${styles.pricing_row} row`}>
                   <div
@@ -162,7 +176,7 @@ export const IndexSampleSiteModal = ({ sample_site_modal_data, onClose }) => {
                     <span
                       className={`${styles.pricing_heading} orientation-change-element half-second`}
                     >
-                      Pricing (Regular):
+                      Regular:
                     </span>
 
                     <ul>
@@ -170,7 +184,7 @@ export const IndexSampleSiteModal = ({ sample_site_modal_data, onClose }) => {
                         Pages:{" "}
                         {convertToCurrency(
                           modal.modalProjectPricing_REGULAR[0].pagePrice
-                        )}
+                        )}{" "}
                       </li>
                       <li className="orientation-change-element half-second">
                         Hosting (Monthly):{" "}
@@ -210,7 +224,7 @@ export const IndexSampleSiteModal = ({ sample_site_modal_data, onClose }) => {
                     <span
                       className={`${styles.pricing_heading} orientation-change-element half-second`}
                     >
-                      Pricing (Renting):
+                      Renting:
                     </span>
 
                     <ul>
@@ -233,7 +247,7 @@ export const IndexSampleSiteModal = ({ sample_site_modal_data, onClose }) => {
                         )}
                       </li>
                       <li className="orientation-change-element half-second">
-                        Total:{" "}
+                        Monthly Total:{" "}
                         {convertToCurrency(
                           modal.modalProjectPricing_RENTING[0].total
                         )}
@@ -429,12 +443,44 @@ export const IndexSampleSiteModal = ({ sample_site_modal_data, onClose }) => {
 
                         <div className={`${styles.sample_site_technologies}`}>
                           {modal.sampleSiteTechnologies.map((tech) => (
-                            <div className={`${styles.sample_site_tech}`}>
+                            <div
+                              className={`${styles.sample_site_tech}`}
+                              title={`What is ${tech.techName}?`}
+                              onClick={() => {
+                                if (tech.techName === "ReactJS") {
+                                  window.open(
+                                    "https://en.wikipedia.org/wiki/React_(software)",
+                                    "_blank"
+                                  );
+                                }
+
+                                if (tech.techName === "Next.js") {
+                                  window.open(
+                                    "https://en.wikipedia.org/wiki/Next.js",
+                                    "_blank"
+                                  );
+                                }
+
+                                if (tech.techName === "Sass") {
+                                  window.open(
+                                    "https://en.wikipedia.org/wiki/Sass_(style_sheet_language)",
+                                    "_blank"
+                                  );
+                                }
+
+                                if (tech.techName === "Bootstrap") {
+                                  window.open(
+                                    "https://en.wikipedia.org/wiki/Bootstrap_(front-end_framework)",
+                                    "_blank"
+                                  );
+                                }
+                              }}
+                            >
                               <LazyLoadImage
                                 key={tech.techID}
                                 src={tech.techImg}
                                 alt={`Image of ${tech.techName}.`}
-                                title={tech.techName}
+                                // title={tech.techName}
                                 className={`${styles.tech_img} orientation-change-element half-second`}
                               />
 
@@ -457,40 +503,42 @@ export const IndexSampleSiteModal = ({ sample_site_modal_data, onClose }) => {
                         </div>
 
                         <div className={`${styles.sample_site_links}`}>
-                          {modal.sampleSiteDemoLink !== "" &&
-                          modal.sampleSiteDemoLink !== null ? (
+                          <div className={`${styles.demo_and_details}`}>
+                            {modal.sampleSiteDemoLink !== "" &&
+                            modal.sampleSiteDemoLink !== null ? (
+                              <button
+                                onClick={() => {
+                                  router.push(modal.sampleSiteDemoLink);
+                                }}
+                                className={`${styles.demo_link} orientation-change-element half-second`}
+                              >
+                                <span>Visit {modal.sampleSiteName} Site</span>
+                              </button>
+                            ) : (
+                              <button
+                                className={`${styles.demo_link} orientation-change-element half-second`}
+                              >
+                                <span>ERROR: No Sample Site Link!</span>
+                              </button>
+                            )}
+
                             <button
                               onClick={() => {
-                                router.push(modal.sampleSiteDemoLink);
+                                const DETAILS_MODAL = document.getElementById(
+                                  `${modal.modalID}_details_MODAL`
+                                );
+                                const DETAILS_DARKEN = document.getElementById(
+                                  `${modal.modalID}_details_modal_DARKEN`
+                                );
+
+                                DETAILS_MODAL.style.display = "flex";
+                                DETAILS_DARKEN.style.display = "block";
                               }}
-                              className={`${styles.demo_link} orientation-change-element half-second`}
+                              className={`${styles.details_toggler} orientation-change-element half-second`}
                             >
-                              <span>Visit {modal.sampleSiteName} Site</span>
+                              <span>Included/Pricing</span>
                             </button>
-                          ) : (
-                            <button
-                              className={`${styles.demo_link} orientation-change-element half-second`}
-                            >
-                              <span>ERROR: No Sample Site Link!</span>
-                            </button>
-                          )}
-
-                          <button
-                            onClick={() => {
-                              const DETAILS_MODAL = document.getElementById(
-                                `${modal.modalID}_details_MODAL`
-                              );
-                              const DETAILS_DARKEN = document.getElementById(
-                                `${modal.modalID}_details_modal_DARKEN`
-                              );
-
-                              DETAILS_MODAL.style.display = "flex";
-                              DETAILS_DARKEN.style.display = "block";
-                            }}
-                            className={`${styles.details_toggler} orientation-change-element half-second`}
-                          >
-                            <span>Included/Pricing</span>
-                          </button>
+                          </div>
 
                           <button
                             onClick={() => {

@@ -169,7 +169,36 @@ export const IndexSampleSites = ({ sample_sites_data }) => {
                                   className="lazyload"
                                   data-src={tech.techImg}
                                   alt={`Image of ${tech.techName}.`}
-                                  title={tech.techName}
+                                  title={`What is ${tech.techName}?`}
+                                  onClick={() => {
+                                    if (tech.techName === "ReactJS") {
+                                      window.open(
+                                        "https://en.wikipedia.org/wiki/React_(software)",
+                                        "_blank"
+                                      );
+                                    }
+
+                                    if (tech.techName === "Next.js") {
+                                      window.open(
+                                        "https://en.wikipedia.org/wiki/Next.js",
+                                        "_blank"
+                                      );
+                                    }
+
+                                    if (tech.techName === "Sass") {
+                                      window.open(
+                                        "https://en.wikipedia.org/wiki/Sass_(style_sheet_language)",
+                                        "_blank"
+                                      );
+                                    }
+
+                                    if (tech.techName === "Bootstrap") {
+                                      window.open(
+                                        "https://en.wikipedia.org/wiki/Bootstrap_(front-end_framework)",
+                                        "_blank"
+                                      );
+                                    }
+                                  }}
                                 />
                               ) : (
                                 <img
