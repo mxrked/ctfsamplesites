@@ -174,7 +174,7 @@ export default function Home({
         const data = await response.json();
 
         // Handle the data
-        console.log("API response:", data);
+        // console.log("API response:", data);
       } catch (error) {
         console.error("Error fetching data:", error);
       }
