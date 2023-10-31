@@ -247,6 +247,7 @@ function MyApp({ Component, pageProps }) {
       "a",
       "a span",
       "li",
+      "li span",
       "img",
       "br",
       "strong",
