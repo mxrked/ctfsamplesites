@@ -17,6 +17,7 @@ import { DesktopNav } from "@/assets/components/sites/Main/Nav/DesktopNav";
 import { MobileNav } from "@/assets/components/sites/Main/Nav/MobileNav";
 import { MobileNavLinks } from "@/assets/components/sites/Main/Nav/MobileNavLinks";
 import { BackToTop } from "@/assets/components/sites/Main/Index/BackToTop";
+import { Footer } from "@/assets/components/sites/Main/Footer/Footer";
 
 import { IndexTop } from "@/assets/components/sites/Main/Index/IndexTop";
 import { IndexSampleSites } from "@/assets/components/sites/Main/Index/IndexSampleSites";
@@ -205,6 +206,7 @@ export default function Home({
           <IndexTop />
           <IndexSampleSites sample_sites_data={sample_sites_data} />
         </div>
+        <Footer />
       </div>
     </PageFade>
   );
